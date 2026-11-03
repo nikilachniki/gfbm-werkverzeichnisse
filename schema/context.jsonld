@@ -28,6 +28,7 @@
     "Expression": "frbr:Expression",
     "Edition": "bibo:MultiVolumeBook",
     "Volume": "bibo:Book",
+    "VolumePart": "bibo:Book",
 
     "lv": "lasso:lv",
     "lvBase": { "@id": "lasso:lvBase", "@type": "xsd:integer" },
@@ -85,6 +86,9 @@
     "page": { "@id": "bibo:pageStart", "@type": "xsd:integer" },
     "volumes": { "@id": "dcterms:hasPart", "@container": "@set" },
     "volume": "bibo:volume",
+    "parts": { "@id": "dcterms:hasPart", "@container": "@set" },
+    "editors": { "@id": "bibo:editor", "@container": "@set" },
+    "publisher": "dcterms:publisher",
 
     "genre": "schema:genre",
     "genres": { "@id": "schema:genre", "@container": "@set" },

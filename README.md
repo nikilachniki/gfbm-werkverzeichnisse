@@ -82,8 +82,8 @@ Erzeugte Dateien:
   den Rohwert in `textAuthor` und verweisen über `textAuthorPerson` auf die
   Person. Siehe Abschnitt 19 in `docs/entscheidungen.md`.
 - `editions.json` listet die Gesamtausgaben (GA, GA², NR) mit ihren Bänden;
-  Teilbände sind eigene Bände. Es sind moderne Editionen, keine Quellen. Werk
-  und Fassung verweisen in `editionAppearances` auf den Band, mit Stücknummer
+  Teilbände stehen in `parts` ihres Bandes. Es sind moderne Editionen, keine Quellen. Werk
+  und Fassung verweisen in `editionAppearances` auf Band oder Teilband, mit Stücknummer
   (`number`) oder Seite (`page`). Der Rohwert bleibt am Eintrag in
   `completeEdition`. Siehe Abschnitt 43 in `docs/entscheidungen.md`.
 

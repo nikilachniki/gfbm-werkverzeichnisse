@@ -1562,7 +1562,9 @@ Drucken und Handschriften und sind im Kontext nicht als
 `bibo:Book` abgebildet.
 
 **Lesart der Fundstellen.** Die erste römische Zahl ist der Band, die zweite
-ein Teilband; ein Teilband wird als eigener Band geführt (`XIV,I`). In der NR
+ein Teilband (`XIV,I`). Ein Teilband steht in `parts` seines Bandes und hat
+eine eigene ID für die Fundstellen, aber keine eigenen bibliographischen
+Angaben; Titel, Herausgeber, Ort, Verlag und Jahr stehen nur am Band. In der NR
 ist der Band arabisch gezählt (`NR 5,19`). NR2 ist keine eigene Ausgabe,
 sondern die Neuauflage eines NR-Bandes, geführt als Band `1²` der NR. Die
 arabische Zahl nach dem Band ist die Stücknummer, nur mit `S.` die Seite
@@ -1593,10 +1595,14 @@ geprüft und nicht automatisch übernommen, darunter echte Zusatzfundstellen wie
 `GA IX 285 NR 26, S.210` und Widersprüche wie `GA X,III 69` gegen `GA X,III 6`.
 
 **Absicherung.** Der Import bricht bei einer unlesbaren Fundstelle oder einem
-Band ab, der in `raw/gesamtausgaben.json` fehlt.
+Band ab, der in `raw/gesamtausgaben.json` fehlt. Eine Fundstelle ohne Teilband
+gilt bei einem Band mit Teilbänden ebenfalls als Fehler, außer der Band trägt
+`citedWithoutPart` (GA² XVI und XX, deren Fundstellen teils keinen Teilband
+nennen).
 
-**Preis.** Band-Titel und Jahre sind noch leer und müssen von Hand ergänzt
-werden. Die Liste enthält bisher nur die zitierten Bände. Die Bedeutung des
+**Preis.** Band-Titel, Herausgeber (`editors`), Ort (`place`), Verlag
+(`publisher`) und Jahre sind noch leer und müssen von Hand ergänzt werden. Die
+Liste enthält bisher nur die zitierten Bände. Die Bedeutung des
 Zeichens `†` ist nicht abschließend geklärt; es steht unverändert in `note`.
 `completeEditions` bleibt am Werk, bis die Oberfläche umgestellt ist, und steht
 bis dahin doppelt im Datensatz.
@@ -1653,7 +1659,7 @@ bis dahin doppelt im Datensatz.
   Drucke des Blatts im Verzeichnis, siehe Abschnitt 26.
 - 311 Handschriften-Zeugnisse und die Zuordnung der 161 LV-Anhang-Werke
   warten auf fachliche Prüfung, siehe Abschnitt 14.
-- Titel und Jahre der Gesamtausgaben-Bände fehlen, und 69 LV-Nummern weichen
+- Titel, Herausgeber, Ort, Verlag und Jahre der Gesamtausgaben-Bände fehlen, und 69 LV-Nummern weichen
   bei der Fundstelle vom Register ab, siehe Abschnitt 43.
 
 ---

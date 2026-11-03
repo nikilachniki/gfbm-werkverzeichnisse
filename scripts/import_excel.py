@@ -960,6 +960,11 @@ def volume_id(edition_key, volume):
     return "edition:{0}-{1}".format(edition_key, slug)
 
 
+def part_label(volume, part):
+    """Zitierform eines Teilbandes, z.B. XIV,I."""
+    return "{0},{1}".format(volume, part)
+
+
 def load_editions():
     """Liest die kuratierte Liste der Gesamtausgaben und ihrer Baende."""
     with EDITIONS_PATH.open(encoding="utf-8") as handle:
@@ -976,13 +981,42 @@ def load_editions():
                     "@type": "Volume",
                     "volume": volume,
                     "title": details["title"],
+                    "editors": details["editors"],
+                    "place": details["place"],
+                    "publisher": details["publisher"],
                     "year": details["year"],
+                    "parts": [
+                        {
+                            "@id": volume_id(key, part_label(volume, part)),
+                            "@type": "VolumePart",
+                            "volume": part_label(volume, part),
+                        }
+                        for part in details.get("parts", [])
+                    ],
                 }
                 for volume, details in edition["volumes"].items()
             ],
         }
         for key, edition in data.items()
     ]
+
+
+def citable_volume_ids():
+    """Die Baende und Teilbaende, auf die eine Fundstelle verweisen darf.
+
+    Ein Band mit Teilbaenden zaehlt nur mit citedWithoutPart, damit eine
+    Fundstelle ohne Teilband wie "GA VIII 25" weiter den Import abbricht.
+    """
+    with EDITIONS_PATH.open(encoding="utf-8") as handle:
+        data = json.load(handle)
+    ids = set()
+    for key, edition in data.items():
+        for volume, details in edition["volumes"].items():
+            parts = details.get("parts", [])
+            if not parts or details.get("citedWithoutPart"):
+                ids.add(volume_id(key, volume))
+            ids.update(volume_id(key, part_label(volume, part)) for part in parts)
+    return ids
 
 
 def parse_edition_citation(raw, volume_ids):
@@ -1012,13 +1046,13 @@ def parse_edition_citation(raw, volume_ids):
     return appearance
 
 
-def attach_edition_appearances(items, editions):
+def attach_edition_appearances(items):
     """Fuellt editionAppearances aus den Fundstellen in completeEditions.
 
     Eine Zelle kann mehrere Fundstellen nennen ("NR 20,21; GA XIX 476"). Nennen
     zwei Eintraege dieselbe Stelle, bleibt ein Verweis, ein Zusatz wird behalten.
     """
-    volume_ids = {v["@id"] for edition in editions for v in edition["volumes"]}
+    volume_ids = citable_volume_ids()
     used = set()
     for item in items:
         for raw in item["completeEditions"]:
@@ -1262,7 +1296,7 @@ def main():
     unattached = attach_print_appearances(works, appearances)
     prints = derive_prints(entries, appearances, print_descriptions)
     editions = load_editions()
-    attach_edition_appearances(works + expressions, editions)
+    attach_edition_appearances(works + expressions)
     unclassified_count = len([m for m in manuscripts if m["lv"] is None and m["lvAnh"] is None])
 
     write_json("entries.json", {"@context": CONTEXT_URL, "items": entries})
