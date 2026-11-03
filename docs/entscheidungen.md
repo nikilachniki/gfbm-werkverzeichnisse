@@ -1516,6 +1516,29 @@ Sammeltiteln ist die Kürzung eine Ermessensentscheidung.
 
 ---
 
+## 42. Gattung vorerst nicht in der Oberfläche
+
+**Entscheidung.** Die Oberfläche zeigt die Gattung vorerst nicht mehr an
+(Übersichten, Filter, Detailseiten), und die Volltextsuche durchsucht sie
+nicht mehr. In den Daten bleiben `genre` und `genres` unverändert
+(Abschnitt 20).
+
+**Begründung.** Die Bestimmung der Gattung ist derzeit noch fehlerhaft. Die
+Zuordnung ist vor allem wegen Kontrafakturen schwierig: Die Musik bleibt
+gleich, mit dem Text kann sich aber auch die Gattung ändern, sodass ein Werk
+nicht unbedingt nur eine Gattung hat. Aus der Volltextsuche ist sie
+herausgenommen, weil Werke sonst über fehlerhafte und nirgends sichtbare
+Werte gefunden würden.
+
+**Preis.** Nach Gattung lässt sich vorerst weder filtern noch gezielt suchen;
+ein Suchbegriff wie „Madrigal“ trifft nur noch dort, wo er in einem anderen
+durchsuchten Feld steht, etwa im Titel.
+
+**Offen.** Wie die Gattung wieder aufgenommen wird. Ein möglicher Weg wäre,
+sie an die Textfassung zu hängen und beim Werk nur daraus abzuleiten.
+
+---
+
 ## Bewusst nicht übernommene Standards
 
 - **MEI**, die Music Encoding Initiative, ist für die Codierung von Notentext
@@ -1560,6 +1583,8 @@ Sammeltiteln ist die Kürzung eine Ermessensentscheidung.
   gegenüber MGG warten auf fachliche Prüfung, siehe Abschnitt 21.
 - Die 474 Kurztitel der Drucke sind ein Entwurf und warten auf fachliche
   Durchsicht, siehe Abschnitt 41.
+- Die Gattung ist fehlerhaft bestimmt und bis zur Klärung aus der Oberfläche
+  genommen, auch wegen der Kontrafakturen, siehe Abschnitt 42.
 - Sechs Drucke des Druckeverzeichnisses fehlen im Blatt *Drucke*, zwei
   Drucke des Blatts im Verzeichnis, siehe Abschnitt 26.
 - 311 Handschriften-Zeugnisse und die Zuordnung der 161 LV-Anhang-Werke
