@@ -9,6 +9,7 @@
     "person": "https://nikilachniki.github.io/lassoDBData/id/person/",
     "manuscript": "https://nikilachniki.github.io/lassoDBData/id/manuscript/",
     "expression": "https://nikilachniki.github.io/lassoDBData/id/expression/",
+    "edition": "https://nikilachniki.github.io/lassoDBData/id/edition/",
 
     "dcterms": "http://purl.org/dc/terms/",
     "frbr": "http://purl.org/vocab/frbr/core#",
@@ -25,6 +26,8 @@
     "Person": "schema:Person",
     "ManuscriptWitness": "lasso:ManuscriptWitness",
     "Expression": "frbr:Expression",
+    "Edition": "bibo:MultiVolumeBook",
+    "Volume": "bibo:Book",
 
     "lv": "lasso:lv",
     "lvBase": { "@id": "lasso:lvBase", "@type": "xsd:integer" },
@@ -75,6 +78,13 @@
 
     "completeEdition": "lasso:completeEdition",
     "completeEditions": { "@id": "lasso:completeEdition", "@container": "@set" },
+    "editionAppearances": { "@id": "lasso:editionAppearance", "@container": "@set" },
+    "inVolume": { "@id": "lasso:inVolume", "@type": "@id" },
+    "appendix": "lasso:appendix",
+    "number": "bibo:number",
+    "page": { "@id": "bibo:pageStart", "@type": "xsd:integer" },
+    "volumes": { "@id": "dcterms:hasPart", "@container": "@set" },
+    "volume": "bibo:volume",
 
     "genre": "schema:genre",
     "genres": { "@id": "schema:genre", "@container": "@set" },

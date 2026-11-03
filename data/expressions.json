@@ -25,6 +25,12 @@
       "completeEditions": [
         "GA 2 IV,I 2"
       ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga2-iv-i",
+          "number": "2"
+        }
+      ],
       "genres": [],
       "languages": [
         "Italienisch"
@@ -56,6 +62,12 @@
       "textSources": [],
       "completeEditions": [
         "GA 2 IV,I 2"
+      ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga2-iv-i",
+          "number": "2"
+        }
       ],
       "genres": [
         "Madrigal"
@@ -93,6 +105,12 @@
       "completeEditions": [
         "GA XIX 473"
       ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga-xix",
+          "number": "473"
+        }
+      ],
       "genres": [
         "Chanson"
       ],
@@ -126,6 +144,12 @@
       "textSources": [],
       "completeEditions": [
         "GA 2 XIV,I 66"
+      ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga2-xiv-i",
+          "number": "66"
+        }
       ],
       "genres": [
         "Chanson"
@@ -163,6 +187,13 @@
       "completeEditions": [
         "GA XVII 440†"
       ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga-xvii",
+          "number": "440",
+          "note": "†"
+        }
+      ],
       "genres": [
         "Motette"
       ],
@@ -193,6 +224,7 @@
       "uncertainTextAuthors": [],
       "textSources": [],
       "completeEditions": [],
+      "editionAppearances": [],
       "genres": [
         "Motette"
       ],
@@ -227,6 +259,13 @@
       "completeEditions": [
         "GA XIII 352†"
       ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga-xiii",
+          "number": "352",
+          "note": "†"
+        }
+      ],
       "genres": [
         "Motette"
       ],
@@ -260,6 +299,12 @@
       ],
       "completeEditions": [
         "GA XI 334"
+      ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga-xi",
+          "number": "334"
+        }
       ],
       "genres": [
         "Motette"
@@ -296,6 +341,12 @@
       ],
       "completeEditions": [
         "GA XV 417"
+      ],
+      "editionAppearances": [
+        {
+          "inVolume": "edition:ga-xv",
+          "number": "417"
+        }
       ],
       "genres": [
         "Motette"

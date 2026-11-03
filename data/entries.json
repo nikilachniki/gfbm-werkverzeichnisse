@@ -456,7 +456,7 @@
       "textAuthorPerson": "person:gnd-118593234",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,14",
+      "completeEdition": "GA 2 II,I 14",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -479,7 +479,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,14",
+      "completeEdition": "GA 2 II,I 14",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -502,7 +502,7 @@
       "textAuthorPerson": "person:gnd-118593234",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,15",
+      "completeEdition": "GA 2 II,I 15",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -525,7 +525,7 @@
       "textAuthorPerson": "person:ronconi",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,16",
+      "completeEdition": "GA 2 II,I 16",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -548,7 +548,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,16",
+      "completeEdition": "GA 2 II,I 16",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -571,7 +571,7 @@
       "textAuthorPerson": "person:gnd-118593234",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 II,I,17",
+      "completeEdition": "GA 2 II,I 17",
       "note": null,
       "genre": "Madrigal",
       "language": "Italienisch"
@@ -2940,7 +2940,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA 2 XVI,Anh.I 1",
+      "completeEdition": "GA 2 XVI, Anh. 1,1",
       "note": null,
       "genre": "Chanson",
       "language": "Französisch"
@@ -16441,7 +16441,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 25",
+      "completeEdition": "GA VIII,I 25",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -16464,7 +16464,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 26",
+      "completeEdition": "GA VIII,I 26",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -16487,7 +16487,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 27",
+      "completeEdition": "GA VIII,I 27",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -16510,7 +16510,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 28",
+      "completeEdition": "GA VIII,I 28",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -16533,7 +16533,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 29",
+      "completeEdition": "GA VIII,I 29",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -16556,7 +16556,7 @@
       "textAuthorPerson": "person:gnd-118503952",
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA VIII 30",
+      "completeEdition": "GA VIII,I 30",
       "note": null,
       "genre": null,
       "language": "Italienisch"
@@ -38751,7 +38751,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA XX 2 ,",
+      "completeEdition": "GA 2 XX, Anh. 1,1",
       "note": null,
       "genre": null,
       "language": "Deutsch"
@@ -39235,7 +39235,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 13",
+      "completeEdition": "GA I 13",
       "note": null,
       "genre": null,
       "language": null
@@ -39258,7 +39258,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 14",
+      "completeEdition": "GA I 14",
       "note": null,
       "genre": null,
       "language": null
@@ -39281,7 +39281,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 15",
+      "completeEdition": "GA I 15",
       "note": null,
       "genre": null,
       "language": null
@@ -39304,7 +39304,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 16",
+      "completeEdition": "GA I 16",
       "note": null,
       "genre": null,
       "language": null
@@ -39327,7 +39327,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 17",
+      "completeEdition": "GA I 17",
       "note": null,
       "genre": null,
       "language": null
@@ -39350,7 +39350,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 18",
+      "completeEdition": "GA I 18",
       "note": null,
       "genre": null,
       "language": null
@@ -39373,7 +39373,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 19",
+      "completeEdition": "GA I 19",
       "note": null,
       "genre": null,
       "language": null
@@ -39396,7 +39396,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 20",
+      "completeEdition": "GA I 20",
       "note": null,
       "genre": null,
       "language": null
@@ -39419,7 +39419,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 21",
+      "completeEdition": "GA I 21",
       "note": null,
       "genre": null,
       "language": null
@@ -39442,7 +39442,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 22",
+      "completeEdition": "GA I 22",
       "note": null,
       "genre": null,
       "language": null
@@ -39465,7 +39465,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 23",
+      "completeEdition": "GA I 23",
       "note": null,
       "genre": null,
       "language": null
@@ -39488,7 +39488,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GAI 24",
+      "completeEdition": "GA I 24",
       "note": null,
       "genre": null,
       "language": null
@@ -46038,7 +46038,7 @@
       "textAuthorPerson": null,
       "textAuthorUncertain": false,
       "textSource": null,
-      "completeEdition": "GA2 XIV,I 66 (Responce)t",
+      "completeEdition": "GA 2 XIV,I 66 (Responce)†",
       "note": null,
       "genre": "Chanson",
       "language": "Französisch"

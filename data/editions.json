@@ -1,0 +1,435 @@
+{
+  "@context": "https://raw.githubusercontent.com/nikilachniki/lassoDBData/main/schema/context.jsonld",
+  "items": [
+    {
+      "@id": "edition:ga",
+      "@type": "Edition",
+      "siglum": "GA",
+      "title": "Alte Gesamtausgabe",
+      "volumes": [
+        {
+          "@id": "edition:ga-i",
+          "@type": "Volume",
+          "volume": "I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-iii",
+          "@type": "Volume",
+          "volume": "III",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-v",
+          "@type": "Volume",
+          "volume": "V",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-vii",
+          "@type": "Volume",
+          "volume": "VII",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-viii-i",
+          "@type": "Volume",
+          "volume": "VIII,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-viii-ii",
+          "@type": "Volume",
+          "volume": "VIII,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-ix",
+          "@type": "Volume",
+          "volume": "IX",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-x-i",
+          "@type": "Volume",
+          "volume": "X,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-x-ii",
+          "@type": "Volume",
+          "volume": "X,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-x-iii",
+          "@type": "Volume",
+          "volume": "X,III",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-x-iv",
+          "@type": "Volume",
+          "volume": "X,IV",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xi",
+          "@type": "Volume",
+          "volume": "XI",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xiii",
+          "@type": "Volume",
+          "volume": "XIII",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xv",
+          "@type": "Volume",
+          "volume": "XV",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xvii",
+          "@type": "Volume",
+          "volume": "XVII",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xix",
+          "@type": "Volume",
+          "volume": "XIX",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga-xxi",
+          "@type": "Volume",
+          "volume": "XXI",
+          "title": null,
+          "year": null
+        }
+      ]
+    },
+    {
+      "@id": "edition:ga2",
+      "@type": "Edition",
+      "siglum": "GA²",
+      "title": "Alte Gesamtausgabe, revidierte Fassung",
+      "volumes": [
+        {
+          "@id": "edition:ga2-ii-i",
+          "@type": "Volume",
+          "volume": "II,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-ii-ii",
+          "@type": "Volume",
+          "volume": "II,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-iv-i",
+          "@type": "Volume",
+          "volume": "IV,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-iv-ii",
+          "@type": "Volume",
+          "volume": "IV,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-vi-i",
+          "@type": "Volume",
+          "volume": "VI,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-vi-ii",
+          "@type": "Volume",
+          "volume": "VI,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xii-i",
+          "@type": "Volume",
+          "volume": "XII,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xiv-i",
+          "@type": "Volume",
+          "volume": "XIV,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xvi",
+          "@type": "Volume",
+          "volume": "XVI",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xvi-ii",
+          "@type": "Volume",
+          "volume": "XVI,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xvi-iii",
+          "@type": "Volume",
+          "volume": "XVI,III",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xvi-iv",
+          "@type": "Volume",
+          "volume": "XVI,IV",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xviii-i",
+          "@type": "Volume",
+          "volume": "XVIII,I",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xviii-ii",
+          "@type": "Volume",
+          "volume": "XVIII,II",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xviii-iii",
+          "@type": "Volume",
+          "volume": "XVIII,III",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xx",
+          "@type": "Volume",
+          "volume": "XX",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xx-iv",
+          "@type": "Volume",
+          "volume": "XX,IV",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xx-v",
+          "@type": "Volume",
+          "volume": "XX,V",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xx-vi",
+          "@type": "Volume",
+          "volume": "XX,VI",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:ga2-xx-vii",
+          "@type": "Volume",
+          "volume": "XX,VII",
+          "title": null,
+          "year": null
+        }
+      ]
+    },
+    {
+      "@id": "edition:nr",
+      "@type": "Edition",
+      "siglum": "NR",
+      "title": "Neue Reihe",
+      "volumes": [
+        {
+          "@id": "edition:nr-1-2",
+          "@type": "Volume",
+          "volume": "1²",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-2",
+          "@type": "Volume",
+          "volume": "2",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-3",
+          "@type": "Volume",
+          "volume": "3",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-4",
+          "@type": "Volume",
+          "volume": "4",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-5",
+          "@type": "Volume",
+          "volume": "5",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-6",
+          "@type": "Volume",
+          "volume": "6",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-7",
+          "@type": "Volume",
+          "volume": "7",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-8",
+          "@type": "Volume",
+          "volume": "8",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-11",
+          "@type": "Volume",
+          "volume": "11",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-13",
+          "@type": "Volume",
+          "volume": "13",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-14",
+          "@type": "Volume",
+          "volume": "14",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-15",
+          "@type": "Volume",
+          "volume": "15",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-16",
+          "@type": "Volume",
+          "volume": "16",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-17",
+          "@type": "Volume",
+          "volume": "17",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-19",
+          "@type": "Volume",
+          "volume": "19",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-20",
+          "@type": "Volume",
+          "volume": "20",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-21",
+          "@type": "Volume",
+          "volume": "21",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-22",
+          "@type": "Volume",
+          "volume": "22",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-23",
+          "@type": "Volume",
+          "volume": "23",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-25",
+          "@type": "Volume",
+          "volume": "25",
+          "title": null,
+          "year": null
+        },
+        {
+          "@id": "edition:nr-26",
+          "@type": "Volume",
+          "volume": "26",
+          "title": null,
+          "year": null
+        }
+      ]
+    }
+  ]
+}

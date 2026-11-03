@@ -93,6 +93,21 @@ VOICE_NAMES = {
 }
 # Verweis auf eine Nummer im LV-Anhang im Freitext, z.B. "vgl. LVanh 98"
 RE_LVANH = re.compile(r"LVanh\.?\s*(\d+)", re.IGNORECASE)
+# Fundstelle in einer Gesamtausgabe, z.B. "GA 2 XIV,I 65", "NR 19, S.3" oder
+# "GA 2 XVI, Anh. 2,1". Was nach Stuecknummer oder Seite folgt, ist ein Zusatz.
+RE_EDITION_CITATION = re.compile(
+    r"^(GA 2|GA|NR2|NR) ([IVX]+(?:,[IVX]+)?|\d+)(?:\s*,\s*|\s+)"
+    r"(?:(Anh(?:ang|\.))\s*(?:(\d+),)?)?"
+    r"(S\.\s*)?(\d+(?:-\d+)?(?: [ab](?!\w))?)\s*(.*)$"
+)
+# Kuerzel in der Fundstelle -> Ausgabe und Band. NR2 ist keine eigene Ausgabe,
+# sondern die Neuauflage eines Bandes der Neuen Reihe.
+EDITION_PREFIXES = {
+    "GA": ("ga", "{0}"),
+    "GA 2": ("ga2", "{0}"),
+    "NR": ("nr", "{0}"),
+    "NR2": ("nr", "{0}²"),
+}
 
 # Handschriften-Quelle: andere Spalten und ein anderes Feldmodell als die
 # Drucke (RISM-Sigel/Bibliothek/Signatur statt Drucksigle), deshalb ein
@@ -640,6 +655,7 @@ def derive_works(entries, manuscripts):
             "uncertainTextAuthors": [],
             "textSources": [],
             "completeEditions": [],
+            "editionAppearances": [],
             "genres": [],
             "languages": [],
             "entries": [],
@@ -858,6 +874,7 @@ def derive_expressions(entries, works):
                 "uncertainTextAuthors": [],
                 "textSources": [],
                 "completeEditions": [],
+                "editionAppearances": [],
                 "genres": [],
                 "languages": [],
                 "entries": [],
@@ -932,6 +949,93 @@ def derive_prints(entries, appearances, descriptions):
         if appearance["approximate"]:
             item["dateApproximate"] = True
     return sorted(prints.values(), key=lambda p: print_sort_key(p["siglum"]))
+
+
+EDITIONS_PATH = RAW_DIR / "gesamtausgaben.json"
+
+
+def volume_id(edition_key, volume):
+    """Bildet die ID eines Bandes, z.B. edition:ga2-xiv-i oder edition:nr-1-2."""
+    slug = re.sub(r"[^a-z0-9]+", "-", volume.lower().replace("²", "-2")).strip("-")
+    return "edition:{0}-{1}".format(edition_key, slug)
+
+
+def load_editions():
+    """Liest die kuratierte Liste der Gesamtausgaben und ihrer Baende."""
+    with EDITIONS_PATH.open(encoding="utf-8") as handle:
+        data = json.load(handle)
+    return [
+        {
+            "@id": "edition:" + key,
+            "@type": "Edition",
+            "siglum": edition["siglum"],
+            "title": edition["title"],
+            "volumes": [
+                {
+                    "@id": volume_id(key, volume),
+                    "@type": "Volume",
+                    "volume": volume,
+                    "title": details["title"],
+                    "year": details["year"],
+                }
+                for volume, details in edition["volumes"].items()
+            ],
+        }
+        for key, edition in data.items()
+    ]
+
+
+def parse_edition_citation(raw, volume_ids):
+    """Zerlegt eine Fundstelle in Band, Anhang, Stuecknummer oder Seite und Zusatz.
+
+    Bricht bei einer unlesbaren Fundstelle oder einem unbekannten Band ab.
+    """
+    match = RE_EDITION_CITATION.match(raw)
+    if not match:
+        raise SystemExit("Unlesbare Fundstelle in der Gesamtausgabe: {0!r}".format(raw))
+    prefix, volume, appendix, appendix_no, page, value, note = match.groups()
+    edition_key, volume_format = EDITION_PREFIXES[prefix]
+    target = volume_id(edition_key, volume_format.format(volume))
+    if target not in volume_ids:
+        raise SystemExit(
+            "Fundstelle {0!r}: Band fehlt in raw/gesamtausgaben.json".format(raw)
+        )
+    appearance = {"inVolume": target}
+    if appendix:
+        appearance["appendix"] = "Anhang {0}".format(appendix_no) if appendix_no else "Anhang"
+    if page:
+        appearance["page"] = int(value)
+    else:
+        appearance["number"] = value
+    if note:
+        appearance["note"] = note
+    return appearance
+
+
+def attach_edition_appearances(items, editions):
+    """Fuellt editionAppearances aus den Fundstellen in completeEditions.
+
+    Eine Zelle kann mehrere Fundstellen nennen ("NR 20,21; GA XIX 476"). Nennen
+    zwei Eintraege dieselbe Stelle, bleibt ein Verweis, ein Zusatz wird behalten.
+    """
+    volume_ids = {v["@id"] for edition in editions for v in edition["volumes"]}
+    used = set()
+    for item in items:
+        for raw in item["completeEditions"]:
+            for citation in raw.split(";"):
+                appearance = parse_edition_citation(citation.strip(), volume_ids)
+                used.add(appearance["inVolume"])
+                place = {k: v for k, v in appearance.items() if k != "note"}
+                for known in item["editionAppearances"]:
+                    if {k: v for k, v in known.items() if k != "note"} == place:
+                        if "note" in appearance:
+                            known.setdefault("note", appearance["note"])
+                        break
+                else:
+                    item["editionAppearances"].append(appearance)
+    unused = sorted(volume_ids - used)
+    if unused:
+        print("  Hinweis: Baende aus gesamtausgaben.json ohne Fundstelle: {0}".format(unused))
 
 
 PERSON_AUTHORITIES_PATH = RAW_DIR / "personen_normdaten.json"
@@ -1157,6 +1261,8 @@ def main():
     expressions = derive_expressions(entries, works)
     unattached = attach_print_appearances(works, appearances)
     prints = derive_prints(entries, appearances, print_descriptions)
+    editions = load_editions()
+    attach_edition_appearances(works + expressions, editions)
     unclassified_count = len([m for m in manuscripts if m["lv"] is None and m["lvAnh"] is None])
 
     write_json("entries.json", {"@context": CONTEXT_URL, "items": entries})
@@ -1165,6 +1271,7 @@ def main():
     write_json("expressions.json", {"@context": CONTEXT_URL, "items": expressions})
     write_json("prints.json", {"@context": CONTEXT_URL, "items": prints})
     write_json("persons.json", {"@context": CONTEXT_URL, "items": persons})
+    write_json("editions.json", {"@context": CONTEXT_URL, "items": editions})
 
     multi = [w for w in works if len(w["entries"]) > 1]
     with_manuscripts = [w for w in works if w["manuscripts"]]
@@ -1189,6 +1296,9 @@ def main():
         ", ".join(sorted({a["lv"] or "anh-{0}".format(a["lvAnh"]) for a in unattached})[:10]) or "-",
     ))
     print("Textdichter   : {0}".format(len(persons)))
+    print("Gesamtausgaben: {0} mit {1} Baenden".format(
+        len(editions), sum(len(e["volumes"]) for e in editions)
+    ))
     print(
         "Interne IDs   : {0} vergeben, {1} davon neu, naechste freie ID {2}".format(
             len(registry["assigned"]),

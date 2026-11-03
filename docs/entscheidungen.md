@@ -1539,6 +1539,70 @@ sie an die Textfassung zu hängen und beim Werk nur daraus abzuleiten.
 
 ---
 
+## 43. Gesamtausgaben und ihre Bände als eigene Datenstruktur
+
+**Entscheidung.** `data/editions.json` führt die Gesamtausgaben mit ihren
+Bänden: die Alte Gesamtausgabe (GA), deren revidierte Fassung (GA²) und die
+Neue Reihe (NR). Werk und Fassung verweisen in `editionAppearances` auf den
+Band, mit Stücknummer (`number`) oder Seite (`page`), bei Bedarf mit Anhang
+(`appendix`) und Zusatz (`note`):
+
+```json
+{ "inVolume": "edition:ga2-xiv-i", "number": "65", "note": "+1564-3,16" }
+```
+
+Die Ausgaben und Bände stehen in der von Hand gepflegten Datei
+`raw/gesamtausgaben.json`. Der Rohwert bleibt in `completeEdition` am Eintrag
+(Abschnitt 4).
+
+**Moderne Editionen, keine Quellen.** Die Gesamtausgaben sind moderne
+Editionen und gehören nicht zur Überlieferung. Sie stehen deshalb getrennt von
+Drucken und Handschriften und sind im Kontext nicht als
+`frbr:Manifestation` wie die Drucke, sondern als `bibo:MultiVolumeBook` und
+`bibo:Book` abgebildet.
+
+**Lesart der Fundstellen.** Die erste römische Zahl ist der Band, die zweite
+ein Teilband; ein Teilband wird als eigener Band geführt (`XIV,I`). In der NR
+ist der Band arabisch gezählt (`NR 5,19`). NR2 ist keine eigene Ausgabe,
+sondern die Neuauflage eines NR-Bandes, geführt als Band `1²` der NR. Die
+arabische Zahl nach dem Band ist die Stücknummer, nur mit `S.` die Seite
+(77 Verweise, vor allem NR 19, 21 und 22). Die Nummern laufen teils über
+Bandgrenzen hinweg (GA I 1–90, GA III 91–160) und werden von den Teilen eines
+Werks geteilt, was gegen eine Lesart als Seitenzahl spricht.
+
+**Alternativen.** Nur die Zeichenketten vereinheitlichen: einfacher, aber ohne
+Datensatz für den Band und ohne Trennung von Band und Stück. Ein Datensatz je
+Stück der Ausgabe: mehr Struktur, als gebraucht wird. Eine eigene Ausgabe für
+NR2 wurde verworfen, weil sie nur einen einzelnen Band neu auflegt.
+
+**Bereinigung in `Werke.xlsx`.** 27 Fundstellen wurden korrigiert:
+
+| Fälle | Vorher | Nachher | Beleg |
+| --- | --- | --- | --- |
+| 12 | `GAI 13` | `GA I 13` | anschließend an `GA I 10–12` |
+| 6 | `GA 2 II,I,14` | `GA 2 II,I 14` | Register |
+| 6 | `GA VIII 25` | `GA VIII,I 25` | fachlich bestätigt; Nummern 25–30 fehlten dort |
+| 1 | `GA2 XIV,I 66 (Responce)t` | `GA 2 XIV,I 66 (Responce)†` | TeX-Vorlage |
+| 1 | `GA 2 XVI,Anh.I 1` | `GA 2 XVI, Anh. 1,1` | Schreibweise der übrigen Anhänge |
+| 1 | `GA XX 2 ,` | `GA 2 XX, Anh. 1,1` | TeX `GA XX\ho 2 ,` und Register (LV 1197) |
+
+**Zweite Angabe im Register.** Auch das Blatt *Drucknachweise* in
+`raw/Drucke.xlsx` nennt Fundstellen. `Werke.xlsx` bleibt führend; die
+Abweichungen (69 LV-Nummern, ohne bloße Schreibvarianten) werden von Hand
+geprüft und nicht automatisch übernommen, darunter echte Zusatzfundstellen wie
+`GA IX 285 NR 26, S.210` und Widersprüche wie `GA X,III 69` gegen `GA X,III 6`.
+
+**Absicherung.** Der Import bricht bei einer unlesbaren Fundstelle oder einem
+Band ab, der in `raw/gesamtausgaben.json` fehlt.
+
+**Preis.** Band-Titel und Jahre sind noch leer und müssen von Hand ergänzt
+werden. Die Liste enthält bisher nur die zitierten Bände. Die Bedeutung des
+Zeichens `†` ist nicht abschließend geklärt; es steht unverändert in `note`.
+`completeEditions` bleibt am Werk, bis die Oberfläche umgestellt ist, und steht
+bis dahin doppelt im Datensatz.
+
+---
+
 ## Bewusst nicht übernommene Standards
 
 - **MEI**, die Music Encoding Initiative, ist für die Codierung von Notentext
@@ -1589,6 +1653,8 @@ sie an die Textfassung zu hängen und beim Werk nur daraus abzuleiten.
   Drucke des Blatts im Verzeichnis, siehe Abschnitt 26.
 - 311 Handschriften-Zeugnisse und die Zuordnung der 161 LV-Anhang-Werke
   warten auf fachliche Prüfung, siehe Abschnitt 14.
+- Titel und Jahre der Gesamtausgaben-Bände fehlen, und 69 LV-Nummern weichen
+  bei der Fundstelle vom Register ab, siehe Abschnitt 43.
 
 ---
 

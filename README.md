@@ -8,7 +8,7 @@ liegt getrennt in [lassoDB](https://github.com/nikilachniki/lassoDB).
 
 | Ordner    | Inhalt                                                          |
 | --------- | --------------------------------------------------------------- |
-| `raw/`    | Quelldateien des Imports: drei Excel-Tabellen und die GND-Zuordnung |
+| `raw/`    | Quelldateien des Imports: drei Excel-Tabellen, die GND-Zuordnung und die Liste der Gesamtausgaben |
 | `scripts/`| Importskript, das aus `raw/` die Dateien in `data/` erzeugt, und die ID-Registry |
 | `schema/` | JSON-LD-Kontext und JSON-Schema                                  |
 | `data/`   | Erzeugte JSON-LD-Dateien, der eigentliche Datenbestand           |
@@ -81,6 +81,11 @@ Erzeugte Dateien:
   `preferredName` und `variantNames` zusammengeführt; die Einträge behalten
   den Rohwert in `textAuthor` und verweisen über `textAuthorPerson` auf die
   Person. Siehe Abschnitt 19 in `docs/entscheidungen.md`.
+- `editions.json` listet die Gesamtausgaben (GA, GA², NR) mit ihren Bänden;
+  Teilbände sind eigene Bände. Es sind moderne Editionen, keine Quellen. Werk
+  und Fassung verweisen in `editionAppearances` auf den Band, mit Stücknummer
+  (`number`) oder Seite (`page`). Der Rohwert bleibt am Eintrag in
+  `completeEdition`. Siehe Abschnitt 43 in `docs/entscheidungen.md`.
 
 Alle Dateien tragen einen Verweis auf `schema/context.jsonld` und sind damit als
 JSON-LD lesbar. Sie lassen sich mit Standardwerkzeugen nach RDF überführen, ohne
@@ -92,9 +97,10 @@ Das Importskript prüft jeden erzeugten Eintrag gegen
 `schema/entry.schema.json` und jedes Handschriften-Zeugnis gegen
 `schema/manuscript.schema.json`, bevor es irgendetwas schreibt. Ein
 Mapping-Fehler bricht den Import damit sofort mit einer Fehlermeldung ab,
-statt still eine ungültige Datei zu erzeugen. `works.json`, `prints.json` und
-`persons.json` sind dagegen nicht schemabewehrt; sie sind rein abgeleitet und
-werden bei jedem Import ohnehin vollständig neu berechnet.
+statt still eine ungültige Datei zu erzeugen. `works.json`, `prints.json`,
+`persons.json` und `editions.json` sind dagegen nicht schemabewehrt; sie werden
+bei jedem Import ohnehin vollständig neu berechnet. Eine unlesbare Fundstelle
+oder ein Band, der in `raw/gesamtausgaben.json` fehlt, bricht den Import ab.
 
 ## Import ausführen
 
@@ -119,6 +125,7 @@ Der Import liest genau diese Dateien aus `raw/`; alle werden von Hand gepflegt:
 | `Drucke.xlsx` | Drucke | eine Zeile je Druck mit den Angaben aus dem Druckeverzeichnis |
 | `lasso_handschriften.xlsx` | Werke | eine Zeile je Werk in einer Handschrift |
 | `personen_normdaten.json` | – | GND/VIAF-Zuordnung der Textdichter |
+| `gesamtausgaben.json` | – | Gesamtausgaben und ihre Bände |
 
 Die Spalten *Beschreibung*, *Titel*, *Stimmbücher*, *Verweis …* (eine je
 Verzeichnis) und *RISM* (Link auf RISM Online) im Blatt *Drucke* stammen aus

@@ -1,0 +1,78 @@
+{
+  "ga": {
+    "siglum": "GA",
+    "title": "Alte Gesamtausgabe",
+    "volumes": {
+      "I": { "title": null, "year": null },
+      "III": { "title": null, "year": null },
+      "V": { "title": null, "year": null },
+      "VII": { "title": null, "year": null },
+      "VIII,I": { "title": null, "year": null },
+      "VIII,II": { "title": null, "year": null },
+      "IX": { "title": null, "year": null },
+      "X,I": { "title": null, "year": null },
+      "X,II": { "title": null, "year": null },
+      "X,III": { "title": null, "year": null },
+      "X,IV": { "title": null, "year": null },
+      "XI": { "title": null, "year": null },
+      "XIII": { "title": null, "year": null },
+      "XV": { "title": null, "year": null },
+      "XVII": { "title": null, "year": null },
+      "XIX": { "title": null, "year": null },
+      "XXI": { "title": null, "year": null }
+    }
+  },
+  "ga2": {
+    "siglum": "GA²",
+    "title": "Alte Gesamtausgabe, revidierte Fassung",
+    "volumes": {
+      "II,I": { "title": null, "year": null },
+      "II,II": { "title": null, "year": null },
+      "IV,I": { "title": null, "year": null },
+      "IV,II": { "title": null, "year": null },
+      "VI,I": { "title": null, "year": null },
+      "VI,II": { "title": null, "year": null },
+      "XII,I": { "title": null, "year": null },
+      "XIV,I": { "title": null, "year": null },
+      "XVI": { "title": null, "year": null },
+      "XVI,II": { "title": null, "year": null },
+      "XVI,III": { "title": null, "year": null },
+      "XVI,IV": { "title": null, "year": null },
+      "XVIII,I": { "title": null, "year": null },
+      "XVIII,II": { "title": null, "year": null },
+      "XVIII,III": { "title": null, "year": null },
+      "XX": { "title": null, "year": null },
+      "XX,IV": { "title": null, "year": null },
+      "XX,V": { "title": null, "year": null },
+      "XX,VI": { "title": null, "year": null },
+      "XX,VII": { "title": null, "year": null }
+    }
+  },
+  "nr": {
+    "siglum": "NR",
+    "title": "Neue Reihe",
+    "volumes": {
+      "1²": { "title": null, "year": null },
+      "2": { "title": null, "year": null },
+      "3": { "title": null, "year": null },
+      "4": { "title": null, "year": null },
+      "5": { "title": null, "year": null },
+      "6": { "title": null, "year": null },
+      "7": { "title": null, "year": null },
+      "8": { "title": null, "year": null },
+      "11": { "title": null, "year": null },
+      "13": { "title": null, "year": null },
+      "14": { "title": null, "year": null },
+      "15": { "title": null, "year": null },
+      "16": { "title": null, "year": null },
+      "17": { "title": null, "year": null },
+      "19": { "title": null, "year": null },
+      "20": { "title": null, "year": null },
+      "21": { "title": null, "year": null },
+      "22": { "title": null, "year": null },
+      "23": { "title": null, "year": null },
+      "25": { "title": null, "year": null },
+      "26": { "title": null, "year": null }
+    }
+  }
+}
