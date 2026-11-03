@@ -1600,9 +1600,34 @@ gilt bei einem Band mit Teilbänden ebenfalls als Fehler, außer der Band trägt
 `citedWithoutPart` (GA² XVI und XX, deren Fundstellen teils keinen Teilband
 nennen).
 
-**Preis.** Band-Titel, Herausgeber (`editors`), Ort (`place`), Verlag
-(`publisher`) und Jahre sind noch leer und müssen von Hand ergänzt werden. Die
-Liste enthält bisher nur die zitierten Bände. Die Bedeutung des
+**Bibliographische Angaben.** Titel, Herausgeber, Ort, Verlag und Jahr stammen
+von der Lasso-Seite der Bayerischen Akademie der Wissenschaften, abgerufen am
+3. November 2026: GA² und NR aus den
+[Publikationen](https://lasso.badw.de/publikationen.html), die GA aus der Seite
+zur [Alten Gesamtausgabe](https://lasso.badw.de/geschichte/alte-gesamtausgabe.html).
+Drei redaktionelle Setzungen:
+
+- Von NR 2 und NR 21 nennt die Seite je zwei Ausgaben (1961 und 2006, 1990 und
+  2016). Geführt ist die frühere, denn der zugrunde liegende Katalog erschien
+  vor den späteren. Von NR 1 sind beide Auflagen geführt, Band `1` von 1956 und
+  die zitierte zweite Auflage als Band `1²` von 1989.
+- Bei den GA-Bänden des Magnum opus steht in `editors` nur, wer laut Seite
+  redigiert hat: Haberl, bei Band XXI Sandberger. Carl Proske hat sie „in
+  Partitur gebracht“, das bleibt im Titel erhalten und macht ihn nicht zum
+  Herausgeber. Ebenso steht Fred Büttner, Mitarbeiter von GA² XI, im Titel.
+- Wo die Seite ein Jahr mit „ca.“ nennt (GA XII, XIV, XVI, XVIII und XIX), steht
+  es in `year` mit `dateApproximate`.
+
+Für die Teilbände nennen die Seiten keine eigenen Angaben. Die Titel legen
+nahe, dass die zweite römische Zahl teils einen Druck innerhalb des Bandes
+meint (GA² II: „Das erste und zweite Buch“, GA² XVIII: „Die drei Teile“).
+
+**Vollständigkeit.** Die Liste führt alle Bände der Seite (GA 21, GA² 21, NR 27
+einschließlich Band `1²`), auch die nicht zitierten. Bei GA² V und VII fehlen Ort,
+Verlag und Jahr, weil die Detailseiten beim Abruf nicht erreichbar waren.
+
+**Preis.** Die Angaben hängen von einer einzelnen, nicht mit den Bänden selbst
+abgeglichenen Webseite ab. Die Bedeutung des
 Zeichens `†` ist nicht abschließend geklärt; es steht unverändert in `note`.
 `completeEditions` bleibt am Werk, bis die Oberfläche umgestellt ist, und steht
 bis dahin doppelt im Datensatz.
@@ -1659,8 +1684,8 @@ bis dahin doppelt im Datensatz.
   Drucke des Blatts im Verzeichnis, siehe Abschnitt 26.
 - 311 Handschriften-Zeugnisse und die Zuordnung der 161 LV-Anhang-Werke
   warten auf fachliche Prüfung, siehe Abschnitt 14.
-- Titel, Herausgeber, Ort, Verlag und Jahre der Gesamtausgaben-Bände fehlen, und 69 LV-Nummern weichen
-  bei der Fundstelle vom Register ab, siehe Abschnitt 43.
+- 69 LV-Nummern weichen bei der Fundstelle in der Gesamtausgabe vom Register
+  ab, und bei GA² V und VII fehlen Ort, Verlag und Jahr, siehe Abschnitt 43.
 
 ---
 

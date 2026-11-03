@@ -5,61 +5,119 @@
       "@id": "edition:ga",
       "@type": "Edition",
       "siglum": "GA",
-      "title": "Alte Gesamtausgabe",
+      "title": "Orlando di Lasso, Sämmtliche Werke",
+      "shortTitle": "Alte Gesamtausgabe",
       "volumes": [
         {
           "@id": "edition:ga-i",
           "@type": "Volume",
           "volume": "I",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil I, für 2, 3 und 4 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1894,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-ii",
+          "@type": "Volume",
+          "volume": "II",
+          "title": "Madrigale. Erster Theil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1894,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-iii",
           "@type": "Volume",
           "volume": "III",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil II, für 4 und 5 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1895,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-iv",
+          "@type": "Volume",
+          "volume": "IV",
+          "title": "Madrigale. Zweiter Theil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1895,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-v",
           "@type": "Volume",
           "volume": "V",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil III, für 5 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1895,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-vi",
+          "@type": "Volume",
+          "volume": "VI",
+          "title": "Madrigale. Dritter Theil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1896,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-vii",
           "@type": "Volume",
           "volume": "VII",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil IV, für 5 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1896,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-viii",
           "@type": "Volume",
           "volume": "VIII",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Madrigale. Vierter Theil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1898,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga-viii-i",
@@ -77,22 +135,28 @@
           "@id": "edition:ga-ix",
           "@type": "Volume",
           "volume": "IX",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil V, für 5 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1897,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-x",
           "@type": "Volume",
           "volume": "X",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Madrigale. Fünfter Theil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1898,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga-x-i",
@@ -120,66 +184,154 @@
           "@id": "edition:ga-xi",
           "@type": "Volume",
           "volume": "XI",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil VI, für 5 und 6 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1900,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-xii",
+          "@type": "Volume",
+          "volume": "XII",
+          "title": "Kompositionen mit französischem Text. Erster Teil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1904,
+          "dateApproximate": true,
           "parts": []
         },
         {
           "@id": "edition:ga-xiii",
           "@type": "Volume",
           "volume": "XIII",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil VII, für 6 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1901,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-xiv",
+          "@type": "Volume",
+          "volume": "XIV",
+          "title": "Kompositionen mit französischem Text. Zweiter Teil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1904,
+          "dateApproximate": true,
           "parts": []
         },
         {
           "@id": "edition:ga-xv",
           "@type": "Volume",
           "volume": "XV",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil VIII, für 6 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1903,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-xvi",
+          "@type": "Volume",
+          "volume": "XVI",
+          "title": "Kompositionen mit französischem Text. Dritter Teil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1905,
+          "dateApproximate": true,
           "parts": []
         },
         {
           "@id": "edition:ga-xvii",
           "@type": "Volume",
           "volume": "XVII",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Teil IX, für 6 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1905,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-xviii",
+          "@type": "Volume",
+          "volume": "XVIII",
+          "title": "Kompositionen mit deutschem Text. Erster Teil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1907,
+          "dateApproximate": true,
           "parts": []
         },
         {
           "@id": "edition:ga-xix",
           "@type": "Volume",
           "volume": "XIX",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Teil X, für 6, 7 und 8 Stimmen",
+          "editors": [
+            "Franz Xaver Haberl"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1909,
+          "dateApproximate": true,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga-xx",
+          "@type": "Volume",
+          "volume": "XX",
+          "title": "Kompositionen mit deutschem Text. Zweiter Teil",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1910,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:ga-xxi",
           "@type": "Volume",
           "volume": "XXI",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Teil XI, für 8, 9, 10 und 12 Stimmen",
+          "editors": [
+            "Adolf Sandberger"
+          ],
+          "place": "Leipzig",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1926,
+          "dateApproximate": false,
           "parts": []
         }
       ]
@@ -188,17 +340,35 @@
       "@id": "edition:ga2",
       "@type": "Edition",
       "siglum": "GA²",
-      "title": "Alte Gesamtausgabe, revidierte Fassung",
+      "title": "Orlando di Lasso. Sämtliche Werke (Zweite, nach den Quellen revidierte Auflage der Ausgabe von F. X. Haberl und A. Sandberger)",
+      "shortTitle": "Alte Gesamtausgabe, revidierte Fassung",
       "volumes": [
+        {
+          "@id": "edition:ga2-i",
+          "@type": "Volume",
+          "volume": "I",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6. 7. 8. 9. 10 u. 12 Stimmen. Teil 1: für 2,3 und 4 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2003,
+          "dateApproximate": false,
+          "parts": []
+        },
         {
           "@id": "edition:ga2-ii",
           "@type": "Volume",
           "volume": "II",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit italienischem Text; 1: Das erste und zweite Buch fünfstimmiger Madrigale, Venedig 1555 und Rom 1557",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1968,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-ii-i",
@@ -213,14 +383,31 @@
           ]
         },
         {
+          "@id": "edition:ga2-iii",
+          "@type": "Volume",
+          "volume": "III",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 2: für 4 und 5 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2004,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
           "@id": "edition:ga2-iv",
           "@type": "Volume",
           "volume": "IV",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit italienischem Text; 2: Das dritte und vierte Buch fünfstimmiger Madrigale, Rom 1563 und Venedig 1567",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1986,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-iv-i",
@@ -235,14 +422,31 @@
           ]
         },
         {
-          "@id": "edition:ga2-vi",
+          "@id": "edition:ga2-v",
           "@type": "Volume",
-          "volume": "VI",
-          "title": null,
-          "editors": [],
+          "volume": "V",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 3: für 5 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
           "place": null,
           "publisher": null,
           "year": null,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-vi",
+          "@type": "Volume",
+          "volume": "VI",
+          "title": "Kompositionen mit italienischem Text; 3: Die beiden Madrigaldrucke, Nürnberg 1585 und 1587",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1990,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-vi-i",
@@ -257,14 +461,90 @@
           ]
         },
         {
-          "@id": "edition:ga2-xii",
+          "@id": "edition:ga2-vii",
           "@type": "Volume",
-          "volume": "XII",
-          "title": null,
-          "editors": [],
+          "volume": "VII",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 4: für 5 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
           "place": null,
           "publisher": null,
           "year": null,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-viii",
+          "@type": "Volume",
+          "volume": "VIII",
+          "title": "Kompositionen mit italienischem Text IV: Madrigale zu vier und fünf Stimmen",
+          "editors": [
+            "Christian Berktold",
+            "Horst Leuchtmann",
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2022,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-ix",
+          "@type": "Volume",
+          "volume": "IX",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 5: für 5 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2010,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-x",
+          "@type": "Volume",
+          "volume": "X",
+          "title": "Kompositionen mit italienischem Text 5: Madrigale aus Sammelwerken und Sammlungen zu 6 und mehr Stimmen: Villanellen und Moresken",
+          "editors": [
+            "Marie Louise Göllner",
+            "Mariacarla De Giorgi"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2016,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-xi",
+          "@type": "Volume",
+          "volume": "XI",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 6: für 5 und 6 Stimmen. Mitarbeit: Fred Büttner",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2012,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:ga2-xii",
+          "@type": "Volume",
+          "volume": "XII",
+          "title": "Kompositionen mit französischem Text; 1: Die vierstimmigen Chansons aus \"Les Meslanges d'Orlande de Lassus\", Paris 1576",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1982,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-xii-i",
@@ -274,14 +554,31 @@
           ]
         },
         {
+          "@id": "edition:ga2-xiii",
+          "@type": "Volume",
+          "volume": "XIII",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 7: für 6 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2013,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
           "@id": "edition:ga2-xiv",
           "@type": "Volume",
           "volume": "XIV",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit französischem Text; 2: Die fünf- und achtstimmigen Chansons aus \"Les Meslanges d'Orlande de Lassus\", Paris 1576",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1981,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-xiv-i",
@@ -291,14 +588,31 @@
           ]
         },
         {
+          "@id": "edition:ga2-xv",
+          "@type": "Volume",
+          "volume": "XV",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 8: für 6 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2015,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
           "@id": "edition:ga2-xvi",
           "@type": "Volume",
           "volume": "XVI",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit französischem Text; 3: Drei- bis achtstimmige Chansons aus verschiedenen Drucken",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1982,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-xvi-ii",
@@ -318,14 +632,31 @@
           ]
         },
         {
+          "@id": "edition:ga2-xvii",
+          "@type": "Volume",
+          "volume": "XVII",
+          "title": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. Teil 9: für 6 Stimmen",
+          "editors": [
+            "Bernhold Schmid"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2018,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
           "@id": "edition:ga2-xviii",
           "@type": "Volume",
           "volume": "XVIII",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit deutschem Text; 1: Die drei Teile fünfstimmiger deutscher Lieder, München 1567, 1572 und 1576",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1970,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-xviii-i",
@@ -345,14 +676,32 @@
           ]
         },
         {
+          "@id": "edition:ga2-xix",
+          "@type": "Volume",
+          "volume": "XIX",
+          "title": "Motetten X: (Magnum opus musicum, Teil X): Motetten für 6, 7 und 8 Stimmen",
+          "editors": [
+            "Bernhold Schmid",
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2021,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
           "@id": "edition:ga2-xx",
           "@type": "Volume",
           "volume": "XX",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Kompositionen mit deutschem Text; 2: Drei- bis achtstimmige deutsche Lieder aus verschiedenen Drucken sowie aus handschriftlicher Überlieferung",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 1971,
+          "dateApproximate": false,
           "parts": [
             {
               "@id": "edition:ga2-xx-iv",
@@ -375,6 +724,21 @@
               "volume": "XX,VII"
             }
           ]
+        },
+        {
+          "@id": "edition:ga2-xxi",
+          "@type": "Volume",
+          "volume": "XXI",
+          "title": "Motetten XI: (Magnum opus musicum, Teil XI): Motetten für 8, 9, 10 und 12 Stimmen",
+          "editors": [
+            "Bernhold Schmid",
+            "Horst Leuchtmann"
+          ],
+          "place": "Wiesbaden",
+          "publisher": "Breitkopf & Härtel",
+          "year": 2022,
+          "dateApproximate": false,
+          "parts": []
         }
       ]
     },
@@ -382,237 +746,385 @@
       "@id": "edition:nr",
       "@type": "Edition",
       "siglum": "NR",
-      "title": "Neue Reihe",
+      "title": "Orlando di Lasso, Sämtliche Werke, Neue Reihe",
+      "shortTitle": "Neue Reihe",
       "volumes": [
+        {
+          "@id": "edition:nr-1",
+          "@type": "Volume",
+          "volume": "1",
+          "title": "Lateinische Motetten, französische Chansons und italienische Madrigale aus wiederaufgefundenen Drucken 1559 - 1588",
+          "editors": [
+            "Wolfgang Boetticher"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1956,
+          "dateApproximate": false,
+          "parts": []
+        },
         {
           "@id": "edition:nr-1-2",
           "@type": "Volume",
           "volume": "1²",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Lateinische Motetten, französische Chansons und italienische Madrigale aus wiederaufgefundenen Drucken 1559 - 1588",
+          "editors": [
+            "Wolfgang Boetticher"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1989,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-2",
           "@type": "Volume",
           "volume": "2",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Die vier Passionen",
+          "editors": [
+            "Kurt von Fischer"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1961,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-3",
           "@type": "Volume",
           "volume": "3",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 1 - 9: Messen der Drucke Venedig 1570 und München 1574",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1962,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-4",
           "@type": "Volume",
           "volume": "4",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 10 - 17: Messen des Druckes Paris 1577",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1964,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-5",
           "@type": "Volume",
           "volume": "5",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 18 - 23: Messen der Drucke Paris 1577 und Nürnberg 1581",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1965,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-6",
           "@type": "Volume",
           "volume": "6",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 24 - 29: Messe des Druckes München 1589",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1966,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-7",
           "@type": "Volume",
           "volume": "7",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 30 - 35: Messen aus Einzel- und Sammeldrucken 1570 - 1588",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1967,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-8",
           "@type": "Volume",
           "volume": "8",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 36 - 41: Messen der Drucke 1607 und München 1610",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1968,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:nr-9",
+          "@type": "Volume",
+          "volume": "9",
+          "title": "Messen 42 - 48: Handschriftlich überlieferte Messen; 1",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1969,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:nr-10",
+          "@type": "Volume",
+          "volume": "10",
+          "title": "Messen 49 - 55: Handschriftlich überlieferte Messen; 2",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1970,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-11",
           "@type": "Volume",
           "volume": "11",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Messen 56 - 63",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1971,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:nr-12",
+          "@type": "Volume",
+          "volume": "12",
+          "title": "Messen 64 - 70: Handschriftlich überlieferte Messen; 4, Fragmente, Modelle, Register",
+          "editors": [
+            "Siegfried Hermelink"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1975,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-13",
           "@type": "Volume",
           "volume": "13",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnificat 1 - 24: Magnificat des Druckes Nürnberg 1567",
+          "editors": [
+            "James Erb"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1980,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-14",
           "@type": "Volume",
           "volume": "14",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnificat 25 - 49: Magnificat der Drucke Paris 1587 sowie München 1576 und 1587",
+          "editors": [
+            "James Erb"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1986,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-15",
           "@type": "Volume",
           "volume": "15",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnificat 50 - 70: Magnificat der Jahre 1576 - 1583 aus Münchner Handschriften",
+          "editors": [
+            "James Erb"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1986,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-16",
           "@type": "Volume",
           "volume": "16",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnificat 71 - 92: Magnificat der Jahre 1583 - 85 aus Münchner Handschriften",
+          "editors": [
+            "James Erb"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1988,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-17",
           "@type": "Volume",
           "volume": "17",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Magnificat 93 - 110: Postum überlieferte Magnificat. Zweifelhafte Werke. Modelle. Register",
+          "editors": [
+            "James Erb"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1988,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:nr-18",
+          "@type": "Volume",
+          "volume": "18",
+          "title": "Das Hymnarium aus dem Jahre 1580/81",
+          "editors": [
+            "Marie Louise Göllner"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1980,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-19",
           "@type": "Volume",
           "volume": "19",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Lectiones",
+          "editors": [
+            "Wolfgang Boetticher"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1989,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-20",
           "@type": "Volume",
           "volume": "20",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Lagrime di San Pietro",
+          "editors": [
+            "Fritz Jensch"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1989,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-21",
           "@type": "Volume",
           "volume": "21",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Prophetiae Sibyllarum",
+          "editors": [
+            "Reinhold Schlötterer"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1990,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-22",
           "@type": "Volume",
           "volume": "22",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Lamentationes Jeremiae prophetae",
+          "editors": [
+            "Peter Bergquist"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1992,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-23",
           "@type": "Volume",
           "volume": "23",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Offizien und Messproprien",
+          "editors": [
+            "Peter Bergquist"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1993,
+          "dateApproximate": false,
+          "parts": []
+        },
+        {
+          "@id": "edition:nr-24",
+          "@type": "Volume",
+          "volume": "24",
+          "title": "Cantica, Responsorien und andere Musik für die Officia",
+          "editors": [
+            "Peter Bergquist"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1993,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-25",
           "@type": "Volume",
           "volume": "25",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Litaneien, Falsibordoni und Offiziumssätze",
+          "editors": [
+            "Peter Bergquist"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1993,
+          "dateApproximate": false,
           "parts": []
         },
         {
           "@id": "edition:nr-26",
           "@type": "Volume",
           "volume": "26",
-          "title": null,
-          "editors": [],
-          "place": null,
-          "publisher": null,
-          "year": null,
+          "title": "Die sieben Busspsalmen mit der Motette Laudes Domini",
+          "editors": [
+            "Horst Leuchtmann"
+          ],
+          "place": "Kassel u.a.",
+          "publisher": "Bärenreiter",
+          "year": 1995,
+          "dateApproximate": false,
           "parts": []
         }
       ]

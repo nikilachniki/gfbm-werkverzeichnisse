@@ -975,6 +975,7 @@ def load_editions():
             "@type": "Edition",
             "siglum": edition["siglum"],
             "title": edition["title"],
+            "shortTitle": edition["shortTitle"],
             "volumes": [
                 {
                     "@id": volume_id(key, volume),
@@ -985,6 +986,7 @@ def load_editions():
                     "place": details["place"],
                     "publisher": details["publisher"],
                     "year": details["year"],
+                    "dateApproximate": details.get("dateApproximate", False),
                     "parts": [
                         {
                             "@id": volume_id(key, part_label(volume, part)),
@@ -1053,12 +1055,10 @@ def attach_edition_appearances(items):
     zwei Eintraege dieselbe Stelle, bleibt ein Verweis, ein Zusatz wird behalten.
     """
     volume_ids = citable_volume_ids()
-    used = set()
     for item in items:
         for raw in item["completeEditions"]:
             for citation in raw.split(";"):
                 appearance = parse_edition_citation(citation.strip(), volume_ids)
-                used.add(appearance["inVolume"])
                 place = {k: v for k, v in appearance.items() if k != "note"}
                 for known in item["editionAppearances"]:
                     if {k: v for k, v in known.items() if k != "note"} == place:
@@ -1067,9 +1067,6 @@ def attach_edition_appearances(items):
                         break
                 else:
                     item["editionAppearances"].append(appearance)
-    unused = sorted(volume_ids - used)
-    if unused:
-        print("  Hinweis: Baende aus gesamtausgaben.json ohne Fundstelle: {0}".format(unused))
 
 
 PERSON_AUTHORITIES_PATH = RAW_DIR / "personen_normdaten.json"
