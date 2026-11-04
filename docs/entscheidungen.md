@@ -1660,10 +1660,12 @@ Expression mit dem Werk. Dafür erzeugt nur der Export je Werk eine Expression, 
 Daten im Repository bleiben unverändert. Die Bedenken gegen rund 2000 inhaltsleere
 Datensätze gelten weiter; sollte MeLODy führend werden, ist das neu zu entscheiden.
 
-**Stand der Prüfung.** Der Gesamtexport ergibt 8053 Dateien und wurde gegen die
-SHACL-Shapes geprüft. Offen sind 4390 Verstöße durch einen Widerspruch in der
-Shape selbst und 353 Titel ohne bestimmbare Sprache. Im Editor selbst sind die
-Dateien noch nicht geöffnet worden.
+**Stand der Prüfung.** Der Gesamtexport ergibt 8053 Dateien. Gegen die
+SHACL-Shapes bleiben 6277 Verstöße durch einen Widerspruch in der Shape selbst und
+353 Titel ohne bestimmbare Sprache. Im Praxistest lud der Editor den Bestand und
+gab die geprüften Dateien verlustfrei wieder aus; die 242 Werke ohne Sprachangabe
+dürfen aber noch nicht gespeichert werden. Bei der Datenmenge wird er spürbar
+langsam und speicherhungrig. Einzelheiten stehen in `docs/melody-abbildung.md`.
 
 **Preis.** Stücknummer und Fundstelle stehen im Export nur als Text. Ein
 späterer Wechsel des führenden Systems ist damit nicht vorweggenommen und bleibt

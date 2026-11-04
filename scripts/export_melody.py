@@ -41,9 +41,10 @@ LANGUAGES = {
     "Deutsch": "melodTerms:German",
 }
 LANGUAGE_TAGS = {"Latein": "la", "Italienisch": "it", "Französisch": "fr", "Deutsch": "de"}
-UNKNOWN_LANGUAGE = "und"  # BCP 47: unbestimmt, fuer Werke ohne Sprachangabe
 LASSO = "persons/lasso"
-RE_LINK = re.compile(r"^https?://.+?/.+")
+# Nur gueltige IRIs; ein Zeichen wie "[" laesst sonst die Index-Erzeugung des
+# Editors scheitern. Andere Links bleiben als Anmerkung erhalten.
+RE_LINK = re.compile(r"^https?://[^\s/<>\"{}|\\^`\[\]]+/[^\s<>\"{}|\\^`\[\]]+$")
 
 
 class Term(str):
@@ -126,9 +127,11 @@ def identifier(label, value):
 
 
 def title_language(item):
-    """Werke und Fassungen verlangen Titel mit Sprach-Tag."""
+    """Werke und Fassungen verlangen Titel mit Sprach-Tag. Ohne Sprachangabe bleibt
+    der Titel ohne Tag: Raten waere eine Setzung, und mit dem Tag "und" schreibt
+    das Formular des Editors ungueltiges Turtle."""
     languages = item["languages"]
-    return LANGUAGE_TAGS[languages[0]] if languages else UNKNOWN_LANGUAGE
+    return LANGUAGE_TAGS[languages[0]] if languages else None
 
 
 def title(label, title_type=None, language=None):
@@ -153,13 +156,14 @@ def contribution(person, role, uncertain=False):
 def publication(year=None, approximate=False, place=None, publisher=None):
     """Ein Jahr wird wie in der MeLODy-Vorlage zum Zeitraum eines Jahres."""
     pairs = [("a", Term("schema:PublicationEvent"))]
-    if publisher:  # schema:publishedBy erlaubt nur Personen, siehe Abbildung
-        pairs.append(("rdfs:label", publisher))
+    # schema:publishedBy erlaubt nur Personen und schema:description fehlt an der
+    # Manifestation; beides steht deshalb im Label, siehe Abbildung.
+    label = [part for part in (publisher, "ca. {0}".format(year) if approximate else None) if part]
+    if label:
+        pairs.append(("rdfs:label", ", ".join(label)))
     if year:
         pairs.append(("schema:startDate", Typed("{0}-01-01".format(year), "xsd:date")))
         pairs.append(("schema:endDate", Typed("{0}-12-31".format(year), "xsd:date")))
-        if approximate:
-            pairs.append(("schema:description", "ca. {0}".format(year)))
     if place:
         pairs.append(("schema:location", ref(place)))
     return ("schema:publication", pairs)
@@ -403,8 +407,10 @@ def contents_field(lines):
     """Die Stelle im Druck hat keine eigene Verknuepfung, siehe Abbildung."""
     if not lines:
         return []
+    # melod:Annotation statt melod:Contents, denn so speichert es der Editor,
+    # weil die Contents-Shape sh:targetClass melod:Annotation traegt.
     return [("melod:hasContents", [
-        ("a", Term("melod:Contents")),
+        ("a", Term("melod:Annotation")),
         ("rdfs:label", "Inhalt"),
         ("melod:paragraph", "\n".join(lines)),
     ])]
@@ -527,11 +533,11 @@ def export_manuscripts(export, sources, selected_works, by_lv, by_anh):
         former = distinct(rows, "shelfmarkAlt")
         if former:
             item.append(("melod:hasFormerShelfmark", former[0]))
-        item += [
-            ("owl:sameAs", Term("<{0}>".format(link)))
-            for link in distinct(rows, "link")
-            if RE_LINK.match(link) and " " not in link
-        ]
+        for link in distinct(rows, "link"):
+            if RE_LINK.match(link):
+                item.append(("owl:sameAs", Term("<{0}>".format(link))))
+            else:
+                item.append(annotation("Link", link))
         item.append(("lrmoo:R7_exemplifies", ref(manifestation)))
         export.add("items/hs-" + path, item)
 
