@@ -77,3 +77,22 @@ vielen Datensätzen und einer stillschweigenden fachlichen Setzung.
 nicht als eigene Gestalt des Werks. Die in Lasso ausdrücklich als Fassung
 gekennzeichneten Stücke, etwa `74 (IV)`, bleiben im Härtetest vorerst eigene
 Expressions, damit die Kennzeichnung nicht verloren geht.
+
+## 6. Frühester Druck aus dem Datum statt eigenes Feld
+
+**Entscheidung.** Ob ein Druck der früheste eines Werks ist, steht nicht in den Daten.
+Die Oberfläche leitet es aus dem Datum ab, innerhalb eines Jahres aus der laufenden
+Nummer der Sigle, und nennt es „Frühester Druck“. Ohne solche Nummer bleiben alle
+Drucke des Jahres markiert.
+
+**Alternative.** Ein Feld in `contents`: Es wäre redundant und könnte dem Datum
+widersprechen.
+
+**Begründung.** Gegen die 1977 Lasso-Werke mit angegebenem Erstdruck geprüft: Das
+früheste Jahr trifft 1820-mal genau, die laufende Nummer entscheidet weitere 150. Bei
+7 Werken weicht es ab, in den 6 angesehenen Fällen, weil ein Teil oder eine Fassung
+früher erschien als das Werk als Ganzes. Deshalb „Frühester Druck“ statt „Erstdruck“.
+
+**Preis.** Ein zweiter Erstdruck in anderer Besetzung ist nicht mehr gekennzeichnet (bei
+Lasso 30 Werke), und das Datum „ca. 1558“ zählt als 1558. Eine redaktionelle Korrektur
+der Ableitung ist nicht vorgesehen, bis ein echter Fall sie verlangt.
