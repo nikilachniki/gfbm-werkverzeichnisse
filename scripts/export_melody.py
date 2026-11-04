@@ -86,7 +86,9 @@ def flatten_citations(record, abbreviations):
 
 
 def content_line(content, labels):
-    line = labels.get(content["embodies"], content["embodies"])
+    # Ein Stueck ohne Werk hat nur seinen Titel in der Quelle.
+    assigned = "embodies" in content
+    line = labels.get(content["embodies"], content["embodies"]) if assigned else content["titleInSource"]
     if content.get("position"):
         place = content["position"]
         if content.get("part"):
@@ -94,7 +96,7 @@ def content_line(content, labels):
         line = "Nr. {0}: {1}".format(place, line)
     elif content.get("part"):
         line = "Teil {0}: {1}".format(content["part"], line)
-    details = [content.get("titleInSource")]
+    details = [content.get("titleInSource")] if assigned else []
     if content.get("voices"):
         details.append("{0} Stimmen".format(content["voices"]))
     details += [content.get("dating"), content.get("note")]
@@ -107,9 +109,9 @@ def flatten_contents(record, labels):
     contents = record.pop("contents", None)
     if not contents:
         return
-    record["lrmoo:R4_embodies"] = [
-        {"@id": ref} for ref in sorted({content["embodies"] for content in contents})
-    ]
+    embodied = sorted({content["embodies"] for content in contents if "embodies" in content})
+    if embodied:
+        record["lrmoo:R4_embodies"] = [{"@id": ref} for ref in embodied]
     # melod:Annotation, denn so speichert es der Editor (Shape melod:Contents).
     record["melod:hasContents"] = {
         "@type": "melod:Annotation",

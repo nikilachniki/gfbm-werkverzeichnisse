@@ -67,7 +67,8 @@ Literaturangaben in Lasso nicht als Bibliographie-Einträge vorliegen.
 ## Was nicht geprüft ist
 
 - **Stücke außerhalb der Auswahl.** Die Handschriften enthalten viele weitere Stücke
-  (1325 im schwierigen Test), die nur als Anmerkung „Weitere Stücke“ stehen.
+  (1325 im schwierigen Test). Sie stehen als Stücke ohne Werk in `contents`, mit ihrer
+  Nummer in `note`. Stücke mit Nummer wären im Gesamtbestand normal zugeordnet.
 - **Datenmenge.** Der Editor wird schon bei 291 Dateien spürbar langsamer: Der Test
   dauerte gut zehn Minuten, Chrome belegte bis zu 2,8 GB. Die Vorlage selbst ist nicht
   mit großen Datenmengen getestet.

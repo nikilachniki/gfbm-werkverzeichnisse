@@ -158,11 +158,8 @@
       }
     },
     "content": {
-      "description": "Ein Stück in einer Quelle, mit den Angaben, die nur für diese Quelle gelten. Das fehlt in MeLODy.",
+      "description": "Ein Stück in einer Quelle, mit den Angaben, die nur für diese Quelle gelten. Fehlt embodies, ist das Stück keinem Werk zugeordnet und braucht titleInSource. Das fehlt in MeLODy.",
       "type": "object",
-      "required": [
-        "embodies"
-      ],
       "additionalProperties": false,
       "properties": {
         "position": {
@@ -188,7 +185,19 @@
           "type": "string",
           "description": "Teil innerhalb des Stuecks, etwa die secunda pars."
         }
-      }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "embodies"
+          ]
+        },
+        {
+          "required": [
+            "titleInSource"
+          ]
+        }
+      ]
     },
     "catalogue": {
       "type": "object",

@@ -43,6 +43,9 @@ eindeutig ist. Siehe `docs/entscheidungen.md`, Abschnitt 5.
 `terms:Print`. Die vollständigen Listen führt das MeLODy-Vokabular. Für das Land
 eines Orts erwartet es einen GeoNames-Link.
 
+**Stücke ohne Werk.** Ein Stück in `contents` ohne `embodies` ist keinem Werk zugeordnet,
+etwa bei einer offenen Zuschreibung. Es braucht dann `titleInSource`.
+
 **Titel tragen ihre Sprache als Schlüssel,** etwa `{ "it": "Fiera stella" }`, ohne
 Text oder bekannte Sprache `{ "@none": "Sonate" }`.
 

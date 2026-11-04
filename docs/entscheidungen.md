@@ -78,7 +78,22 @@ nicht als eigene Gestalt des Werks. Die in Lasso ausdrücklich als Fassung
 gekennzeichneten Stücke, etwa `74 (IV)`, bleiben im Härtetest vorerst eigene
 Expressions, damit die Kennzeichnung nicht verloren geht.
 
-## 6. Frühester Druck aus dem Datum statt eigenes Feld
+## 6. Stücke ohne Werk in einer Quelle
+
+**Entscheidung.** `embodies` ist in `contents` optional, wenn `titleInSource` angegeben
+ist. So kann eine Quelle ein Stück nennen, das keinem Werk zugeordnet ist.
+
+**Anlass.** Bei Lasso sind 311 Handschriftenzeugnisse keinem Werk zugeordnet (siehe
+`main`, Abschnitt 14). Ohne dieses Feld standen sie nur als Textblock in einer Anmerkung.
+
+**Alternative.** Für jedes solche Stück ein Werk anlegen: Das unterstellte eine
+Zuordnung, die noch nicht feststeht.
+
+**Preis.** Solche Stücke sind nicht über ein Werk auffindbar, sondern nur über die Quelle.
+In MeLODy erscheinen sie als Textzeile im Inhaltsverzeichnis, weil `lrmoo:R4_embodies`
+ein Ziel braucht. Ob zwei gleich lautende Stücke dasselbe sind, bleibt offen.
+
+## 7. Frühester Druck aus dem Datum statt eigenes Feld
 
 **Entscheidung.** Ob ein Druck der früheste eines Werks ist, steht nicht in den Daten.
 Die Oberfläche leitet es aus dem Datum ab, innerhalb eines Jahres aus der laufenden

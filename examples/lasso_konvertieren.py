@@ -329,14 +329,10 @@ class Converter:
                 base += "-2"
             used_names.add(base.casefold())
             contents = []
-            others = []
             for row in rows:
                 work = by_lv.get(row["lv"]) if row["lv"] else by_anh.get(row["lvAnh"])
-                if not work:
-                    others.append(row)
-                    continue
-                content = {"embodies": expression_for(work)}
-                if len(work["voiceCounts"]) > 1 and row["voices"] is None:
+                content = {"embodies": expression_for(work)} if work else {}
+                if work and len(work["voiceCounts"]) > 1 and row["voices"] is None:
                     gap("Stimmenzahl in Handschrift nicht belegt", "{0} in {1}".format(work["lv"], name))
                 for source_field, target in (
                     ("title", "titleInSource"), ("voices", "voices"),
@@ -344,9 +340,18 @@ class Converter:
                 ):
                     if row[source_field]:
                         content[target] = row[source_field]
+                if work:
+                    self.structured += 1
+                else:
+                    # Ohne Werk im Auszug; die Nummer bleibt als Hinweis erhalten.
+                    self.others += 1
+                    number = row["lv"] or ("LVanh {0}".format(row["lvAnh"]) if row["lvAnh"] is not None else None)
+                    if number:
+                        label = "LV {0}".format(number) if row["lv"] else number
+                        content["note"] = "; ".join(filter(None, (label, content.get("note"))))
+                    else:
+                        gap("Stück in Handschrift ohne Nummer", row["title"])
                 contents.append(content)
-            self.structured += len(contents)
-            self.others += len(others)
             record = {
                 "@id": "manifestations:" + base,
                 "@type": "Manifestation",
@@ -365,11 +370,6 @@ class Converter:
             notes = []
             for field, label in (("provenance", "Provenienz"), ("sourceNote", "Bemerkung")):
                 notes += [note(label, v) for v in sorted({r[field] for r in rows if r[field]})]
-            if others:
-                gap("Stücke außerhalb der Auswahl als Anmerkung", name)
-                notes.append(note("Weitere Stücke", "; ".join(
-                    "{0}: {1}".format(r["lv"] or r["lvAnh"] or "ohne LV", r["title"]) for r in others
-                )))
             if notes:
                 record["notes"] = notes
             self.out["manifestations"].append(record)
