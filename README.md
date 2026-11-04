@@ -5,7 +5,9 @@ Prototyp für die Daten eines musikalischen Werkverzeichnisses. Das Modell folgt
 Daten liegen aber als JSON-LD vor, damit eine Website sie direkt lesen kann. Sie
 entstand aus dem Lasso-Werkverzeichnis (Branch `main`).
 
-**Stand:** Prototyp. Noch ohne Eingabeoberfläche und Website.
+**Stand:** Prototyp. Noch ohne Eingabeoberfläche. Die Website liegt in
+[lassoDB](https://github.com/nikilachniki/lassoDB/tree/werkverzeichnis-vorlage), Branch
+`werkverzeichnis-vorlage`.
 
 ## Aufbau
 
