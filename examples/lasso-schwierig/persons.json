@@ -1,0 +1,35 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "persons:lasso",
+      "@type": "Person",
+      "familyName": "Lasso",
+      "givenName": "Orlando di"
+    },
+    {
+      "@id": "persons:gnd-118731122",
+      "@type": "Person",
+      "familyName": "Clément Marot",
+      "alternateNames": [
+        "C.Marot",
+        "Cl. Marot",
+        "Marot"
+      ],
+      "sameAs": [
+        "https://d-nb.info/gnd/118731122",
+        "https://viaf.org/viaf/59086239"
+      ]
+    },
+    {
+      "@id": "persons:Franz-Xaver-Haberl",
+      "@type": "Person",
+      "familyName": "Franz Xaver Haberl"
+    },
+    {
+      "@id": "persons:Horst-Leuchtmann",
+      "@type": "Person",
+      "familyName": "Horst Leuchtmann"
+    }
+  ]
+}

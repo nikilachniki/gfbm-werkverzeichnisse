@@ -1,0 +1,1039 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "works:74",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Non ha tante serene stelle"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Non ha tante serene"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74",
+        "expressions:74-III",
+        "expressions:74-IV"
+      ]
+    },
+    {
+      "@id": "works:74-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "In sonno eterno"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "In sonn' eterno"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "In sonne eterno"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74-2"
+      ],
+      "partOfWork": "works:74"
+    },
+    {
+      "@id": "works:74-3",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Secchi vedransi"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74-3"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74-3",
+        "expressions:74-3-3st",
+        "expressions:74-3-5st"
+      ],
+      "partOfWork": "works:74"
+    },
+    {
+      "@id": "works:74-4",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Io vo fuggendo"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Io vò fuggendo"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74-4"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74-4",
+        "expressions:74-4-4st",
+        "expressions:74-4-5st"
+      ],
+      "partOfWork": "works:74"
+    },
+    {
+      "@id": "works:74-5",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Deh che fuss’io"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Deh che fuß'io"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Deh che fuss'io"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74-5"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74-5"
+      ],
+      "partOfWork": "works:74"
+    },
+    {
+      "@id": "works:74-6",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Ma sarò spento"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Ma saro spent'"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "74-6"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:74-6",
+        "expressions:74-6-5st",
+        "expressions:74-6-6st"
+      ],
+      "partOfWork": "works:74"
+    },
+    {
+      "@id": "works:90",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "fr": "Elle s’en va"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "fr": "Elle s'en va"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "fr": "Elle s'en va de moy"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "fr": "Elle s’ en va"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "90"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118731122",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:90",
+        "expressions:90-2st",
+        "expressions:90-5st"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-xiv",
+          "section": "I",
+          "number": "81"
+        }
+      ],
+      "genres": [
+        "Chanson"
+      ]
+    },
+    {
+      "@id": "works:193",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "In te Domine speravi"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "In te Domine speraui"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "la": "Gloria patri, et filio, et spiritui sancto"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "la": "In te domine speravi"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "193"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:193",
+        "expressions:193-5st",
+        "expressions:193-6st",
+        "expressions:193-I",
+        "expressions:193-II"
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:193-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Quoniam fortitudo mea"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Qvoniam fortitudo"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "193-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:193-2",
+        "expressions:193-2-5st",
+        "expressions:193-2-6st"
+      ],
+      "partOfWork": "works:193",
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:193-3",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Gloria patri"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Gloria Patri"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "193-3"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:193-3",
+        "expressions:193-3-5st",
+        "expressions:193-3-6st"
+      ],
+      "partOfWork": "works:193",
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Beatus vir qui non abiit"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Beatus uir qui non abijt"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327",
+        "expressions:327-III"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "textSources": [
+        "Psalmus 1"
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Sed in lege Domini"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-2"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-3",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Et erit tanquam"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-3"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-3",
+        "expressions:327-3-3st",
+        "expressions:327-3-6st"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-4",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Et folium eius"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Et folium eius non defluet"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-4"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-4",
+        "expressions:327-4-4st",
+        "expressions:327-4-6st"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-5",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Non sic impii"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Non sic impij"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-5"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-5"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-6",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Ideo non resurgunt"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Ideo non resurgut"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-6"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-6"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-7",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Quoniam novit Dominus"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Quoniam nouit Dominus"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-7"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-7"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-8",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Gloria Patri"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Gloria patri & filio"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-8"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-8"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-9",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Sicut erat"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "la": "Sicut erat in principio"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-9"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-9"
+      ],
+      "partOfWork": "works:327",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga-xv",
+          "number": "417",
+          "note": "†"
+        }
+      ],
+      "genres": [
+        "Motette"
+      ]
+    },
+    {
+      "@id": "works:327-100",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Et erit tanquam"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-100"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-100"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-101",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Et folium eius"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-101"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-101"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-102",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Non sic impii"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-102"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-102"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-103",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Ideo non resurgunt"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-103"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-103"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-104",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Quoniam novit Dominus"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-104"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-104"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-105",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Gloria Patri"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-105"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-105"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:327-106",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "la": "Sicut erat"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "327-106"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:327-106"
+      ],
+      "partOfWork": "works:327"
+    },
+    {
+      "@id": "works:anh-1",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "@none": "Ad coenam agni, Hymnus In die sancto Paschae"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "@none": "Ad cenam agni, in octavis Paschae hymnus"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "@none": "Ad coenam agni, in octavis Paschae hymnus"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV-Anhang",
+          "value": "1"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:anh-1"
+      ]
+    }
+  ]
+}

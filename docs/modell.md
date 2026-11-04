@@ -54,9 +54,11 @@ Diese Felder kennt MeLODy nicht. Sie stehen im Namensraum `wv:`, dessen Adresse
 
 | Feld | Zweck | Beim Export nach MeLODy |
 | --- | --- | --- |
-| `contents` an der Manifestation | Welches Stück wo in der Quelle steht, mit Titel, Stimmen, Datierung und Bemerkung dieser Quelle | `lrmoo:R4_embodies` und eine Textzeile in `melod:hasContents` |
+| `contents` an der Manifestation | Welches Stück wo in der Quelle steht (`position`, `part`), mit Titel, Stimmen, Datierung und Bemerkung dieser Quelle | `lrmoo:R4_embodies` und eine Textzeile in `melod:hasContents` |
 | `citations` an Werk und Expression | Verweis auf den Band samt Nummer, Seite und Abschnitt | `schema:citation` und eine Anmerkung „Fundstelle“ |
 | `genres` am Werk | Gattung als freier Text, das MeLODy-Vokabular kennt etwa keine Motette | Anmerkung „Gattung“ |
+| `textSources` an Werk und Expression | Herkunft des vertonten Texts, etwa eine Bibelstelle | Anmerkung „Textprovenienz“ |
+| `sourceType`, `partbooks`, `literature` an der Manifestation | Art der Quelle, vorhandene Stimmbücher, Literatur als Text | je eine Anmerkung |
 | `publisherName` | Verlag als Text, `schema:publishedBy` erlaubt nur Personen | Text im Label der Veröffentlichung |
 | `composer`, `catalogueAbbreviation` am Katalog | Angaben zum Verzeichnis | entfallen |
 

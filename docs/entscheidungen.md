@@ -59,3 +59,21 @@ gepflegte Beziehungen liefen auseinander.
 
 **Preis.** Dass eine ID nicht neu vergeben wird, sichert nur die Redaktion ab, nicht
 ein Werkzeug; `scripts/validate.py` findet nur Dubletten im aktuellen Bestand.
+
+## 5. Die Vorlage legt keine Regel für Expressions fest
+
+**Entscheidung.** Wann eine weitere Expression entsteht, entscheidet die Redaktion
+eines Verzeichnisses. Das Modell erlaubt eine Expression je Fassung, schreibt aber keine
+Regel vor.
+
+**Anlass.** Der Härtetest legt je belegter Stimmenzahl eine Expression an. Das hielt
+den Fakt fest, welche Besetzung wo steht, ergäbe bei Lasso aber rund 3300 Expressions
+bei 2166 Werken und setzte jede abweichende Zählung mit einer Fassung gleich, auch wenn
+eine Quelle nur Stimmen verloren hat.
+
+**Alternative.** Die Stimmenzahl nur am Stück in der Quelle (`voices` in `contents`)
+und je Werk eine Expression. Das hält die Daten klein und bleibt für den Regelfall der
+einfachere Weg; `voices` steht dafür schon bereit.
+
+**Preis.** Verzeichnisse können uneinheitlich arbeiten. Eine Empfehlung braucht die
+Erfahrung eines echten Verzeichnisses.

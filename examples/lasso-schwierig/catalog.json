@@ -1,0 +1,8 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "@id": "urn:uuid:dataCatalogs/catalog",
+  "@type": "Catalogue",
+  "label": "Werkverzeichnis Orlando di Lasso, Auszug (lasso-schwierig)",
+  "composer": "persons:lasso",
+  "catalogueAbbreviation": "LV"
+}

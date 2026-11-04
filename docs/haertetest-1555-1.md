@@ -1,53 +1,80 @@
-# Härtetest mit dem Lasso-Druck 1555-1
+# Härtetests mit Lasso-Daten
 
-Am 4. November 2026 wurde der Druck 1555-1 samt seinen Werken, Nachdrucken und
-Handschriften aus dem Lasso-Stand (`main`) in die Vorlage übertragen.
-`examples/lasso-1555-1/konvertieren.py` ist wiederholbar, `luecken.json` im selben
-Ordner listet alle Fundstücke. Die Daten sind echt, aber ein Auszug; das Werkzeug
-gehört nicht zur Vorlage.
+Am 4. November 2026 wurden echte Auszüge aus dem Lasso-Stand (`main`) in die Vorlage
+übertragen. `examples/lasso_konvertieren.py` ist wiederholbar, aber kein Teil der
+Vorlage; `luecken.json` im jeweiligen Ordner listet die Fundstücke.
+
+| Test | Auswahl | Was er prüft |
+| --- | --- | --- |
+| `examples/lasso-1555-1/` | Druck 1555-1 mit allem, was dazugehört | Der Normalfall |
+| `examples/lasso-schwierig/` | LV 74, 90, 193, 327 mit Teilen und LV-Anhang 1 | Fassungen, mehrere Stimmenzahlen, Textprovenienz, Titel ohne Sprache, Werk ohne Druck |
 
 ## Ergebnis
 
-| Prüfung | Ergebnis |
-| --- | --- |
-| Datenmenge | 31 Werke, 31 Expressions, 27 Quellen (20 Drucke, 7 Handschriften), 7 Exemplare |
-| `scripts/validate.py` | keine Fehler, 3320 RDF-Aussagen |
-| Stellen in Drucken | 315 von 315, mit Nummer und Expression |
-| Handschriftenzeugnisse der Werke | 27 von 27, mit Titel, Stimmen, Datierung und Bemerkung |
-| Fundstellen in der Gesamtausgabe | 31 von 31, mit Band, Abschnitt und Nummer |
-| Variantentitel, Textdichter | 28 von 28, 18 von 18 |
-| Export nach MeLODy | 121 Dateien, zwei Läufe identisch |
-| Shapes | nur der bekannte Widerspruch bei Anmerkungen an Manifestationen (83 Meldungen) |
-| Formular im Editor | 118 von 118 ohne Abweichung, Speichern von Werk, Druck und Band ohne Verlust |
+| Prüfung | 1555-1 | Schwierig |
+| --- | --- | --- |
+| Werke, Expressions | 31, 31 | 27, 50 |
+| Quellen, Exemplare | 27, 7 | 101, 45 |
+| `scripts/validate.py` | keine Fehler | keine Fehler |
+| Stellen in Drucken mit Nummer | 315 von 315 | 59 von 59 |
+| Handschriftenzeugnisse der Werke | 27 von 27 | 149 von 149 |
+| Fundstellen in der Gesamtausgabe | 31 von 31 | 14 von 14 |
+| Fassungen | keine | 5 von 5 |
+| Export nach MeLODy, zwei Läufe | identisch, 121 Dateien | identisch, 294 Dateien |
+| Shapes | 83 Meldungen | 357 Meldungen |
+| Formular im Editor ohne Abweichung | 118 von 118 | 290 von 291 |
+| Speichern ohne Verlust | Werk, Druck, Band | Werk, Druck, Fassung |
 
-Damit stehen Stücknummern, Fundstellen und Zeugnisse hier als Struktur, die beim
-Lasso-Export nur Text waren. Im MeLODy-Export bleiben sie weiterhin Text.
+Alle Shape-Meldungen haben zwei Ursachen: den Widerspruch bei Anmerkungen an
+Manifestationen und die Titel des Anhang-Werks ohne Sprache. Dieses Werk ist auch die
+eine Abweichung im Editor (`"…"^^rdf:langString`).
 
-## Was im Modell fehlt
+Fassungen und Stimmenzahlen funktionieren: LV 90 steht fünfstimmig in 1560-4 und
+zweistimmig in 1560-8, jeweils als eigene Expression mit Nummer im Druck.
 
-| Angabe | Häufigkeit | Bisher | Vorschlag |
-| --- | --- | --- | --- |
-| Stimmbücher | 20 Drucke | Anmerkung | Eigenes Feld `partbooks` |
-| Quellenart | 7 Handschriften | Anmerkung | Eigenes Feld `sourceType` |
-| Literatur zu einer Quelle | 2 | Anmerkung | `citations` auch an der Manifestation |
-| Quellenbemerkung | 1 | Anmerkung | passt |
-| Teil innerhalb eines Stücks | 9 | Text in `position` („1, Teil 2“) | Eigenes Feld prüfen |
-| Vor- und Nachname | 3 Namen | ganzer Name in `familyName` | Redaktionell zerlegen |
+## Inhaltliche Befunde
 
-Textprovenienz hat ebenfalls kein eigenes Feld. Sie kommt in diesem Druck zwar nicht
-vor, in Lasso aber häufig.
+**Eine Regel erzeugt viele Expressions.** Die Konvertierung legt je belegter Stimmenzahl
+eine Expression an und zusätzlich eine ohne Besetzung für Quellen ohne Angabe. Aus 27
+Werken werden so 50 Expressions, im gesamten Lasso-Bestand wären es rund 3300 bei 2166
+Werken. Vor allem ist die Regel eine fachliche Setzung: Abweichende Stimmenzahlen
+müssen keine echte Fassung sein, etwa wenn eine Handschrift Stimmen verloren hat
+(„74-3“ zu 3 und 5 Stimmen). Das bleibt fachlich zu prüfen, das Modell erzwingt die
+Regel nicht.
+
+**Viele Nachdrucke belegen keine Stimmenzahl.** Bei Werken mit mehreren Stimmenzahlen
+sagt die Quelle in 35 von 59 Druckstellen nicht, welche gemeint ist. Sie verweisen auf
+die Expression ohne Besetzung. Das ist eine Lücke der Quelle, das Modell gibt sie
+richtig wieder.
+
+**Fassung und Registernummer finden nicht zueinander.** In 1558-1 steht Nr. 12 mit der
+Bemerkung „nur IV.“ am Gesamtwerk LV 74, die Fassung `74 (IV)` steht im selben Druck
+ohne Nummer. Vermutlich ist beides dasselbe Stück, automatisch zusammengelegt wurde es
+nicht. Alle 5 Fassungen stehen deshalb ohne Stücknummer im Druck.
+
+## Ergänzt nach dem ersten Test
+
+`partbooks`, `sourceType` und `literature` an der Manifestation, `textSources` an Werk
+und Expression, `part` im Inhalt. `literature` ist Freitext, nicht `citations`, weil
+Literaturangaben in Lasso nicht als Bibliographie-Einträge vorliegen.
+
+## Noch ohne Platz
+
+| Angabe | Häufigkeit | Bisher |
+| --- | --- | --- |
+| Pars einer Fassung | 5 | Anmerkung |
+| Provenienz | je nach Quelle | Anmerkung; MeLODy hat dafür Ereignisse am Exemplar |
+| Vor- und Nachname | 3 Namen | ganzer Name in `familyName` |
 
 ## Was nicht geprüft ist
 
-**Der Druck ist einfacher als der Gesamtbestand.** Er enthält keine Werke mit mehreren
-Stimmenzahlen, keine Textprovenienz, keine Fassungen, keine Bemerkungen zu Einträgen,
-keine Titel ohne Sprache und keine Werke aus dem LV-Anhang. Die schwierigsten Fälle
-stehen also noch aus; das Skript ist für mehrere Stimmenzahlen vorbereitet, aber nicht
-erprobt.
-
-**Die Quelle begrenzt die Tiefe.** Für Nachdrucke liegt keine Stimmenzahl und kein
-Titel des Drucks vor, nur die Stücknummer. Außerdem nennen die Handschriften 174
-weitere Stücke außerhalb der Auswahl; sie stehen nur als Anmerkung „Weitere Stücke“.
-
-**Weiteres.** Größere Datenmengen, Eingaben von Hand im Editor und die Gattung, die in
-Lasso als fehlerhaft gilt und hier ungeprüft übernommen ist.
+- **Stücke außerhalb der Auswahl.** Die Handschriften enthalten viele weitere Stücke
+  (1325 im schwierigen Test), die nur als Anmerkung „Weitere Stücke“ stehen.
+- **Datenmenge.** Der Editor wird schon bei 291 Dateien spürbar langsamer: Der Test
+  dauerte gut zehn Minuten, Chrome belegte bis zu 2,8 GB. Die Vorlage selbst ist nicht
+  mit großen Datenmengen getestet.
+- **Eingaben von Hand** im Editor. Gespeichert wurde nur per Skript, ohne Änderungen.
+- **Bemerkungen zu Einträgen und unsichere Textdichter** waren in diesen Auszügen
+  nicht oder kaum vertreten.
+- **Die Gattung** ist ungeprüft übernommen, obwohl sie in Lasso als fehlerhaft gilt.
+- **Der Weg zurück** vom Editor in das JSON-LD fehlt.

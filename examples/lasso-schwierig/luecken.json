@@ -1,0 +1,56 @@
+{
+  "Fassung im Druck ohne Stücknummer": {
+    "Anzahl": 5,
+    "Beispiele": [
+      "74 (III) in 1562-7",
+      "74 (IV) in 1558-1",
+      "193 (I) in 1564-7"
+    ]
+  },
+  "Name nicht in Vor- und Nachname zerlegt": {
+    "Anzahl": 3,
+    "Beispiele": [
+      "Clément Marot",
+      "Franz Xaver Haberl",
+      "Horst Leuchtmann"
+    ]
+  },
+  "Pars einer Fassung nur als Anmerkung": {
+    "Anzahl": 5,
+    "Beispiele": [
+      "74 (III)",
+      "74 (IV)",
+      "193 (I)"
+    ]
+  },
+  "Stimmenzahl im Druck nicht belegt": {
+    "Anzahl": 35,
+    "Beispiele": [
+      "90 in 1562-9",
+      "90 in 1566-3",
+      "90 in 1567-17"
+    ]
+  },
+  "Stücke außerhalb der Auswahl als Anmerkung": {
+    "Anzahl": 41,
+    "Beispiele": [
+      "A-Wn Mus.Hs.16697",
+      "A-Wn Mus.Hs.16704 Mus",
+      "CH-Bu F. IX. 44"
+    ]
+  },
+  "Titel ohne Sprache": {
+    "Anzahl": 1,
+    "Beispiele": [
+      "work:anh-1"
+    ]
+  },
+  "Werk mit mehreren Stimmenzahlen": {
+    "Anzahl": 9,
+    "Beispiele": [
+      "work:74-3",
+      "work:74-4",
+      "work:74-6"
+    ]
+  }
+}

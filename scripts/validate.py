@@ -18,6 +18,7 @@ import rdflib
 
 from catalogue import COLLECTIONS, SCHEMA_PATH, load_catalogue, load_context, read_json
 
+MAX_ID_LENGTH = 80
 RE_REFERENCE = re.compile(r"^(?:" + "|".join(COLLECTIONS) + r"):[A-Za-z0-9-]+$")
 # Schluessel, deren Wert kein Verweis ist, auch wenn er so aussieht.
 TEXT_KEYS = {"value", "number", "note", "html", "description", "label", "@none"}
@@ -49,12 +50,19 @@ def check_schema(catalog, collections, errors):
 
 
 def check_ids(collections, errors):
+    """Eine ID wird im Export zum Dateinamen: Windows unterscheidet nicht zwischen
+    E-SC und E-Sc, und lange Pfade scheitern dort."""
     known = set()
+    folded = set()
     for records in collections.values():
         for record in records:
-            if record["@id"] in known:
-                errors.append("ID doppelt vergeben: {0}".format(record["@id"]))
-            known.add(record["@id"])
+            identifier = record["@id"]
+            if identifier.casefold() in folded:
+                errors.append("ID doppelt vergeben (ohne Groß- und Kleinschreibung): {0}".format(identifier))
+            if len(identifier) > MAX_ID_LENGTH:
+                errors.append("ID länger als {0} Zeichen: {1}".format(MAX_ID_LENGTH, identifier))
+            known.add(identifier)
+            folded.add(identifier.casefold())
     return known
 
 

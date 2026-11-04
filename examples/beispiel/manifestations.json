@@ -44,11 +44,14 @@
           "titleInSource": "Der Morgen"
         },
         {
-          "position": "13a",
+          "position": "13",
           "embodies": "expressions:2-1",
-          "note": "Fehlt im Inhaltsverzeichnis"
+          "note": "Fehlt im Inhaltsverzeichnis",
+          "part": "1"
         }
-      ]
+      ],
+      "sourceType": "Stimmbücher (4)",
+      "partbooks": "Cantus; Altus; Tenor; Bassus"
     },
     {
       "@id": "manifestations:hs-mb-1",
@@ -81,6 +84,10 @@
           "label": "Provenienz",
           "html": "Sammlung Muster"
         }
+      ],
+      "sourceType": "Partitur",
+      "literature": [
+        "Muster, Erika: Die Quellen der Werke Anna Musters, Musterstadt 2000."
       ]
     }
   ]

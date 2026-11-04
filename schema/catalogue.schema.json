@@ -4,58 +4,120 @@
   "title": "Werkverzeichnis, Datensätze",
   "description": "Regeln je Datensatztyp. Unbekannte Felder sind nicht erlaubt, damit Tippfehler auffallen.",
   "$defs": {
-    "reference": { "type": "string", "pattern": "^(works|expressions|manifestations|items|persons|institutions|places|instrumentations|bibliography):[A-Za-z0-9-]+$" },
-    "term": { "type": "string", "pattern": "^terms:[A-Za-z0-9]+$" },
-    "link": { "type": "string", "pattern": "^https?://[^\\s/<>\"{}|\\\\^`\\[\\]]+/[^\\s<>\"{}|\\\\^`\\[\\]]+$" },
-    "isoDate": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "reference": {
+      "type": "string",
+      "pattern": "^(works|expressions|manifestations|items|persons|institutions|places|instrumentations|bibliography):[A-Za-z0-9-]+$"
+    },
+    "term": {
+      "type": "string",
+      "pattern": "^terms:[A-Za-z0-9]+$"
+    },
+    "link": {
+      "type": "string",
+      "pattern": "^https?://[^\\s/<>\"{}|\\\\^`\\[\\]]+/[^\\s<>\"{}|\\\\^`\\[\\]]+$"
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
     "languageText": {
       "description": "Sprach-Tag als Schlüssel, etwa {\"it\": \"Fiera stella\"}. @none, wenn das Stück keinen Text hat.",
       "type": "object",
       "minProperties": 1,
-      "additionalProperties": { "type": "string", "minLength": 1 }
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
     },
     "title": {
       "type": "object",
-      "required": ["text"],
+      "required": [
+        "text"
+      ],
       "additionalProperties": false,
       "properties": {
-        "text": { "$ref": "#/$defs/languageText" },
-        "type": { "$ref": "#/$defs/term" }
+        "text": {
+          "$ref": "#/$defs/languageText"
+        },
+        "type": {
+          "$ref": "#/$defs/term"
+        }
       }
     },
     "identifier": {
       "type": "object",
-      "required": ["list", "value"],
+      "required": [
+        "list",
+        "value"
+      ],
       "additionalProperties": false,
-      "properties": { "list": { "type": "string" }, "value": { "type": "string" } }
+      "properties": {
+        "list": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
     },
     "contributor": {
       "type": "object",
-      "required": ["agent", "role"],
+      "required": [
+        "agent",
+        "role"
+      ],
       "additionalProperties": false,
       "properties": {
-        "agent": { "$ref": "#/$defs/reference" },
-        "role": { "$ref": "#/$defs/term" },
-        "certainty": { "$ref": "#/$defs/term" }
+        "agent": {
+          "$ref": "#/$defs/reference"
+        },
+        "role": {
+          "$ref": "#/$defs/term"
+        },
+        "certainty": {
+          "$ref": "#/$defs/term"
+        }
       }
     },
     "note": {
       "type": "object",
-      "required": ["html"],
+      "required": [
+        "html"
+      ],
       "additionalProperties": false,
-      "properties": { "label": { "type": "string" }, "html": { "type": "string" } }
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "html": {
+          "type": "string"
+        }
+      }
     },
     "citation": {
       "description": "Fundstelle: Verweis auf den Band samt Stelle. Das fehlt in MeLODy.",
       "type": "object",
-      "required": ["inBibliography"],
+      "required": [
+        "inBibliography"
+      ],
       "additionalProperties": false,
       "properties": {
-        "inBibliography": { "$ref": "#/$defs/reference" },
-        "number": { "type": "string" },
-        "page": { "type": "integer", "minimum": 1 },
-        "section": { "type": "string" },
-        "note": { "type": "string" }
+        "inBibliography": {
+          "$ref": "#/$defs/reference"
+        },
+        "number": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "section": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
     "date": {
@@ -63,216 +125,630 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "date": { "$ref": "#/$defs/isoDate" },
-        "description": { "type": "string" },
-        "certainty": { "$ref": "#/$defs/term" }
+        "date": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "description": {
+          "type": "string"
+        },
+        "certainty": {
+          "$ref": "#/$defs/term"
+        }
       }
     },
     "publication": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "label": { "type": "string" },
-        "startDate": { "$ref": "#/$defs/isoDate" },
-        "endDate": { "$ref": "#/$defs/isoDate" },
-        "place": { "$ref": "#/$defs/reference" },
-        "publisherName": { "type": "string" }
+        "label": {
+          "type": "string"
+        },
+        "startDate": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "endDate": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "place": {
+          "$ref": "#/$defs/reference"
+        },
+        "publisherName": {
+          "type": "string"
+        }
       }
     },
     "content": {
       "description": "Ein Stück in einer Quelle, mit den Angaben, die nur für diese Quelle gelten. Das fehlt in MeLODy.",
       "type": "object",
-      "required": ["embodies"],
+      "required": [
+        "embodies"
+      ],
       "additionalProperties": false,
       "properties": {
-        "position": { "type": "string" },
-        "embodies": { "$ref": "#/$defs/reference" },
-        "titleInSource": { "type": "string" },
-        "voices": { "type": "integer", "minimum": 1 },
-        "dating": { "type": "string" },
-        "note": { "type": "string" }
+        "position": {
+          "type": "string"
+        },
+        "embodies": {
+          "$ref": "#/$defs/reference"
+        },
+        "titleInSource": {
+          "type": "string"
+        },
+        "voices": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "dating": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "part": {
+          "type": "string",
+          "description": "Teil innerhalb des Stuecks, etwa die secunda pars."
+        }
       }
     },
     "catalogue": {
       "type": "object",
-      "required": ["@id", "@type", "label", "catalogueAbbreviation"],
+      "required": [
+        "@id",
+        "@type",
+        "label",
+        "catalogueAbbreviation"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "const": "urn:uuid:dataCatalogs/catalog" },
-        "@type": { "const": "Catalogue" },
-        "label": { "type": "string", "minLength": 1 },
-        "composer": { "$ref": "#/$defs/reference" },
-        "catalogueAbbreviation": { "type": "string", "minLength": 1 }
+        "@id": {
+          "const": "urn:uuid:dataCatalogs/catalog"
+        },
+        "@type": {
+          "const": "Catalogue"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "composer": {
+          "$ref": "#/$defs/reference"
+        },
+        "catalogueAbbreviation": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "works": {
       "type": "object",
-      "required": ["@id", "@type", "titles"],
+      "required": [
+        "@id",
+        "@type",
+        "titles"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^works:" },
-        "@type": { "const": "Work" },
-        "titles": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/title", "required": ["type"] } },
-        "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" } },
-        "contributors": { "type": "array", "items": { "$ref": "#/$defs/contributor" } },
-        "status": { "type": "string" },
-        "genres": { "type": "array", "items": { "type": "string" } },
-        "realisedIn": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
-        "partOfWork": { "$ref": "#/$defs/reference" },
-        "citations": { "type": "array", "items": { "$ref": "#/$defs/citation" } },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } },
-        "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^works:"
+        },
+        "@type": {
+          "const": "Work"
+        },
+        "titles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/title",
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          }
+        },
+        "contributors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contributor"
+          }
+        },
+        "status": {
+          "type": "string"
+        },
+        "genres": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "realisedIn": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "partOfWork": {
+          "$ref": "#/$defs/reference"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        },
+        "textSources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "expressions": {
       "type": "object",
-      "required": ["@id", "@type", "label"],
+      "required": [
+        "@id",
+        "@type",
+        "label"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^expressions:" },
-        "@type": { "const": "Expression" },
-        "label": { "type": "string", "minLength": 1 },
-        "titles": { "type": "array", "items": { "$ref": "#/$defs/title" } },
-        "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" } },
-        "contributors": { "type": "array", "items": { "$ref": "#/$defs/contributor" } },
-        "languages": { "type": "array", "items": { "$ref": "#/$defs/term" } },
-        "instrumentation": { "$ref": "#/$defs/reference" },
-        "partOfExpression": { "$ref": "#/$defs/reference" },
+        "@id": {
+          "type": "string",
+          "pattern": "^expressions:"
+        },
+        "@type": {
+          "const": "Expression"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/title"
+          }
+        },
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          }
+        },
+        "contributors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contributor"
+          }
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/term"
+          }
+        },
+        "instrumentation": {
+          "$ref": "#/$defs/reference"
+        },
+        "partOfExpression": {
+          "$ref": "#/$defs/reference"
+        },
         "key": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "pitch": { "$ref": "#/$defs/term" },
-            "accidental": { "$ref": "#/$defs/term" },
-            "mode": { "$ref": "#/$defs/term" },
-            "description": { "type": "string" }
+            "pitch": {
+              "$ref": "#/$defs/term"
+            },
+            "accidental": {
+              "$ref": "#/$defs/term"
+            },
+            "mode": {
+              "$ref": "#/$defs/term"
+            },
+            "description": {
+              "type": "string"
+            }
           }
         },
         "meter": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "meterCount": { "type": "integer" },
-            "meterUnit": { "type": "integer" },
-            "meterSymbol": { "type": "string" },
-            "description": { "type": "string" }
+            "meterCount": {
+              "type": "integer"
+            },
+            "meterUnit": {
+              "type": "integer"
+            },
+            "meterSymbol": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
           }
         },
-        "tempo": { "type": "string" },
-        "duration": { "type": "string" },
+        "tempo": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
         "incipit": {
           "type": "object",
           "additionalProperties": false,
-          "properties": { "pae": { "type": "string" }, "incipitText": { "$ref": "#/$defs/languageText" } }
+          "properties": {
+            "pae": {
+              "type": "string"
+            },
+            "incipitText": {
+              "$ref": "#/$defs/languageText"
+            }
+          }
         },
-        "dateCreated": { "$ref": "#/$defs/date" },
-        "placeCreated": { "$ref": "#/$defs/reference" },
-        "citations": { "type": "array", "items": { "$ref": "#/$defs/citation" } },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } },
-        "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+        "dateCreated": {
+          "$ref": "#/$defs/date"
+        },
+        "placeCreated": {
+          "$ref": "#/$defs/reference"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        },
+        "textSources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "manifestations": {
       "type": "object",
-      "required": ["@id", "@type", "titles"],
+      "required": [
+        "@id",
+        "@type",
+        "titles"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^manifestations:" },
-        "@type": { "const": "Manifestation" },
-        "titles": { "type": "array", "minItems": 1, "maxItems": 1, "items": { "$ref": "#/$defs/title" } },
-        "classifications": { "type": "array", "items": { "$ref": "#/$defs/term" } },
-        "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" } },
-        "contributors": { "type": "array", "items": { "$ref": "#/$defs/contributor" } },
+        "@id": {
+          "type": "string",
+          "pattern": "^manifestations:"
+        },
+        "@type": {
+          "const": "Manifestation"
+        },
+        "titles": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "$ref": "#/$defs/title"
+          }
+        },
+        "classifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/term"
+          }
+        },
+        "identifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          }
+        },
+        "contributors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contributor"
+          }
+        },
         "titlePages": {
           "type": "array",
-          "items": { "type": "object", "required": ["html"], "additionalProperties": false, "properties": { "html": { "type": "string" } } }
+          "items": {
+            "type": "object",
+            "required": [
+              "html"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "html": {
+                "type": "string"
+              }
+            }
+          }
         },
-        "publication": { "$ref": "#/$defs/publication" },
-        "partOfManifestation": { "$ref": "#/$defs/reference" },
-        "contents": { "type": "array", "items": { "$ref": "#/$defs/content" } },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } },
-        "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+        "publication": {
+          "$ref": "#/$defs/publication"
+        },
+        "partOfManifestation": {
+          "$ref": "#/$defs/reference"
+        },
+        "contents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/content"
+          }
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        },
+        "sourceType": {
+          "type": "string",
+          "description": "Art der Quelle, etwa Stimmbuecher (6) oder Partitur."
+        },
+        "partbooks": {
+          "type": "string",
+          "description": "Vorhandene Stimmbuecher, etwa Cantus; Tenor; Bassus."
+        },
+        "literature": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "items": {
       "type": "object",
-      "required": ["@id", "@type", "label", "exemplifies"],
+      "required": [
+        "@id",
+        "@type",
+        "label",
+        "exemplifies"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^items:" },
-        "@type": { "const": "Item" },
-        "label": { "type": "string", "minLength": 1 },
-        "keeper": { "$ref": "#/$defs/reference" },
-        "shelfmark": { "type": "string" },
-        "formerShelfmark": { "type": "string" },
-        "exemplifies": { "$ref": "#/$defs/reference" },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } },
-        "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^items:"
+        },
+        "@type": {
+          "const": "Item"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "keeper": {
+          "$ref": "#/$defs/reference"
+        },
+        "shelfmark": {
+          "type": "string"
+        },
+        "formerShelfmark": {
+          "type": "string"
+        },
+        "exemplifies": {
+          "$ref": "#/$defs/reference"
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        }
       }
     },
     "persons": {
       "type": "object",
-      "required": ["@id", "@type", "familyName"],
+      "required": [
+        "@id",
+        "@type",
+        "familyName"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^persons:" },
-        "@type": { "const": "Person" },
-        "familyName": { "type": "string", "minLength": 1 },
-        "givenName": { "type": "string" },
-        "alternateNames": { "type": "array", "items": { "type": "string" } },
-        "birthDate": { "$ref": "#/$defs/date" },
-        "deathDate": { "$ref": "#/$defs/date" },
-        "birthPlace": { "$ref": "#/$defs/reference" },
-        "deathPlace": { "$ref": "#/$defs/reference" },
-        "occupations": { "type": "array", "items": { "type": "string" } },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^persons:"
+        },
+        "@type": {
+          "const": "Person"
+        },
+        "familyName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "givenName": {
+          "type": "string"
+        },
+        "alternateNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "birthDate": {
+          "$ref": "#/$defs/date"
+        },
+        "deathDate": {
+          "$ref": "#/$defs/date"
+        },
+        "birthPlace": {
+          "$ref": "#/$defs/reference"
+        },
+        "deathPlace": {
+          "$ref": "#/$defs/reference"
+        },
+        "occupations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        }
       }
     },
     "institutions": {
       "type": "object",
-      "required": ["@id", "@type", "name"],
+      "required": [
+        "@id",
+        "@type",
+        "name"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^institutions:" },
-        "@type": { "const": "Institution" },
-        "name": { "type": "string", "minLength": 1 },
-        "siglum": { "type": "string" },
-        "abbreviation": { "type": "string" },
-        "place": { "$ref": "#/$defs/reference" },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^institutions:"
+        },
+        "@type": {
+          "const": "Institution"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "siglum": {
+          "type": "string"
+        },
+        "abbreviation": {
+          "type": "string"
+        },
+        "place": {
+          "$ref": "#/$defs/reference"
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        }
       }
     },
     "places": {
       "type": "object",
-      "required": ["@id", "@type", "name"],
+      "required": [
+        "@id",
+        "@type",
+        "name"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^places:" },
-        "@type": { "const": "Place" },
-        "name": { "type": "string", "minLength": 1 },
-        "country": { "$ref": "#/$defs/link", "description": "GeoNames-Adresse des Landes, wie in den MeLODy-Shapes." },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^places:"
+        },
+        "@type": {
+          "const": "Place"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "$ref": "#/$defs/link",
+          "description": "GeoNames-Adresse des Landes, wie in den MeLODy-Shapes."
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        }
       }
     },
     "instrumentations": {
       "type": "object",
-      "required": ["@id", "@type", "label"],
+      "required": [
+        "@id",
+        "@type",
+        "label"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^instrumentations:" },
-        "@type": { "const": "Instrumentation" },
-        "label": { "type": "string", "minLength": 1 },
+        "@id": {
+          "type": "string",
+          "pattern": "^instrumentations:"
+        },
+        "@type": {
+          "const": "Instrumentation"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "details": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["position", "description"],
+            "required": [
+              "position",
+              "description"
+            ],
             "additionalProperties": false,
             "properties": {
-              "position": { "type": "integer", "minimum": 1 },
-              "medium": { "$ref": "#/$defs/term" },
-              "description": { "type": "string" },
-              "quantity": { "type": "integer", "minimum": 1 }
+              "position": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "medium": {
+                "$ref": "#/$defs/term"
+              },
+              "description": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              }
             }
           }
         }
@@ -280,21 +756,63 @@
     },
     "bibliography": {
       "type": "object",
-      "required": ["@id", "@type", "abbreviation"],
+      "required": [
+        "@id",
+        "@type",
+        "abbreviation"
+      ],
       "additionalProperties": false,
       "properties": {
-        "@id": { "type": "string", "pattern": "^bibliography:" },
-        "@type": { "const": "Bibliography" },
-        "abbreviation": { "type": "string", "minLength": 1 },
-        "genre": { "$ref": "#/$defs/term" },
-        "titles": { "type": "array", "items": { "$ref": "#/$defs/title" } },
-        "authors": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
-        "editors": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
-        "publication": { "$ref": "#/$defs/publication" },
-        "series": { "$ref": "#/$defs/reference" },
-        "volumeNumber": { "type": "string" },
-        "pagination": { "type": "string" },
-        "sameAs": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+        "@id": {
+          "type": "string",
+          "pattern": "^bibliography:"
+        },
+        "@type": {
+          "const": "Bibliography"
+        },
+        "abbreviation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "genre": {
+          "$ref": "#/$defs/term"
+        },
+        "titles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/title"
+          }
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "editors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "publication": {
+          "$ref": "#/$defs/publication"
+        },
+        "series": {
+          "$ref": "#/$defs/reference"
+        },
+        "volumeNumber": {
+          "type": "string"
+        },
+        "pagination": {
+          "type": "string"
+        },
+        "sameAs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        }
       }
     }
   }

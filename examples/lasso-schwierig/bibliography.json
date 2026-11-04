@@ -1,0 +1,127 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "bibliography:ga",
+      "@type": "Bibliography",
+      "abbreviation": "GA",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Orlando di Lasso, Sämmtliche Werke"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "bibliography:ga-xv",
+      "@type": "Bibliography",
+      "abbreviation": "GA XV",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Theil VIII, für 6 Stimmen"
+          }
+        }
+      ],
+      "series": "bibliography:ga",
+      "volumeNumber": "XV",
+      "editors": [
+        "persons:Franz-Xaver-Haberl"
+      ],
+      "publication": {
+        "startDate": "1903-01-01",
+        "endDate": "1903-12-31",
+        "publisherName": "Breitkopf & Härtel",
+        "place": "places:Leipzig"
+      }
+    },
+    {
+      "@id": "bibliography:ga-xvii",
+      "@type": "Bibliography",
+      "abbreviation": "GA XVII",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Magnum opus musicum. Lateinische Gesänge für 2, 3, 4, 5, 6, 7, 8, 9, 10 u. 12 Stimmen. In Partitur gebracht von Carl Proske. Teil IX, für 6 Stimmen"
+          }
+        }
+      ],
+      "series": "bibliography:ga",
+      "volumeNumber": "XVII",
+      "editors": [
+        "persons:Franz-Xaver-Haberl"
+      ],
+      "publication": {
+        "startDate": "1905-01-01",
+        "endDate": "1905-12-31",
+        "publisherName": "Breitkopf & Härtel",
+        "place": "places:Leipzig"
+      }
+    },
+    {
+      "@id": "bibliography:ga2",
+      "@type": "Bibliography",
+      "abbreviation": "GA²",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Orlando di Lasso. Sämtliche Werke (Zweite, nach den Quellen revidierte Auflage der Ausgabe von F. X. Haberl und A. Sandberger)"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "bibliography:ga2-iv",
+      "@type": "Bibliography",
+      "abbreviation": "GA² IV",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Kompositionen mit italienischem Text; 2: Das dritte und vierte Buch fünfstimmiger Madrigale, Rom 1563 und Venedig 1567"
+          }
+        }
+      ],
+      "series": "bibliography:ga2",
+      "volumeNumber": "IV",
+      "editors": [
+        "persons:Horst-Leuchtmann"
+      ],
+      "publication": {
+        "startDate": "1986-01-01",
+        "endDate": "1986-12-31",
+        "publisherName": "Breitkopf & Härtel",
+        "place": "places:Wiesbaden"
+      }
+    },
+    {
+      "@id": "bibliography:ga2-xiv",
+      "@type": "Bibliography",
+      "abbreviation": "GA² XIV",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Kompositionen mit französischem Text; 2: Die fünf- und achtstimmigen Chansons aus \"Les Meslanges d'Orlande de Lassus\", Paris 1576"
+          }
+        }
+      ],
+      "series": "bibliography:ga2",
+      "volumeNumber": "XIV",
+      "editors": [
+        "persons:Horst-Leuchtmann"
+      ],
+      "publication": {
+        "startDate": "1981-01-01",
+        "endDate": "1981-12-31",
+        "publisherName": "Breitkopf & Härtel",
+        "place": "places:Wiesbaden"
+      }
+    }
+  ]
+}

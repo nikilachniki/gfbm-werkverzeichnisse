@@ -1,0 +1,411 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "items:hs-A-Wn-Mus-Hs-16697",
+      "@type": "Item",
+      "label": "A-Wn Mus.Hs.16697",
+      "exemplifies": "manifestations:hs-A-Wn-Mus-Hs-16697",
+      "shelfmark": "Mus.Hs.16697",
+      "keeper": "institutions:A-Wn"
+    },
+    {
+      "@id": "items:hs-A-Wn-Mus-Hs-16704-Mus",
+      "@type": "Item",
+      "label": "A-Wn Mus.Hs.16704 Mus",
+      "exemplifies": "manifestations:hs-A-Wn-Mus-Hs-16704-Mus",
+      "shelfmark": "Mus.Hs.16704 Mus",
+      "sameAs": [
+        "http://data.onb.ac.at/rec/AL00502903"
+      ],
+      "keeper": "institutions:A-Wn"
+    },
+    {
+      "@id": "items:hs-CH-Bu-F-IX-44",
+      "@type": "Item",
+      "label": "CH-Bu F. IX. 44",
+      "exemplifies": "manifestations:hs-CH-Bu-F-IX-44",
+      "shelfmark": "F. IX. 44",
+      "keeper": "institutions:CH-Bu"
+    },
+    {
+      "@id": "items:hs-CH-Bu-F-IX-49",
+      "@type": "Item",
+      "label": "CH-Bu F. IX. 49",
+      "exemplifies": "manifestations:hs-CH-Bu-F-IX-49",
+      "shelfmark": "F. IX. 49",
+      "keeper": "institutions:CH-Bu"
+    },
+    {
+      "@id": "items:hs-CH-Bu-F-IX-50",
+      "@type": "Item",
+      "label": "CH-Bu F. IX. 50",
+      "exemplifies": "manifestations:hs-CH-Bu-F-IX-50",
+      "shelfmark": "F. IX. 50",
+      "keeper": "institutions:CH-Bu"
+    },
+    {
+      "@id": "items:hs-D-AN-VI-g-18",
+      "@type": "Item",
+      "label": "D-AN VI g 18",
+      "exemplifies": "manifestations:hs-D-AN-VI-g-18",
+      "shelfmark": "VI g 18",
+      "sameAs": [
+        "https://opac.rism.info/search?id=455037586"
+      ],
+      "keeper": "institutions:D-AN"
+    },
+    {
+      "@id": "items:hs-D-ASsb-Ms-Nr-4783",
+      "@type": "Item",
+      "label": "D-ASsb Ms. Nr. 4783",
+      "exemplifies": "manifestations:hs-D-ASsb-Ms-Nr-4783",
+      "shelfmark": "Ms. Nr. 4783",
+      "keeper": "institutions:D-ASsb"
+    },
+    {
+      "@id": "items:hs-D-As-Tonkunst-Schletterer-24",
+      "@type": "Item",
+      "label": "D-As Tonkunst Schletterer 24",
+      "exemplifies": "manifestations:hs-D-As-Tonkunst-Schletterer-24",
+      "shelfmark": "Tonkunst Schletterer 24",
+      "keeper": "institutions:D-As"
+    },
+    {
+      "@id": "items:hs-D-B-Mus-ms-30288",
+      "@type": "Item",
+      "label": "D-B Mus.ms. 30288",
+      "exemplifies": "manifestations:hs-D-B-Mus-ms-30288",
+      "shelfmark": "Mus.ms. 30288",
+      "formerShelfmark": "12591",
+      "sameAs": [
+        "https://opac.rism.info/search?id=455034030"
+      ],
+      "keeper": "institutions:D-B"
+    },
+    {
+      "@id": "items:hs-D-B-Mus-ms-40158",
+      "@type": "Item",
+      "label": "D-B Mus.ms. 40158",
+      "exemplifies": "manifestations:hs-D-B-Mus-ms-40158",
+      "shelfmark": "Mus.ms. 40158",
+      "keeper": "institutions:D-B"
+    },
+    {
+      "@id": "items:hs-D-B-Mus-ms-40212",
+      "@type": "Item",
+      "label": "D-B Mus.ms. 40212",
+      "exemplifies": "manifestations:hs-D-B-Mus-ms-40212",
+      "shelfmark": "Mus.ms. 40212",
+      "keeper": "institutions:D-B"
+    },
+    {
+      "@id": "items:hs-D-B-Slg-Bohn-Ms-mus-1",
+      "@type": "Item",
+      "label": "D-B Slg. Bohn Ms. mus. 1",
+      "exemplifies": "manifestations:hs-D-B-Slg-Bohn-Ms-mus-1",
+      "shelfmark": "Slg. Bohn Ms. mus. 1",
+      "keeper": "institutions:D-B"
+    },
+    {
+      "@id": "items:hs-D-BS-nicht-eruiert",
+      "@type": "Item",
+      "label": "D-BS nicht eruiert",
+      "exemplifies": "manifestations:hs-D-BS-nicht-eruiert",
+      "shelfmark": "nicht eruiert",
+      "keeper": "institutions:D-BS"
+    },
+    {
+      "@id": "items:hs-D-Dl-Ms-Mus-1274",
+      "@type": "Item",
+      "label": "D-Dl Ms. Mus. 1274",
+      "exemplifies": "manifestations:hs-D-Dl-Ms-Mus-1274",
+      "shelfmark": "Ms. Mus. 1274",
+      "keeper": "institutions:D-Dl"
+    },
+    {
+      "@id": "items:hs-D-Dl-Mus-Gri-54",
+      "@type": "Item",
+      "label": "D-Dl Mus. Gri 54",
+      "exemplifies": "manifestations:hs-D-Dl-Mus-Gri-54",
+      "shelfmark": "Mus. Gri 54",
+      "keeper": "institutions:D-Dl"
+    },
+    {
+      "@id": "items:hs-D-Lr-Mus-ant-pract-K-N-150",
+      "@type": "Item",
+      "label": "D-Lr Mus.ant.pract. K.N. 150",
+      "exemplifies": "manifestations:hs-D-Lr-Mus-ant-pract-K-N-150",
+      "shelfmark": "Mus.ant.pract. K.N. 150",
+      "sameAs": [
+        "https://opac.rism.info/metaopac/search?View=rism&id=453012264"
+      ],
+      "keeper": "institutions:D-Lr"
+    },
+    {
+      "@id": "items:hs-D-Mbm-jetzt-als-Depositum-in-D-FS-Mf-Chb-5-alte-Signatur-Ms-",
+      "@type": "Item",
+      "label": "D-Mbm (jetzt als Depositum in D-FS) Mf. Chb. 5 (alte Signatur: Ms. Artes 238)",
+      "exemplifies": "manifestations:hs-D-Mbm-jetzt-als-Depositum-in-D-FS-Mf-Chb-5-alte-Signatur-Ms-",
+      "shelfmark": "Mf. Chb. 5 (alte Signatur: Ms. Artes 238)",
+      "keeper": "institutions:D-Mbm-jetzt-als-Depositum-in-D-FS"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-1536",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 1536",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-1536",
+      "shelfmark": "Mus.ms. 1536",
+      "sameAs": [
+        "https://opacplus.bsb-muenchen.de/search?oclcno=828797038&db=100"
+      ],
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-263",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 263",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-263",
+      "shelfmark": "Mus.ms. 263",
+      "sameAs": [
+        "https://opacplus.bsb-muenchen.de/search?oclcno=643058985&db=100"
+      ],
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-265",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 265",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-265",
+      "shelfmark": "Mus.ms. 265",
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-520",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 520",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-520",
+      "shelfmark": "Mus.ms. 520",
+      "sameAs": [
+        "https://opacplus.bsb-muenchen.de/search?oclcno=823237118&db=100"
+      ],
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-55",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 55",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-55",
+      "shelfmark": "Mus.ms. 55",
+      "sameAs": [
+        "https://opacplus.bsb-muenchen.de/search?oclcno=823235834&db=100"
+      ],
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Mbs-Mus-ms-75",
+      "@type": "Item",
+      "label": "D-Mbs Mus.ms. 75",
+      "exemplifies": "manifestations:hs-D-Mbs-Mus-ms-75",
+      "shelfmark": "Mus.ms. 75",
+      "sameAs": [
+        "https://opacplus.bsb-muenchen.de/search?oclcno=823236022&db=100"
+      ],
+      "keeper": "institutions:D-Mbs"
+    },
+    {
+      "@id": "items:hs-D-Rp-A-R-786-837",
+      "@type": "Item",
+      "label": "D-Rp A.R. 786-837",
+      "exemplifies": "manifestations:hs-D-Rp-A-R-786-837",
+      "shelfmark": "A.R. 786-837",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-Rp-A-R-844-848",
+      "@type": "Item",
+      "label": "D-Rp A.R. 844-848",
+      "exemplifies": "manifestations:hs-D-Rp-A-R-844-848",
+      "shelfmark": "A.R. 844-848",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-Rp-A-R-875-877",
+      "@type": "Item",
+      "label": "D-Rp A.R. 875-877",
+      "exemplifies": "manifestations:hs-D-Rp-A-R-875-877",
+      "shelfmark": "A.R. 875-877",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-Rp-Pr-M-Lasso-IX-6",
+      "@type": "Item",
+      "label": "D-Rp Pr-M Lasso IX/6",
+      "exemplifies": "manifestations:hs-D-Rp-Pr-M-Lasso-IX-6",
+      "shelfmark": "Pr-M Lasso IX/6",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-Rp-Pr-M-Lasso-VI-68",
+      "@type": "Item",
+      "label": "D-Rp Pr-M Lasso VI/68",
+      "exemplifies": "manifestations:hs-D-Rp-Pr-M-Lasso-VI-68",
+      "shelfmark": "Pr-M Lasso VI/68",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-Rp-Pr-M-Lasso-VIII-16",
+      "@type": "Item",
+      "label": "D-Rp Pr-M Lasso VIII/16",
+      "exemplifies": "manifestations:hs-D-Rp-Pr-M-Lasso-VIII-16",
+      "shelfmark": "Pr-M Lasso VIII/16",
+      "keeper": "institutions:D-Rp"
+    },
+    {
+      "@id": "items:hs-D-SCHM-Stimmbuch-Handschrift-7",
+      "@type": "Item",
+      "label": "D-SCHM Stimmbuch-Handschrift 7",
+      "exemplifies": "manifestations:hs-D-SCHM-Stimmbuch-Handschrift-7",
+      "shelfmark": "Stimmbuch-Handschrift 7",
+      "keeper": "institutions:D-SCHM"
+    },
+    {
+      "@id": "items:hs-D-SCHM-Tabulatur-1",
+      "@type": "Item",
+      "label": "D-SCHM Tabulatur 1",
+      "exemplifies": "manifestations:hs-D-SCHM-Tabulatur-1",
+      "shelfmark": "Tabulatur 1",
+      "keeper": "institutions:D-SCHM"
+    },
+    {
+      "@id": "items:hs-D-W-Cod-Guelf-321-Mus-Hdschr",
+      "@type": "Item",
+      "label": "D-W Cod. Guelf. 321 Mus. Hdschr.",
+      "exemplifies": "manifestations:hs-D-W-Cod-Guelf-321-Mus-Hdschr",
+      "shelfmark": "Cod. Guelf. 321 Mus. Hdschr.",
+      "sameAs": [
+        "https://opac.rism.info/search?id=451509924&db=251&View=rism"
+      ],
+      "keeper": "institutions:D-W"
+    },
+    {
+      "@id": "items:hs-F-Pn-R-s-Vma-ms-851-Bourdeney-Codex",
+      "@type": "Item",
+      "label": "F-Pn Rés. Vma. ms. 851 (Bourdeney Codex)",
+      "exemplifies": "manifestations:hs-F-Pn-R-s-Vma-ms-851-Bourdeney-Codex",
+      "shelfmark": "Rés. Vma. ms. 851 (Bourdeney Codex)",
+      "keeper": "institutions:F-Pn"
+    },
+    {
+      "@id": "items:hs-GB-Cfm-Ms-24-E-13-17",
+      "@type": "Item",
+      "label": "GB-Cfm Ms. 24.E.13-17",
+      "exemplifies": "manifestations:hs-GB-Cfm-Ms-24-E-13-17",
+      "shelfmark": "Ms. 24.E.13-17",
+      "keeper": "institutions:GB-Cfm"
+    },
+    {
+      "@id": "items:hs-GB-Lbl-Add-MS-29246-29247",
+      "@type": "Item",
+      "label": "GB-Lbl Add MS 29246-29247",
+      "exemplifies": "manifestations:hs-GB-Lbl-Add-MS-29246-29247",
+      "shelfmark": "Add MS 29246-29247",
+      "sameAs": [
+        "http://searcharchives.bl.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=IAMS032-002020702&indx=1&recIds=IAMS032-002020702&recIdxs=0&elementId=0&renderMode=poppedOut&displayMode=full&frbrVersion=&dscnt=0&frbg=&scp.scps=scope%3A%28BL%29&tab=local&dstmp=1419159245597&srt=rank&mode=Basic&dum=true&vl(freeText0)=29246-29247&vid=IAMS_VU2"
+      ],
+      "keeper": "institutions:GB-Lbl"
+    },
+    {
+      "@id": "items:hs-GB-Lbl-Add-MS-32377",
+      "@type": "Item",
+      "label": "GB-Lbl Add MS 32377",
+      "exemplifies": "manifestations:hs-GB-Lbl-Add-MS-32377",
+      "shelfmark": "Add MS 32377",
+      "sameAs": [
+        "http://searcharchives.bl.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=IAMS032-002026165&indx=1&recIds=IAMS032-002026165&recIdxs=0&elementId=0&renderMode=poppedOut&displayMode=full&frbrVersion=&dscnt=1&frbg=&scp.scps=scope%3A%28BL%29&tab=local&dstmp=1419163699914&srt=rank&mode=Basic&dum=true&vl(freeText0)=32377&vid=IAMS_VU2"
+      ],
+      "keeper": "institutions:GB-Lbl"
+    },
+    {
+      "@id": "items:hs-GB-Lcm-RCM-MS-928",
+      "@type": "Item",
+      "label": "GB-Lcm RCM MS 928",
+      "exemplifies": "manifestations:hs-GB-Lcm-RCM-MS-928",
+      "shelfmark": "RCM MS 928",
+      "sameAs": [
+        "https://opac.rism.info/search?id=806499176"
+      ],
+      "keeper": "institutions:GB-Lcm"
+    },
+    {
+      "@id": "items:hs-H-G-Ms-XI-b-54",
+      "@type": "Item",
+      "label": "H-G ? Ms. XI. b. 54",
+      "exemplifies": "manifestations:hs-H-G-Ms-XI-b-54",
+      "shelfmark": "Ms. XI. b. 54",
+      "keeper": "institutions:H-G"
+    },
+    {
+      "@id": "items:hs-I-CMac-M-Se-1",
+      "@type": "Item",
+      "label": "I-CMac M Se 1",
+      "exemplifies": "manifestations:hs-I-CMac-M-Se-1",
+      "shelfmark": "M Se 1",
+      "keeper": "institutions:I-CMac"
+    },
+    {
+      "@id": "items:hs-NL-Uim-Ms-3-L-16-Codex-Lerma",
+      "@type": "Item",
+      "label": "NL-Uim Ms. 3. L. 16 (Codex Lerma)",
+      "exemplifies": "manifestations:hs-NL-Uim-Ms-3-L-16-Codex-Lerma",
+      "shelfmark": "Ms. 3. L. 16 (Codex Lerma)",
+      "sameAs": [
+        "http://objects.library.uu.nl/reader/index.php?obj=1874-27572&lan=en#page//22/77/83/22778310528075829211113662540696592563.jpg/mode/1up"
+      ],
+      "keeper": "institutions:NL-Uim"
+    },
+    {
+      "@id": "items:hs-PL-GD-Ms-4030",
+      "@type": "Item",
+      "label": "PL-GD Ms. 4030",
+      "exemplifies": "manifestations:hs-PL-GD-Ms-4030",
+      "shelfmark": "Ms. 4030",
+      "keeper": "institutions:PL-GD"
+    },
+    {
+      "@id": "items:hs-PL-Kj-Mus-ms-40032",
+      "@type": "Item",
+      "label": "PL-Kj Mus.ms. 40032",
+      "exemplifies": "manifestations:hs-PL-Kj-Mus-ms-40032",
+      "shelfmark": "Mus.ms. 40032",
+      "keeper": "institutions:PL-Kj"
+    },
+    {
+      "@id": "items:hs-PL-WRu-51335-Muz",
+      "@type": "Item",
+      "label": "PL-WRu 51335 Muz.",
+      "exemplifies": "manifestations:hs-PL-WRu-51335-Muz",
+      "shelfmark": "51335 Muz.",
+      "keeper": "institutions:PL-WRu"
+    },
+    {
+      "@id": "items:hs-PL-Wu-Ms-7-41-5-14-VII-VIII",
+      "@type": "Item",
+      "label": "PL-Wu Ms. 7.41.5.14 (VII-VIII)",
+      "exemplifies": "manifestations:hs-PL-Wu-Ms-7-41-5-14-VII-VIII",
+      "shelfmark": "Ms. 7.41.5.14 (VII-VIII)",
+      "keeper": "institutions:PL-Wu"
+    },
+    {
+      "@id": "items:hs-Sl-Lnr-Mus-Ms-207",
+      "@type": "Item",
+      "label": "Sl-Lnr Mus. Ms. 207",
+      "exemplifies": "manifestations:hs-Sl-Lnr-Mus-Ms-207",
+      "shelfmark": "Mus. Ms. 207",
+      "sameAs": [
+        "http://www.nuk.uni-lj.si/dokumenti/2012/katalog_rokopisov.pdf"
+      ],
+      "keeper": "institutions:Sl-Lnr"
+    }
+  ]
+}

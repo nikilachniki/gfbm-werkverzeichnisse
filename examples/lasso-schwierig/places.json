@@ -1,0 +1,135 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "places:Ansbach",
+      "@type": "Place",
+      "name": "Ansbach"
+    },
+    {
+      "@id": "places:Aschaffenburg",
+      "@type": "Place",
+      "name": "Aschaffenburg"
+    },
+    {
+      "@id": "places:Augsburg",
+      "@type": "Place",
+      "name": "Augsburg"
+    },
+    {
+      "@id": "places:Basel",
+      "@type": "Place",
+      "name": "Basel"
+    },
+    {
+      "@id": "places:Berlin",
+      "@type": "Place",
+      "name": "Berlin"
+    },
+    {
+      "@id": "places:Braunschweig",
+      "@type": "Place",
+      "name": "Braunschweig"
+    },
+    {
+      "@id": "places:Cambridge",
+      "@type": "Place",
+      "name": "Cambridge"
+    },
+    {
+      "@id": "places:Casale-Monferrato",
+      "@type": "Place",
+      "name": "Casale Monferrato"
+    },
+    {
+      "@id": "places:Dresden",
+      "@type": "Place",
+      "name": "Dresden"
+    },
+    {
+      "@id": "places:Gda-sk-Danzig",
+      "@type": "Place",
+      "name": "Gdańsk (= Danzig)"
+    },
+    {
+      "@id": "places:Gy-r-Raab",
+      "@type": "Place",
+      "name": "Györ (=Raab)"
+    },
+    {
+      "@id": "places:Krak-w-Krakau",
+      "@type": "Place",
+      "name": "Kraków (= Krakau)"
+    },
+    {
+      "@id": "places:L-neburg",
+      "@type": "Place",
+      "name": "Lüneburg"
+    },
+    {
+      "@id": "places:Leipzig",
+      "@type": "Place",
+      "name": "Leipzig"
+    },
+    {
+      "@id": "places:Ljubljana-Laibach",
+      "@type": "Place",
+      "name": "Ljubljana (= Laibach)"
+    },
+    {
+      "@id": "places:London",
+      "@type": "Place",
+      "name": "London"
+    },
+    {
+      "@id": "places:M-nchen",
+      "@type": "Place",
+      "name": "München"
+    },
+    {
+      "@id": "places:Paris",
+      "@type": "Place",
+      "name": "Paris"
+    },
+    {
+      "@id": "places:Regensburg",
+      "@type": "Place",
+      "name": "Regensburg"
+    },
+    {
+      "@id": "places:Schm-lln",
+      "@type": "Place",
+      "name": "Schmölln"
+    },
+    {
+      "@id": "places:Utrecht",
+      "@type": "Place",
+      "name": "Utrecht"
+    },
+    {
+      "@id": "places:Warszawa-Warschau",
+      "@type": "Place",
+      "name": "Warszawa (= Warschau)"
+    },
+    {
+      "@id": "places:Wien",
+      "@type": "Place",
+      "name": "Wien"
+    },
+    {
+      "@id": "places:Wiesbaden",
+      "@type": "Place",
+      "name": "Wiesbaden"
+    },
+    {
+      "@id": "places:Wolfenb-ttel",
+      "@type": "Place",
+      "name": "Wolfenbüttel"
+    },
+    {
+      "@id": "places:Wroc-aw-Breslau",
+      "@type": "Place",
+      "name": "Wrocław (=Breslau)"
+    }
+  ]
+}

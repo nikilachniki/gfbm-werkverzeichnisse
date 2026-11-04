@@ -88,7 +88,12 @@ def flatten_citations(record, abbreviations):
 def content_line(content, labels):
     line = labels.get(content["embodies"], content["embodies"])
     if content.get("position"):
-        line = "Nr. {0}: {1}".format(content["position"], line)
+        place = content["position"]
+        if content.get("part"):
+            place = "{0}, Teil {1}".format(place, content["part"])
+        line = "Nr. {0}: {1}".format(place, line)
+    elif content.get("part"):
+        line = "Teil {0}: {1}".format(content["part"], line)
     details = [content.get("titleInSource")]
     if content.get("voices"):
         details.append("{0} Stimmen".format(content["voices"]))
@@ -111,6 +116,16 @@ def flatten_contents(record, labels):
         "rdfs:label": "Inhalt",
         "melod:paragraph": "\n".join(content_line(c, labels) for c in contents),
     }
+
+
+def fields_to_notes(record, fields):
+    """Eigene Textfelder werden zu Anmerkungen, Listen je eine."""
+    for field, label in fields:
+        value = record.pop(field, None)
+        if not value:
+            continue
+        for text in value if isinstance(value, list) else [value]:
+            record.setdefault("notes", []).append(note(label, text))
 
 
 def merge_publisher(record):
@@ -155,8 +170,16 @@ def to_melody(catalog, collections):
         genres = work.pop("genres", None)
         if genres:
             work.setdefault("notes", []).append(note("Gattung", "; ".join(genres)))
+    for name in ("works", "expressions"):
+        for record in collections[name]:
+            fields_to_notes(record, (("textSources", "Textprovenienz"),))
     for record in collections["manifestations"]:
         flatten_contents(record, labels)
+        fields_to_notes(record, (
+            ("sourceType", "Quellenart"),
+            ("partbooks", "Stimmbücher"),
+            ("literature", "Literatur"),
+        ))
     for name in ("manifestations", "bibliography"):
         for record in collections[name]:
             merge_publisher(record)
