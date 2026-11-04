@@ -1,0 +1,1401 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "works:1",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Cantai hor piango"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "1"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:1"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "1"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:1-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Tengan dunque"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "1-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:1-2"
+      ],
+      "partOfWork": "works:1",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "1"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Guarda’l mio stato"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Gvarda'l mio stat'a"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:2"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "2"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:3",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Alma cortese"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "3"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:3"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "3"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:3-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Ch’udirai"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Ch'udirai un se"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Ch'udirai"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "3-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:3-2"
+      ],
+      "partOfWork": "works:3",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "3"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:4",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Gia mi fu"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "4"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:4"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "4"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:5",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Quando’l voler"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Qvado'l uoler"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "5"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:5"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "5"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:5-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Onde come colui"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "5-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:5-2"
+      ],
+      "partOfWork": "works:5",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "5"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:6",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Hor qui son lasso"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "6"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:6"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "6"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:7",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Poi che’l camin"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Poi che'l camin"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "7"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:7"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "7"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:8",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Mentre che’l cor"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Mentre che'l cor"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "8"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:8"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "8"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:8-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Quel fuoco e morte"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Qvel fuoco e morto"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Quel fuoco e morto"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "8-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:8-2"
+      ],
+      "partOfWork": "works:8",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "8"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:9",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Poi che l’iniquo"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Poi che l'iniquo"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "9"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:9"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "9"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:9-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Diviso m’ha"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Diuiso m'ha"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "9-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:9-2"
+      ],
+      "partOfWork": "works:9",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "9"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:10",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Mia benigna Fortuna"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "10"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:10"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "10"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:11",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "O invidia nemica"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "O inuidia nemica"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "11"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:11"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "11"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:11-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Ne però che con"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Ne pero che con"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Ma tu pretendi"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "11-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:11-2"
+      ],
+      "partOfWork": "works:11",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "11"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:12",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Crudel acerba inesorabil morte"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Crudel acerba inesorabil Morte"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "12"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:12"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "12"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:13",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Pon fren’al gran dolor"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Pon fren'al gra dolor"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Pon fren’ al gran dolor"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Pon fren'al gran dolor"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "13"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:13"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "13"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:14",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Fiera stella"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "14"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:14"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "14"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:14-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Ma tu prendi"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Ma tu predi"
+          },
+          "type": "terms:OtherTitle"
+        },
+        {
+          "text": {
+            "it": "Ma tu pretendi"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "14-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:14-2"
+      ],
+      "partOfWork": "works:14",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "14"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:15",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Quando la sera"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Qvando la sera"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "15"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:15"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "15"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:16",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "S’io tal’hor"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "S'io tal'hor"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "16"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:ronconi",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:16"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "16"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:16-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Al’hor lasso"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Al'hor lasso"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "16-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:16-2"
+      ],
+      "partOfWork": "works:16",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "16"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:17",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Con lei fuss’io"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Con lei fuss'io"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "17"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:17"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "17"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:18",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Ben mi credea"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "18"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:18"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "18"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:19",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Sol’e pensoso"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Sol'e pensoso"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "19"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:19"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "19"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:19-2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Si ch’io mi credo"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Si ch'io mi credo"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "19-2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:19-2"
+      ],
+      "partOfWork": "works:19",
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "19"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:20",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Pien d’un vago pensier"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Pien d'un uago pensier"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "20"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:gnd-118593234",
+          "role": "terms:Lyricist"
+        }
+      ],
+      "realisedIn": [
+        "expressions:20"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "20"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:21",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "L’altr’hier sul mezzo giorno"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "L'altr'hier sul"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "21"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:21"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "21"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    },
+    {
+      "@id": "works:22",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "it": "Perche nemica mia"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "it": "Perche nemica"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "LV",
+          "value": "22"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:lasso",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:22"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ga2-ii",
+          "section": "I",
+          "number": "22"
+        }
+      ],
+      "genres": [
+        "Madrigal"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "places:Bologna",
+      "@type": "Place",
+      "name": "Bologna"
+    },
+    {
+      "@id": "places:Casale-Monferrato",
+      "@type": "Place",
+      "name": "Casale Monferrato"
+    },
+    {
+      "@id": "places:Genova-Genua",
+      "@type": "Place",
+      "name": "Genova (= Genua)"
+    },
+    {
+      "@id": "places:Milano-Mailand",
+      "@type": "Place",
+      "name": "Milano (= Mailand)"
+    },
+    {
+      "@id": "places:Puebla",
+      "@type": "Place",
+      "name": "Puebla"
+    },
+    {
+      "@id": "places:Stockholm",
+      "@type": "Place",
+      "name": "Stockholm"
+    },
+    {
+      "@id": "places:Utrecht",
+      "@type": "Place",
+      "name": "Utrecht"
+    },
+    {
+      "@id": "places:Wiesbaden",
+      "@type": "Place",
+      "name": "Wiesbaden"
+    }
+  ]
+}

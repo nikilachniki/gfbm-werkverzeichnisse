@@ -1,0 +1,54 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "institutions:I-Bc",
+      "@type": "Institution",
+      "name": "Civico Museo Bibliografico Musicale",
+      "siglum": "I-Bc",
+      "place": "places:Bologna"
+    },
+    {
+      "@id": "institutions:I-CMac",
+      "@type": "Institution",
+      "name": "Archivio Capitolare, Biblioteca del Seminario",
+      "siglum": "I-CMac",
+      "place": "places:Casale-Monferrato"
+    },
+    {
+      "@id": "institutions:I-Gu",
+      "@type": "Institution",
+      "name": "Biblioteca Universitaria",
+      "siglum": "I-Gu",
+      "place": "places:Genova-Genua"
+    },
+    {
+      "@id": "institutions:I-Mc",
+      "@type": "Institution",
+      "name": "Conservatorio di Musica Giuseppe Verdi",
+      "siglum": "I-Mc",
+      "place": "places:Milano-Mailand"
+    },
+    {
+      "@id": "institutions:MEX-Pc",
+      "@type": "Institution",
+      "name": "Catedral, Archivo de Música Sacra ? = Puebla (Mexico), Archivio Capitol",
+      "siglum": "MEX-Pc ?",
+      "place": "places:Puebla"
+    },
+    {
+      "@id": "institutions:NL-Uim",
+      "@type": "Institution",
+      "name": "Instituut voor Muziekwetenschap der Rijksuniversiteit Utrecht, Rijksuniversiteit Bibl. Instituut voor Muziekwetenschap",
+      "siglum": "NL-Uim",
+      "place": "places:Utrecht"
+    },
+    {
+      "@id": "institutions:S-Sk",
+      "@type": "Institution",
+      "name": "Kungliga Biblioteket",
+      "siglum": "S-Sk",
+      "place": "places:Stockholm"
+    }
+  ]
+}

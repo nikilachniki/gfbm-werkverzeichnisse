@@ -1,0 +1,42 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "bibliography:ga2",
+      "@type": "Bibliography",
+      "abbreviation": "GA²",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Orlando di Lasso. Sämtliche Werke (Zweite, nach den Quellen revidierte Auflage der Ausgabe von F. X. Haberl und A. Sandberger)"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "bibliography:ga2-ii",
+      "@type": "Bibliography",
+      "abbreviation": "GA² II",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Kompositionen mit italienischem Text; 1: Das erste und zweite Buch fünfstimmiger Madrigale, Venedig 1555 und Rom 1557"
+          }
+        }
+      ],
+      "series": "bibliography:ga2",
+      "volumeNumber": "II",
+      "editors": [
+        "persons:Horst-Leuchtmann"
+      ],
+      "publication": {
+        "startDate": "1968-01-01",
+        "endDate": "1968-12-31",
+        "publisherName": "Breitkopf & Härtel",
+        "place": "places:Wiesbaden"
+      }
+    }
+  ]
+}

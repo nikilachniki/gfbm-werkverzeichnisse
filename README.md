@@ -13,6 +13,7 @@ entstand aus dem Lasso-Werkverzeichnis (Branch `main`).
 | --- | --- |
 | `data/` | Die Daten eines Verzeichnisses, hier leer |
 | `examples/beispiel/` | Erfundener Beispieldatensatz mit allen wichtigen Fällen |
+| `examples/lasso-1555-1/` | Echter Auszug für den [Härtetest](docs/haertetest-1555-1.md) |
 | `schema/` | JSON-LD-Kontext und JSON-Schema |
 | `scripts/` | Prüfung und Export nach MeLODy |
 | `docs/` | [Datenmodell](docs/modell.md) und [Entscheidungen](docs/entscheidungen.md) |

@@ -1,0 +1,8 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "@id": "urn:uuid:dataCatalogs/catalog",
+  "@type": "Catalogue",
+  "label": "Werkverzeichnis Orlando di Lasso, Auszug zum Druck 1555-1",
+  "composer": "persons:lasso",
+  "catalogueAbbreviation": "LV"
+}

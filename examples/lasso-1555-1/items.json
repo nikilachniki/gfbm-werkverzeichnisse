@@ -1,0 +1,67 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "items:hs-I-Bc-M-225",
+      "@type": "Item",
+      "label": "I-Bc M.225",
+      "exemplifies": "manifestations:hs-I-Bc-M-225",
+      "shelfmark": "M.225",
+      "keeper": "institutions:I-Bc"
+    },
+    {
+      "@id": "items:hs-I-CMac-M-Se-1",
+      "@type": "Item",
+      "label": "I-CMac M Se 1",
+      "exemplifies": "manifestations:hs-I-CMac-M-Se-1",
+      "shelfmark": "M Se 1",
+      "keeper": "institutions:I-CMac"
+    },
+    {
+      "@id": "items:hs-I-Gu-ms-F-VII-a",
+      "@type": "Item",
+      "label": "I-Gu ms. F. VII.a",
+      "exemplifies": "manifestations:hs-I-Gu-ms-F-VII-a",
+      "shelfmark": "ms. F. VII.a",
+      "sameAs": [
+        "http://manus.iccu.sbn.it/opac_SchedaScheda.php?ID=164960"
+      ],
+      "keeper": "institutions:I-Gu"
+    },
+    {
+      "@id": "items:hs-I-Mc-Ms-o-Sign-Tarasconi-oder-Clerici-Codex",
+      "@type": "Item",
+      "label": "I-Mc Ms. o. Sign. (Tarasconi- oder Clerici-Codex)",
+      "exemplifies": "manifestations:hs-I-Mc-Ms-o-Sign-Tarasconi-oder-Clerici-Codex",
+      "shelfmark": "Ms. o. Sign. (Tarasconi- oder Clerici-Codex)",
+      "keeper": "institutions:I-Mc"
+    },
+    {
+      "@id": "items:hs-MEX-Pc-Ms-mus-C-B-XIX",
+      "@type": "Item",
+      "label": "MEX-Pc ? Ms. mus. C.B. XIX",
+      "exemplifies": "manifestations:hs-MEX-Pc-Ms-mus-C-B-XIX",
+      "shelfmark": "Ms. mus. C.B. XIX",
+      "keeper": "institutions:MEX-Pc"
+    },
+    {
+      "@id": "items:hs-NL-Uim-Ms-3-L-16-Codex-Lerma",
+      "@type": "Item",
+      "label": "NL-Uim Ms. 3. L. 16 (Codex Lerma)",
+      "exemplifies": "manifestations:hs-NL-Uim-Ms-3-L-16-Codex-Lerma",
+      "shelfmark": "Ms. 3. L. 16 (Codex Lerma)",
+      "sameAs": [
+        "http://objects.library.uu.nl/reader/index.php?obj=1874-27572&lan=en#page//22/77/83/22778310528075829211113662540696592563.jpg/mode/1up"
+      ],
+      "keeper": "institutions:NL-Uim"
+    },
+    {
+      "@id": "items:hs-S-Sk-S-227",
+      "@type": "Item",
+      "label": "S-Sk S 227",
+      "exemplifies": "manifestations:hs-S-Sk-S-227",
+      "shelfmark": "S 227",
+      "keeper": "institutions:S-Sk"
+    }
+  ]
+}

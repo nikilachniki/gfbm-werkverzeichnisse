@@ -1,0 +1,33 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "persons:lasso",
+      "@type": "Person",
+      "familyName": "Lasso",
+      "givenName": "Orlando di"
+    },
+    {
+      "@id": "persons:gnd-118593234",
+      "@type": "Person",
+      "familyName": "Francesco Petrarca",
+      "alternateNames": [
+        "Petrarca"
+      ],
+      "sameAs": [
+        "https://d-nb.info/gnd/118593234",
+        "https://viaf.org/viaf/39382430"
+      ]
+    },
+    {
+      "@id": "persons:ronconi",
+      "@type": "Person",
+      "familyName": "Ronconi"
+    },
+    {
+      "@id": "persons:Horst-Leuchtmann",
+      "@type": "Person",
+      "familyName": "Horst Leuchtmann"
+    }
+  ]
+}

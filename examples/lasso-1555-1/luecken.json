@@ -1,0 +1,47 @@
+{
+  "Bemerkung nur als Anmerkung": {
+    "Anzahl": 1,
+    "Beispiele": [
+      "Quellentyp bisher nicht exakt ermittelt"
+    ]
+  },
+  "Literatur nur als Anmerkung": {
+    "Anzahl": 2,
+    "Beispiele": [
+      "Biblioteca Universitaria di Genova, Lamusica dei libri. Opere musicali dei secoli XIII-XIX. Catalogo, a cura di O. Carta",
+      "Milan, Biblioteca del Conservatorio di Musica Giuseppe Verdi, The Tarasconi Codex. Introduction by Jessie Ann Owens, New"
+    ]
+  },
+  "Name nicht in Vor- und Nachname zerlegt": {
+    "Anzahl": 3,
+    "Beispiele": [
+      "Francesco Petrarca",
+      "Ronconi",
+      "Horst Leuchtmann"
+    ]
+  },
+  "Quellenart nur als Anmerkung": {
+    "Anzahl": 7,
+    "Beispiele": [
+      "Sparten",
+      "Nicht ermittelt",
+      "Lautentabulatur"
+    ]
+  },
+  "Stimmbücher nur als Anmerkung": {
+    "Anzahl": 20,
+    "Beispiele": [
+      "Cantus; Tenor; Altus; Bassus; Quintus",
+      "Cantus; Altus; Tenor; Bassus; Quintus",
+      "Canto; Alto; Tenore; Basso; Quinta parte"
+    ]
+  },
+  "Stück außerhalb der Auswahl nur als Bemerkung": {
+    "Anzahl": 174,
+    "Beispiele": [
+      "54",
+      "54-2",
+      "108"
+    ]
+  }
+}

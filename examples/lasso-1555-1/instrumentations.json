@@ -1,0 +1,18 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "instrumentations:5-stimmen",
+      "@type": "Instrumentation",
+      "label": "5 Stimmen",
+      "details": [
+        {
+          "position": 1,
+          "medium": "terms:Voices",
+          "description": "Stimmen",
+          "quantity": 5
+        }
+      ]
+    }
+  ]
+}

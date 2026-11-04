@@ -1,0 +1,293 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "expressions:1",
+      "@type": "Expression",
+      "label": "Cantai hor piango",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:1-2",
+      "@type": "Expression",
+      "label": "Tengan dunque",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:1"
+    },
+    {
+      "@id": "expressions:2",
+      "@type": "Expression",
+      "label": "Guarda’l mio stato",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:3",
+      "@type": "Expression",
+      "label": "Alma cortese",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:3-2",
+      "@type": "Expression",
+      "label": "Ch’udirai",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:3"
+    },
+    {
+      "@id": "expressions:4",
+      "@type": "Expression",
+      "label": "Gia mi fu",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:5",
+      "@type": "Expression",
+      "label": "Quando’l voler",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:5-2",
+      "@type": "Expression",
+      "label": "Onde come colui",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:5"
+    },
+    {
+      "@id": "expressions:6",
+      "@type": "Expression",
+      "label": "Hor qui son lasso",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:7",
+      "@type": "Expression",
+      "label": "Poi che’l camin",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:8",
+      "@type": "Expression",
+      "label": "Mentre che’l cor",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:8-2",
+      "@type": "Expression",
+      "label": "Quel fuoco e morte",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:8"
+    },
+    {
+      "@id": "expressions:9",
+      "@type": "Expression",
+      "label": "Poi che l’iniquo",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:9-2",
+      "@type": "Expression",
+      "label": "Diviso m’ha",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:9"
+    },
+    {
+      "@id": "expressions:10",
+      "@type": "Expression",
+      "label": "Mia benigna Fortuna",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:11",
+      "@type": "Expression",
+      "label": "O invidia nemica",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:11-2",
+      "@type": "Expression",
+      "label": "Ne però che con",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:11"
+    },
+    {
+      "@id": "expressions:12",
+      "@type": "Expression",
+      "label": "Crudel acerba inesorabil morte",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:13",
+      "@type": "Expression",
+      "label": "Pon fren’al gran dolor",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:14",
+      "@type": "Expression",
+      "label": "Fiera stella",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:14-2",
+      "@type": "Expression",
+      "label": "Ma tu prendi",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:14"
+    },
+    {
+      "@id": "expressions:15",
+      "@type": "Expression",
+      "label": "Quando la sera",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:16",
+      "@type": "Expression",
+      "label": "S’io tal’hor",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:16-2",
+      "@type": "Expression",
+      "label": "Al’hor lasso",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:16"
+    },
+    {
+      "@id": "expressions:17",
+      "@type": "Expression",
+      "label": "Con lei fuss’io",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:18",
+      "@type": "Expression",
+      "label": "Ben mi credea",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:19",
+      "@type": "Expression",
+      "label": "Sol’e pensoso",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:19-2",
+      "@type": "Expression",
+      "label": "Si ch’io mi credo",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen",
+      "partOfExpression": "expressions:19"
+    },
+    {
+      "@id": "expressions:20",
+      "@type": "Expression",
+      "label": "Pien d’un vago pensier",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:21",
+      "@type": "Expression",
+      "label": "L’altr’hier sul mezzo giorno",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:22",
+      "@type": "Expression",
+      "label": "Perche nemica mia",
+      "languages": [
+        "terms:Italian"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    }
+  ]
+}
