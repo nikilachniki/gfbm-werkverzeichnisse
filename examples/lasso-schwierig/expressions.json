@@ -30,52 +30,12 @@
       "partOfExpression": "expressions:74"
     },
     {
-      "@id": "expressions:74-3-3st",
-      "@type": "Expression",
-      "label": "Secchi vedransi (3 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:3-stimmen",
-      "partOfExpression": "expressions:74"
-    },
-    {
-      "@id": "expressions:74-3-5st",
-      "@type": "Expression",
-      "label": "Secchi vedransi (5 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:5-stimmen",
-      "partOfExpression": "expressions:74"
-    },
-    {
       "@id": "expressions:74-4",
       "@type": "Expression",
       "label": "Io vo fuggendo",
       "languages": [
         "terms:Italian"
       ],
-      "partOfExpression": "expressions:74"
-    },
-    {
-      "@id": "expressions:74-4-4st",
-      "@type": "Expression",
-      "label": "Io vo fuggendo (4 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:4-stimmen",
-      "partOfExpression": "expressions:74"
-    },
-    {
-      "@id": "expressions:74-4-5st",
-      "@type": "Expression",
-      "label": "Io vo fuggendo (5 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:5-stimmen",
       "partOfExpression": "expressions:74"
     },
     {
@@ -98,26 +58,6 @@
       "partOfExpression": "expressions:74"
     },
     {
-      "@id": "expressions:74-6-5st",
-      "@type": "Expression",
-      "label": "Ma sarò spento (5 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:5-stimmen",
-      "partOfExpression": "expressions:74"
-    },
-    {
-      "@id": "expressions:74-6-6st",
-      "@type": "Expression",
-      "label": "Ma sarò spento (6 Stimmen)",
-      "languages": [
-        "terms:Italian"
-      ],
-      "instrumentation": "instrumentations:6-stimmen",
-      "partOfExpression": "expressions:74"
-    },
-    {
       "@id": "expressions:90",
       "@type": "Expression",
       "label": "Elle s’en va",
@@ -126,48 +66,12 @@
       ]
     },
     {
-      "@id": "expressions:90-2st",
-      "@type": "Expression",
-      "label": "Elle s’en va (2 Stimmen)",
-      "languages": [
-        "terms:French"
-      ],
-      "instrumentation": "instrumentations:2-stimmen"
-    },
-    {
-      "@id": "expressions:90-5st",
-      "@type": "Expression",
-      "label": "Elle s’en va (5 Stimmen)",
-      "languages": [
-        "terms:French"
-      ],
-      "instrumentation": "instrumentations:5-stimmen"
-    },
-    {
       "@id": "expressions:193",
       "@type": "Expression",
       "label": "In te Domine speravi",
       "languages": [
         "terms:Latin"
       ]
-    },
-    {
-      "@id": "expressions:193-5st",
-      "@type": "Expression",
-      "label": "In te Domine speravi (5 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:5-stimmen"
-    },
-    {
-      "@id": "expressions:193-6st",
-      "@type": "Expression",
-      "label": "In te Domine speravi (6 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:6-stimmen"
     },
     {
       "@id": "expressions:193-2",
@@ -179,26 +83,6 @@
       "partOfExpression": "expressions:193"
     },
     {
-      "@id": "expressions:193-2-5st",
-      "@type": "Expression",
-      "label": "Quoniam fortitudo mea (5 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:5-stimmen",
-      "partOfExpression": "expressions:193-5st"
-    },
-    {
-      "@id": "expressions:193-2-6st",
-      "@type": "Expression",
-      "label": "Quoniam fortitudo mea (6 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:6-stimmen",
-      "partOfExpression": "expressions:193-6st"
-    },
-    {
       "@id": "expressions:193-3",
       "@type": "Expression",
       "label": "Gloria patri",
@@ -206,26 +90,6 @@
         "terms:Latin"
       ],
       "partOfExpression": "expressions:193"
-    },
-    {
-      "@id": "expressions:193-3-5st",
-      "@type": "Expression",
-      "label": "Gloria patri (5 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:5-stimmen",
-      "partOfExpression": "expressions:193-5st"
-    },
-    {
-      "@id": "expressions:193-3-6st",
-      "@type": "Expression",
-      "label": "Gloria patri (6 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:6-stimmen",
-      "partOfExpression": "expressions:193-6st"
     },
     {
       "@id": "expressions:327",
@@ -256,52 +120,12 @@
       "partOfExpression": "expressions:327"
     },
     {
-      "@id": "expressions:327-3-3st",
-      "@type": "Expression",
-      "label": "Et erit tanquam (3 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:3-stimmen",
-      "partOfExpression": "expressions:327"
-    },
-    {
-      "@id": "expressions:327-3-6st",
-      "@type": "Expression",
-      "label": "Et erit tanquam (6 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:6-stimmen",
-      "partOfExpression": "expressions:327"
-    },
-    {
       "@id": "expressions:327-4",
       "@type": "Expression",
       "label": "Et folium eius",
       "languages": [
         "terms:Latin"
       ],
-      "partOfExpression": "expressions:327"
-    },
-    {
-      "@id": "expressions:327-4-4st",
-      "@type": "Expression",
-      "label": "Et folium eius (4 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:4-stimmen",
-      "partOfExpression": "expressions:327"
-    },
-    {
-      "@id": "expressions:327-4-6st",
-      "@type": "Expression",
-      "label": "Et folium eius (6 Stimmen)",
-      "languages": [
-        "terms:Latin"
-      ],
-      "instrumentation": "instrumentations:6-stimmen",
       "partOfExpression": "expressions:327"
     },
     {

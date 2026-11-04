@@ -40,8 +40,7 @@
         "Motette"
       ],
       "realisedIn": [
-        "expressions:1-vierstimmig",
-        "expressions:1-fuenfstimmig"
+        "expressions:1"
       ],
       "citations": [
         {
@@ -55,7 +54,7 @@
       "notes": [
         {
           "label": "Bemerkung",
-          "html": "Erfundenes Beispiel mit zwei <em>Fassungen</em>."
+          "html": "Erfundenes Beispiel, in den Quellen mit <em>abweichender</em> Stimmenzahl."
         }
       ],
       "textSources": [

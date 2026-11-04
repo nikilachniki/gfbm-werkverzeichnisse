@@ -60,20 +60,20 @@ gepflegte Beziehungen liefen auseinander.
 **Preis.** Dass eine ID nicht neu vergeben wird, sichert nur die Redaktion ab, nicht
 ein Werkzeug; `scripts/validate.py` findet nur Dubletten im aktuellen Bestand.
 
-## 5. Die Vorlage legt keine Regel für Expressions fest
+## 5. Eine Expression je Werk
 
-**Entscheidung.** Wann eine weitere Expression entsteht, entscheidet die Redaktion
-eines Verzeichnisses. Das Modell erlaubt eine Expression je Fassung, schreibt aber keine
-Regel vor.
+**Entscheidung.** Ein Werk hat eine Expression. Die Stimmenzahl steht am Stück in der
+jeweiligen Quelle (`voices` in `contents`), die Besetzung an der Expression nur dann,
+wenn sie eindeutig ist.
 
-**Anlass.** Der Härtetest legt je belegter Stimmenzahl eine Expression an. Das hielt
-den Fakt fest, welche Besetzung wo steht, ergäbe bei Lasso aber rund 3300 Expressions
-bei 2166 Werken und setzte jede abweichende Zählung mit einer Fassung gleich, auch wenn
-eine Quelle nur Stimmen verloren hat.
+**Anlass.** Ein erster Härtetest legte je belegter Stimmenzahl eine Expression an. Das
+ergäbe bei Lasso rund 3300 Expressions bei 2166 Werken und setzte jede abweichende
+Zählung mit einer Fassung gleich, auch wenn eine Quelle nur Stimmen verloren hat.
 
-**Alternative.** Die Stimmenzahl nur am Stück in der Quelle (`voices` in `contents`)
-und je Werk eine Expression. Das hält die Daten klein und bleibt für den Regelfall der
-einfachere Weg; `voices` steht dafür schon bereit.
+**Alternative.** Je Stimmenzahl eine Expression: näher an der Idee von LRM, aber mit
+vielen Datensätzen und einer stillschweigenden fachlichen Setzung.
 
-**Preis.** Verzeichnisse können uneinheitlich arbeiten. Eine Empfehlung braucht die
-Erfahrung eines echten Verzeichnisses.
+**Preis.** Welche Stimmen ein Werk in welcher Gestalt hat, ist nur je Quelle ablesbar,
+nicht als eigene Gestalt des Werks. Die in Lasso ausdrücklich als Fassung
+gekennzeichneten Stücke, etwa `74 (IV)`, bleiben im Härtetest vorerst eigene
+Expressions, damit die Kennzeichnung nicht verloren geht.

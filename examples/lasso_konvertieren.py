@@ -62,14 +62,10 @@ def key_of(row):
     return row["rismSiglum"], row["shelfmark"]
 
 
-def expression_for(work, voices=None):
-    """Eine Expression je belegter Stimmenzahl. Hat ein Werk mehrere, gibt es eine
-    weitere ohne Besetzung fuer Quellen, die keine Stimmenzahl belegen."""
-    base = local(work["@id"])
-    counts = work["voiceCounts"]
-    if len(counts) > 1 and voices in counts:
-        return "expressions:{0}-{1}st".format(base, voices)
-    return "expressions:" + base
+def expression_for(work):
+    """Eine Expression je Werk, siehe docs/entscheidungen.md, Abschnitt 5. Die
+    Stimmenzahl steht am Stueck in der jeweiligen Quelle."""
+    return "expressions:" + local(work["@id"])
 
 
 def contributor_list(item):
@@ -164,7 +160,6 @@ class Converter:
         counts = work["voiceCounts"]
         realised = [expression_for(work)]
         if len(counts) > 1:
-            realised += [expression_for(work, n) for n in counts]
             gap("Werk mit mehreren Stimmenzahlen", work["@id"])
         realised += ["expressions:" + local(x) for x in work["expressions"]]
         record["realisedIn"] = realised
@@ -181,25 +176,12 @@ class Converter:
 
         languages = [LANGUAGES[name][1]] if name else []
         parent = self.by_id.get(work["isPartOf"])
-
-        def parent_of(voices=None):
-            return expression_for(parent, voices) if parent else None
-
-        if len(counts) <= 1:
-            self.out["expressions"].append(self.expression(
-                expression_for(work), work["preferredTitle"], languages,
-                counts[0] if counts else None, parent_of(counts[0] if counts else None),
-            ))
-        else:
-            self.out["expressions"].append(self.expression(
-                expression_for(work), work["preferredTitle"], languages, None, parent_of(),
-            ))
-            for count in counts:
-                self.out["expressions"].append(self.expression(
-                    expression_for(work, count),
-                    "{0} ({1} Stimmen)".format(work["preferredTitle"], count),
-                    languages, count, parent_of(count),
-                ))
+        # Die Besetzung nur, wenn sie eindeutig ist; sonst steht sie je Quelle in voices.
+        self.out["expressions"].append(self.expression(
+            expression_for(work), work["preferredTitle"], languages,
+            counts[0] if len(counts) == 1 else None,
+            expression_for(parent) if parent else None,
+        ))
         self.work_contents(work)
 
     def work_contents(self, work):
@@ -214,14 +196,14 @@ class Converter:
             voices = first[0]["voices"] if first else None
             if len(work["voiceCounts"]) > 1 and voices is None:
                 gap("Stimmenzahl im Druck nicht belegt", "{0} in {1}".format(work["lv"], siglum))
-            content = {"position": appearance["piece"], "embodies": expression_for(work, voices)}
+            content = {"position": appearance["piece"], "embodies": expression_for(work)}
             self.source_details(content, first, appearance.get("note"))
             self.contents[siglum].append(content)
         # Teile und Eintraege ohne Registerangabe stehen nur als Eintrag im Erstdruck.
         for siglum, group in by_print.items():
             if not siglum or siglum in appeared:
                 continue
-            content = {"embodies": expression_for(work, group[0]["voices"])}
+            content = {"embodies": expression_for(work)}
             if work["isPartOf"]:
                 piece = [
                     a["piece"] for a in self.by_id[work["isPartOf"]]["printAppearances"]
@@ -353,7 +335,7 @@ class Converter:
                 if not work:
                     others.append(row)
                     continue
-                content = {"embodies": expression_for(work, row["voices"])}
+                content = {"embodies": expression_for(work)}
                 if len(work["voiceCounts"]) > 1 and row["voices"] is None:
                     gap("Stimmenzahl in Handschrift nicht belegt", "{0} in {1}".format(work["lv"], name))
                 for source_field, target in (

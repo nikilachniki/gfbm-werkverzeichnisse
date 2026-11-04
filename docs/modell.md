@@ -34,9 +34,10 @@ die Form, die der Editor aus dem Dateipfad bildet.
 Gesamtwerk, ein Werk mit `realisedIn` auf seine Expressions, ein Exemplar mit
 `exemplifies` auf die Quelle. Die Gegenrichtung ist ableitbar und wird nicht gepflegt.
 
-**Jedes Werk braucht eine Expression,** wenn es in einer Quelle stehen soll, denn eine
-Quelle verweist auf die Expression. Weicht ein Stück ab, etwa in der Besetzung,
-bekommt es eine weitere Expression.
+**Ein Werk hat eine Expression,** denn eine Quelle verweist auf die Expression, nicht
+auf das Werk. Weicht ein Stück in einer Quelle ab, etwa in der Stimmenzahl, steht das
+dort in `contents` (`voices`). Die Besetzung an der Expression gilt nur, wenn sie
+eindeutig ist. Siehe `docs/entscheidungen.md`, Abschnitt 5.
 
 **Begriffe aus MeLODy-Listen** stehen als `terms:…`, etwa `terms:Lyricist` oder
 `terms:Print`. Die vollständigen Listen führt das MeLODy-Vokabular. Für das Land

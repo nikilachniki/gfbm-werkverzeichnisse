@@ -13,39 +13,37 @@ Vorlage; `luecken.json` im jeweiligen Ordner listet die Fundstücke.
 
 | Prüfung | 1555-1 | Schwierig |
 | --- | --- | --- |
-| Werke, Expressions | 31, 31 | 27, 50 |
+| Werke, Expressions | 31, 31 | 27, 32 |
 | Quellen, Exemplare | 27, 7 | 101, 45 |
 | `scripts/validate.py` | keine Fehler | keine Fehler |
 | Stellen in Drucken mit Nummer | 315 von 315 | 59 von 59 |
 | Handschriftenzeugnisse der Werke | 27 von 27 | 149 von 149 |
 | Fundstellen in der Gesamtausgabe | 31 von 31 | 14 von 14 |
 | Fassungen | keine | 5 von 5 |
-| Export nach MeLODy, zwei Läufe | identisch, 121 Dateien | identisch, 294 Dateien |
+| Export nach MeLODy, zwei Läufe | identisch, 121 Dateien | identisch, 275 Dateien |
 | Shapes | 83 Meldungen | 357 Meldungen |
-| Formular im Editor ohne Abweichung | 118 von 118 | 290 von 291 |
+| Formular im Editor ohne Abweichung | 118 von 118 | 75 von 75 in der Stichprobe; davor 290 von 291 |
 | Speichern ohne Verlust | Werk, Druck, Band | Werk, Druck, Fassung |
 
 Alle Shape-Meldungen haben zwei Ursachen: den Widerspruch bei Anmerkungen an
-Manifestationen und die Titel des Anhang-Werks ohne Sprache. Dieses Werk ist auch die
-eine Abweichung im Editor (`"…"^^rdf:langString`).
+Manifestationen und die Titel des Anhang-Werks ohne Sprache. Dieses Werk war auch die
+eine Abweichung im Editor (`"…"^^rdf:langString`). Nach dem Wechsel auf eine Expression
+je Werk wurde nur noch eine Stichprobe von 10 Dateien je Typ im Editor geprüft, das
+Anhang-Werk war nicht darunter.
 
-Fassungen und Stimmenzahlen funktionieren: LV 90 steht fünfstimmig in 1560-4 und
-zweistimmig in 1560-8, jeweils als eigene Expression mit Nummer im Druck.
+Stimmenzahlen funktionieren: LV 90 steht fünfstimmig in 1560-4 und zweistimmig in
+1560-8, mit `voices` und Nummer am Stück in der Quelle.
 
 ## Inhaltliche Befunde
 
-**Eine Regel erzeugt viele Expressions.** Die Konvertierung legt je belegter Stimmenzahl
-eine Expression an und zusätzlich eine ohne Besetzung für Quellen ohne Angabe. Aus 27
-Werken werden so 50 Expressions, im gesamten Lasso-Bestand wären es rund 3300 bei 2166
-Werken. Vor allem ist die Regel eine fachliche Setzung: Abweichende Stimmenzahlen
-müssen keine echte Fassung sein, etwa wenn eine Handschrift Stimmen verloren hat
-(„74-3“ zu 3 und 5 Stimmen). Das bleibt fachlich zu prüfen, das Modell erzwingt die
-Regel nicht.
+**Eine Expression je Werk.** Eine frühere Fassung dieses Tests legte je Stimmenzahl eine
+Expression an (50 statt der jetzigen 32 Expressions). Das wurde verworfen, siehe
+`docs/entscheidungen.md`, Abschnitt 5. Die Tabelle oben zeigt den aktuellen Stand; die
+Laufzeit weiter unten stammt noch von der früheren Fassung.
 
 **Viele Nachdrucke belegen keine Stimmenzahl.** Bei Werken mit mehreren Stimmenzahlen
-sagt die Quelle in 35 von 59 Druckstellen nicht, welche gemeint ist. Sie verweisen auf
-die Expression ohne Besetzung. Das ist eine Lücke der Quelle, das Modell gibt sie
-richtig wieder.
+sagt die Quelle in 35 von 59 Druckstellen nicht, welche gemeint ist. Dort fehlt `voices`.
+Das ist eine Lücke der Quelle, das Modell gibt sie richtig wieder.
 
 **Fassung und Registernummer finden nicht zueinander.** In 1558-1 steht Nr. 12 mit der
 Bemerkung „nur IV.“ am Gesamtwerk LV 74, die Fassung `74 (IV)` steht im selben Druck

@@ -35,8 +35,9 @@
       "contents": [
         {
           "position": "12",
-          "embodies": "expressions:1-vierstimmig",
-          "titleInSource": "Lobet den Herren"
+          "embodies": "expressions:1",
+          "titleInSource": "Lobet den Herren",
+          "voices": 4
         },
         {
           "position": "13",
@@ -68,7 +69,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:1-fuenfstimmig",
+          "embodies": "expressions:1",
           "titleInSource": "Lobet den Herrn",
           "voices": 5,
           "dating": "um 1610",

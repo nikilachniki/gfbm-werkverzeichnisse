@@ -123,7 +123,7 @@
       "contents": [
         {
           "position": "12",
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 5
         }
@@ -183,7 +183,7 @@
       "contents": [
         {
           "position": "35",
-          "embodies": "expressions:90-2st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 2
         }
@@ -399,7 +399,7 @@
           "voices": 5
         },
         {
-          "embodies": "expressions:74-3-5st",
+          "embodies": "expressions:74-3",
           "position": "2",
           "part": "3",
           "titleInSource": "Secchi vedransi",
@@ -407,7 +407,7 @@
           "note": "Ersterscheinung 1562-7,4t"
         },
         {
-          "embodies": "expressions:74-4-5st",
+          "embodies": "expressions:74-4",
           "position": "2",
           "part": "4",
           "titleInSource": "Io vò fuggendo",
@@ -422,7 +422,7 @@
           "voices": 5
         },
         {
-          "embodies": "expressions:74-6-5st",
+          "embodies": "expressions:74-6",
           "position": "2",
           "part": "6",
           "titleInSource": "Ma saro spent'",
@@ -902,19 +902,19 @@
       "contents": [
         {
           "position": "19",
-          "embodies": "expressions:193-5st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speraui",
           "voices": 5
         },
         {
-          "embodies": "expressions:193-2-5st",
+          "embodies": "expressions:193-2",
           "position": "19",
           "part": "2",
           "titleInSource": "Qvoniam fortitudo",
           "voices": 5
         },
         {
-          "embodies": "expressions:193-3-5st",
+          "embodies": "expressions:193-3",
           "position": "19",
           "part": "3",
           "titleInSource": "Gloria patri",
@@ -1201,14 +1201,14 @@
           "voices": 6
         },
         {
-          "embodies": "expressions:327-3-6st",
+          "embodies": "expressions:327-3",
           "position": "30",
           "part": "3",
           "titleInSource": "Et erit tanquam",
           "voices": 6
         },
         {
-          "embodies": "expressions:327-4-6st",
+          "embodies": "expressions:327-4",
           "position": "30",
           "part": "4",
           "titleInSource": "Et folium eius non defluet",
@@ -4110,19 +4110,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1590 - 1600"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1590 - 1600"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1590 - 1600"
@@ -4151,7 +4151,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1585-1589"
@@ -4187,7 +4187,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 5,
           "dating": "1640"
@@ -4227,7 +4227,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 5,
           "dating": "1639"
@@ -4263,19 +4263,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1566"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1566"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1566"
@@ -4365,7 +4365,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s’en va",
           "voices": 5,
           "dating": "1583 - 1591"
@@ -4444,13 +4444,13 @@
           "dating": "1851"
         },
         {
-          "embodies": "expressions:327-3-3st",
+          "embodies": "expressions:327-3",
           "titleInSource": "Et erit tanquam",
           "voices": 3,
           "dating": "1851"
         },
         {
-          "embodies": "expressions:327-4-4st",
+          "embodies": "expressions:327-4",
           "titleInSource": "Et folium eius",
           "voices": 4,
           "dating": "1851"
@@ -4513,20 +4513,20 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1676",
           "note": "[nur prima pars]"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1676"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1676"
@@ -4559,13 +4559,13 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "Ende 16. Jhdt."
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "Ende 16. Jhdt."
@@ -4601,20 +4601,20 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1580 - 1610 / 2. Hälfte 16. Jahrhundert",
           "note": "[transpositus per quartam]"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1580 - 1610 / 2. Hälfte 16. Jahrhundert"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1580 - 1610 / 2. Hälfte 16. Jahrhundert"
@@ -4646,19 +4646,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1585 - 1588"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1585 - 1588"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1585 - 1588"
@@ -4769,19 +4769,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1590"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1590"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1590"
@@ -4817,20 +4817,20 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1575 - 1620",
           "note": "LV193"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1575 - 1620"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria patri",
           "voices": 6,
           "dating": "um 1575 - 1620"
@@ -4895,19 +4895,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1583"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1583"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1583"
@@ -4997,19 +4997,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1600 - 1605"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1600 - 1605"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1600 - 1605"
@@ -5045,13 +5045,13 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1607 - 1610"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1607 - 1610"
@@ -5194,20 +5194,20 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1569 - 1578",
           "note": "[fehlt]"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1569 - 1578"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1569 - 1578"
@@ -5239,7 +5239,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "Gloria patri, et filio, et spiritui sancto",
           "voices": 6,
           "dating": "1573 - 1577; mit Nachträgen",
@@ -5266,20 +5266,20 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1568-1579",
           "note": "[nur im A enthalten, Secunda pars nur im B]"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1568-1579"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1568-1579"
@@ -5323,13 +5323,13 @@
           "dating": "1844"
         },
         {
-          "embodies": "expressions:74-3-3st",
+          "embodies": "expressions:74-3",
           "titleInSource": "Secchi vedransi",
           "voices": 3,
           "dating": "1844"
         },
         {
-          "embodies": "expressions:74-4-4st",
+          "embodies": "expressions:74-4",
           "titleInSource": "Io vo fuggendo",
           "voices": 4,
           "dating": "1844"
@@ -5341,7 +5341,7 @@
           "dating": "1844"
         },
         {
-          "embodies": "expressions:74-6-6st",
+          "embodies": "expressions:74-6",
           "titleInSource": "Ma sarò spento",
           "voices": 6,
           "dating": "1844"
@@ -5389,13 +5389,13 @@
           "dating": "1842"
         },
         {
-          "embodies": "expressions:327-3-3st",
+          "embodies": "expressions:327-3",
           "titleInSource": "Et erit tanquam",
           "voices": 3,
           "dating": "1842"
         },
         {
-          "embodies": "expressions:327-4-4st",
+          "embodies": "expressions:327-4",
           "titleInSource": "Et folium eius",
           "voices": 4,
           "dating": "1842"
@@ -5451,19 +5451,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1842"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1842"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria patri",
           "voices": 6,
           "dating": "1842"
@@ -5495,13 +5495,13 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "ab 1597"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "ab 1597"
@@ -5533,7 +5533,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te domine speravi",
           "voices": 6,
           "dating": "1618-1621, mit Ergänzungen von 1624 und 1629",
@@ -5566,19 +5566,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "2. Hälfte 16. Jahrhundert"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "2. Hälfte 16. Jahrhundert"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "2. Hälfte 16. Jahrhundert"
@@ -5607,7 +5607,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s’ en va",
           "voices": 5,
           "dating": "Anfang 17. Jahrhundert"
@@ -5636,19 +5636,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1670"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1670"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1670"
@@ -5677,27 +5677,27 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s’ en va",
           "voices": 5,
           "dating": "um 1620",
           "note": "LV 90 (Ms. Add. 29247)"
         },
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1620",
           "note": "LV 193 (Ms. Add. 29247)"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1620"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1620"
@@ -5730,19 +5730,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "spätes 16. Jahrhundert"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "spätes 16. Jahrhundert"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "spätes 16. Jahrhundert"
@@ -5771,7 +5771,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 5,
           "dating": "18. Jahrhundert"
@@ -5800,19 +5800,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1600"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1600"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1600"
@@ -5855,12 +5855,12 @@
           "voices": 5
         },
         {
-          "embodies": "expressions:74-3-3st",
+          "embodies": "expressions:74-3",
           "titleInSource": "Secchi vedransi",
           "voices": 3
         },
         {
-          "embodies": "expressions:74-4-5st",
+          "embodies": "expressions:74-4",
           "titleInSource": "Io vo fuggendo",
           "voices": 5
         },
@@ -5870,7 +5870,7 @@
           "voices": 5
         },
         {
-          "embodies": "expressions:74-6-6st",
+          "embodies": "expressions:74-6",
           "titleInSource": "Ma sarò spento",
           "voices": 6
         }
@@ -5898,25 +5898,25 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s’en va",
           "voices": 5,
           "dating": "um 1600 - 1620"
         },
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1600 - 1620"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1600 - 1620"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1600 - 1620"
@@ -5945,19 +5945,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "1582 - 1588"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "1582 - 1588"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "1582 - 1588"
@@ -5993,7 +5993,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va de moy",
           "voices": 5,
           "dating": "um 1600",
@@ -6026,7 +6026,7 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:90-5st",
+          "embodies": "expressions:90",
           "titleInSource": "Elle s'en va",
           "voices": 5,
           "dating": "Anfang 17. Jhdt.",
@@ -6140,19 +6140,19 @@
       ],
       "contents": [
         {
-          "embodies": "expressions:193-6st",
+          "embodies": "expressions:193",
           "titleInSource": "In te Domine speravi",
           "voices": 6,
           "dating": "um 1590 - 1615"
         },
         {
-          "embodies": "expressions:193-2-6st",
+          "embodies": "expressions:193-2",
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
           "dating": "um 1590 - 1615"
         },
         {
-          "embodies": "expressions:193-3-6st",
+          "embodies": "expressions:193-3",
           "titleInSource": "Gloria Patri",
           "voices": 6,
           "dating": "um 1590 - 1615"

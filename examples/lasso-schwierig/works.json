@@ -100,9 +100,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:74-3",
-        "expressions:74-3-3st",
-        "expressions:74-3-5st"
+        "expressions:74-3"
       ],
       "partOfWork": "works:74"
     },
@@ -136,9 +134,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:74-4",
-        "expressions:74-4-4st",
-        "expressions:74-4-5st"
+        "expressions:74-4"
       ],
       "partOfWork": "works:74"
     },
@@ -212,9 +208,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:74-6",
-        "expressions:74-6-5st",
-        "expressions:74-6-6st"
+        "expressions:74-6"
       ],
       "partOfWork": "works:74"
     },
@@ -264,9 +258,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:90",
-        "expressions:90-2st",
-        "expressions:90-5st"
+        "expressions:90"
       ],
       "citations": [
         {
@@ -322,8 +314,6 @@
       ],
       "realisedIn": [
         "expressions:193",
-        "expressions:193-5st",
-        "expressions:193-6st",
         "expressions:193-I",
         "expressions:193-II"
       ],
@@ -361,9 +351,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:193-2",
-        "expressions:193-2-5st",
-        "expressions:193-2-6st"
+        "expressions:193-2"
       ],
       "partOfWork": "works:193",
       "genres": [
@@ -400,9 +388,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:193-3",
-        "expressions:193-3-5st",
-        "expressions:193-3-6st"
+        "expressions:193-3"
       ],
       "partOfWork": "works:193",
       "genres": [
@@ -518,9 +504,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:327-3",
-        "expressions:327-3-3st",
-        "expressions:327-3-6st"
+        "expressions:327-3"
       ],
       "partOfWork": "works:327",
       "citations": [
@@ -564,9 +548,7 @@
         }
       ],
       "realisedIn": [
-        "expressions:327-4",
-        "expressions:327-4-4st",
-        "expressions:327-4-6st"
+        "expressions:327-4"
       ],
       "partOfWork": "works:327",
       "citations": [

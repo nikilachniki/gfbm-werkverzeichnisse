@@ -2,13 +2,12 @@
   "@context": "../../schema/context.jsonld",
   "entries": [
     {
-      "@id": "expressions:1-vierstimmig",
+      "@id": "expressions:1",
       "@type": "Expression",
-      "label": "Lobet den Herrn (vierstimmig)",
+      "label": "Lobet den Herrn",
       "languages": [
         "terms:German"
       ],
-      "instrumentation": "instrumentations:4-stimmen",
       "key": {
         "pitch": "terms:C",
         "mode": "terms:Major"
@@ -28,15 +27,6 @@
         "certainty": "terms:MediumCertainty"
       },
       "placeCreated": "places:musterstadt"
-    },
-    {
-      "@id": "expressions:1-fuenfstimmig",
-      "@type": "Expression",
-      "label": "Lobet den Herrn (fünfstimmig)",
-      "languages": [
-        "terms:German"
-      ],
-      "instrumentation": "instrumentations:5-stimmen"
     },
     {
       "@id": "expressions:2",

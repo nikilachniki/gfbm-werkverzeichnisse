@@ -15,19 +15,6 @@
       ]
     },
     {
-      "@id": "instrumentations:2-stimmen",
-      "@type": "Instrumentation",
-      "label": "2 Stimmen",
-      "details": [
-        {
-          "position": 1,
-          "medium": "terms:Voices",
-          "description": "Stimmen",
-          "quantity": 2
-        }
-      ]
-    },
-    {
       "@id": "instrumentations:3-stimmen",
       "@type": "Instrumentation",
       "label": "3 Stimmen",
