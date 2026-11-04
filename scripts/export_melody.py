@@ -213,7 +213,9 @@ def write_turtle(graph, context, out):
             continue
         path = str(subject)[len("urn:uuid:"):]
         # Kanonische Blankoknoten, sonst wechselt die Reihenfolge von Lauf zu Lauf.
-        part = to_canonical_graph(closure(graph, subject))
+        part = rdflib.Graph()
+        for triple in to_canonical_graph(closure(graph, subject)):
+            part.add(triple)
         for prefix in PREFIXES:
             part.bind(prefix, context[prefix])
         part.bind("melodTerms", context["terms"])
