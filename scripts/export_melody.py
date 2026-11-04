@@ -126,12 +126,28 @@ def identifier(label, value):
     ])
 
 
-def title_language(item):
-    """Werke und Fassungen verlangen Titel mit Sprach-Tag. Ohne Sprachangabe bleibt
-    der Titel ohne Tag: Raten waere eine Setzung, und mit dem Tag "und" schreibt
-    das Formular des Editors ungueltiges Turtle."""
+def inherited_languages(works):
+    """Sprach-Tag je Werk ohne eigene Angabe, aus Gesamtwerk und Teilen desselben
+    Werks; gibt es dort nicht genau eine Sprache, entfaellt der Eintrag."""
+    by_id = {work["@id"]: work for work in works}
+    tags = {}
+    for work in works:
+        if work["languages"]:
+            continue
+        base = by_id[work["isPartOf"]] if work["isPartOf"] else work
+        family = [base] + [by_id[part] for part in base["hasPart"]]
+        languages = {lang for member in family for lang in member["languages"]}
+        if len(languages) == 1:
+            tags[work["@id"]] = LANGUAGE_TAGS[languages.pop()]
+    return tags
+
+
+def title_language(item, inherited):
+    """Werke und Fassungen verlangen Titel mit Sprach-Tag. Ist auch ueber das Werk
+    keine Sprache bekannt, bleibt der Titel ohne Tag: Raten waere eine Setzung, und
+    mit dem Tag "und" schreibt das Formular des Editors ungueltiges Turtle."""
     languages = item["languages"]
-    return LANGUAGE_TAGS[languages[0]] if languages else None
+    return LANGUAGE_TAGS[languages[0]] if languages else inherited.get(item["@id"])
 
 
 def title(label, title_type=None, language=None):
@@ -300,13 +316,14 @@ def citation_notes(item, volume_of):
     return pairs
 
 
-def export_works(export, works, entry_by_id, persons, volume_of, selected_expressions):
+def export_works(export, works, entry_by_id, persons, volume_of, selected_expressions, inherited):
     for work in works:
+        language = title_language(work, inherited)
         pairs = [
             ("a", Term("melod:Work")),
-            title(work["preferredTitle"], "MainTitle", title_language(work)),
+            title(work["preferredTitle"], "MainTitle", language),
         ]
-        pairs += [title(t, "OtherTitle", title_language(work)) for t in work["variantTitles"]]
+        pairs += [title(t, "OtherTitle", language) for t in work["variantTitles"]]
         if work["lv"]:
             pairs.append(identifier("LV", work["lv"]))
         if work["lvAnh"] is not None:
@@ -349,14 +366,14 @@ def slug_expression(work_id):
     return "expressions/" + slug(work_id.split(":", 1)[1])
 
 
-def export_fassungen(export, expressions, persons, volume_of):
+def export_fassungen(export, expressions, persons, volume_of, inherited):
     for item in expressions:
         pairs = [
             ("a", Term("melod:Expression")),
             ("rdfs:label", item["preferredTitle"]),
             identifier("LV", item["lv"]),
         ]
-        pairs += [title(t, None, title_language(item)) for t in item["variantTitles"]]
+        pairs += [title(t, None, title_language(item, inherited)) for t in item["variantTitles"]]
         pairs += shared_expression_fields(export, item)
         pairs += text_authors(item, persons)
         pairs += citation_notes(item, volume_of)
@@ -636,6 +653,7 @@ def main():
     persons = load("persons")
     editions = load("editions")
     entry_by_id = {e["@id"]: e for e in load("entries")}
+    inherited = inherited_languages(works)
 
     if args.siglum:
         if not any(p["siglum"] == args.siglum for p in prints):
@@ -693,8 +711,8 @@ def main():
     export_catalog(export)
     export_persons(export, persons, used_persons)
     export_editions(export, editions, used_volumes)
-    export_works(export, works, entry_by_id, person_paths, all_volumes, selected_expressions)
-    export_fassungen(export, expressions, person_paths, all_volumes)
+    export_works(export, works, entry_by_id, person_paths, all_volumes, selected_expressions, inherited)
+    export_fassungen(export, expressions, person_paths, all_volumes, inherited)
     contents, embodied = print_contents(works, expressions)
     export_prints(export, prints, contents, embodied, {p["siglum"] for p in prints})
     export_manuscripts(export, sources, selected, by_lv, by_anh)

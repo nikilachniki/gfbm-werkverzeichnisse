@@ -61,7 +61,7 @@ Text und ist nicht maschinell verknüpft.
 | **Personennamen** | Ganzer Name in `schema:familyName`, Pflichtfeld; Zerlegen wäre eine Setzung (Abschnitt 8) | Redaktionelle Zerlegung |
 | **Herausgeber-Normdaten** | Ohne GND/VIAF | Ergänzen in `gesamtausgaben.json` |
 | **Textprovenienz, Bemerkung, Pars, Druckbeschreibung, Stimmbücher, Quellenart, Provenienz, Literatur** | Anmerkung mit Bezeichnung | Teils eigene Felder der Shapes prüfen |
-| **Titelsprache** | Tag aus der Werksprache; bei 242 Werken (353 Titel) ohne Sprachangabe kein Tag. **Diese Werke dürfen im Editor noch nicht gespeichert werden**, das Formular schreibt sonst ungültiges Turtle (`"…"^^rdf:langString`), mit dem Tag `und` ebenso | Sprache redaktionell bestimmen; raten wäre eine Setzung |
+| **Titelsprache** | Tag aus der Sprache des Werks, bei 69 Werken ohne eigene Angabe aus Gesamtwerk und Teilen. 173 Werke haben keine Werksprache (161 LV-Anhang, 12 `[untextiert]`) und bleiben ohne Tag. **Diese Werke dürfen im Editor noch nicht gespeichert werden**, das Formular schreibt sonst ungültiges Turtle (`"…"^^rdf:langString`), mit dem Tag `und` ebenso | Sprache der Anhang-Werke bestimmen; für textlose Stücke Lösung des Projekts |
 | **Verlag, „ca.“** | Text im Label der Veröffentlichung; am Druck kennt die Shape kein Beschreibungsfeld, „ca. 1558“ ginge dort sonst beim Speichern verloren | Klärung mit dem Projekt |
 | **Ungültige Links** | Zwei Links mit `[` als Anmerkung „Link“, weil sie die Index-Erzeugung abbrechen | Links in der Quelle korrigieren |
 
