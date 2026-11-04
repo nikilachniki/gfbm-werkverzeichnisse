@@ -1,0 +1,154 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "works:1",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "de": "Lobet den Herrn"
+          },
+          "type": "terms:MainTitle"
+        },
+        {
+          "text": {
+            "de": "Lobet den Herren"
+          },
+          "type": "terms:OtherTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "MWV",
+          "value": "1"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:muster",
+          "role": "terms:Composer"
+        },
+        {
+          "agent": "persons:dichter",
+          "role": "terms:Lyricist",
+          "certainty": "terms:LowCertainty"
+        }
+      ],
+      "status": "authentic",
+      "genres": [
+        "Motette"
+      ],
+      "realisedIn": [
+        "expressions:1-vierstimmig",
+        "expressions:1-fuenfstimmig"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ausgabe-1",
+          "number": "12"
+        }
+      ],
+      "sameAs": [
+        "https://example.org/werke/mwv-1"
+      ],
+      "notes": [
+        {
+          "label": "Bemerkung",
+          "html": "Erfundenes Beispiel mit zwei <em>Fassungen</em>."
+        }
+      ]
+    },
+    {
+      "@id": "works:2",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "de": "Der Morgen"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "MWV",
+          "value": "2"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:muster",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:2"
+      ]
+    },
+    {
+      "@id": "works:2-1",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "de": "Der Morgen: Erster Teil"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "MWV",
+          "value": "2-1"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:muster",
+          "role": "terms:Composer"
+        }
+      ],
+      "realisedIn": [
+        "expressions:2-1"
+      ],
+      "partOfWork": "works:2"
+    },
+    {
+      "@id": "works:3",
+      "@type": "Work",
+      "titles": [
+        {
+          "text": {
+            "@none": "Sonate ohne Text"
+          },
+          "type": "terms:MainTitle"
+        }
+      ],
+      "identifiers": [
+        {
+          "list": "MWV",
+          "value": "3"
+        }
+      ],
+      "contributors": [
+        {
+          "agent": "persons:muster",
+          "role": "terms:Composer"
+        }
+      ],
+      "genres": [
+        "Sonate"
+      ],
+      "realisedIn": [
+        "expressions:3"
+      ],
+      "citations": [
+        {
+          "inBibliography": "bibliography:ausgabe-2",
+          "page": 45
+        }
+      ]
+    }
+  ]
+}

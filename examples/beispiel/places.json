@@ -1,0 +1,14 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "places:musterstadt",
+      "@type": "Place",
+      "name": "Musterstadt",
+      "country": "https://www.geonames.org/2921044",
+      "sameAs": [
+        "https://example.org/orte/1"
+      ]
+    }
+  ]
+}

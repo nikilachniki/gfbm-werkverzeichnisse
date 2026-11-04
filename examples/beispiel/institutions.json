@@ -1,0 +1,13 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "institutions:musterbibliothek",
+      "@type": "Institution",
+      "name": "Musterbibliothek",
+      "siglum": "XX-Mb",
+      "abbreviation": "MB",
+      "place": "places:musterstadt"
+    }
+  ]
+}

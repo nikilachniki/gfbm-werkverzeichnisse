@@ -1,0 +1,17 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "items:hs-mb-1",
+      "@type": "Item",
+      "label": "XX-Mb Mus.ms. 1",
+      "keeper": "institutions:musterbibliothek",
+      "shelfmark": "Mus.ms. 1",
+      "formerShelfmark": "Alt 5",
+      "exemplifies": "manifestations:hs-mb-1",
+      "sameAs": [
+        "https://example.org/quellen/1"
+      ]
+    }
+  ]
+}

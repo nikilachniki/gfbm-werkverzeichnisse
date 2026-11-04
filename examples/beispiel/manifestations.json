@@ -1,0 +1,87 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "manifestations:1601-1",
+      "@type": "Manifestation",
+      "titles": [
+        {
+          "text": {
+            "@none": "Geistliche Gesänge. Erstes Buch"
+          }
+        }
+      ],
+      "classifications": [
+        "terms:Print"
+      ],
+      "identifiers": [
+        {
+          "list": "Sigle",
+          "value": "1601-1"
+        }
+      ],
+      "titlePages": [
+        {
+          "html": "GEISTLICHE GESÄNGE | von Anna Muster | Musterstadt 1601"
+        }
+      ],
+      "publication": {
+        "label": "um 1601",
+        "startDate": "1601-01-01",
+        "endDate": "1601-12-31",
+        "place": "places:musterstadt",
+        "publisherName": "Musterdruck"
+      },
+      "contents": [
+        {
+          "position": "12",
+          "embodies": "expressions:1-vierstimmig",
+          "titleInSource": "Lobet den Herren"
+        },
+        {
+          "position": "13",
+          "embodies": "expressions:2",
+          "titleInSource": "Der Morgen"
+        },
+        {
+          "position": "13a",
+          "embodies": "expressions:2-1",
+          "note": "Fehlt im Inhaltsverzeichnis"
+        }
+      ]
+    },
+    {
+      "@id": "manifestations:hs-mb-1",
+      "@type": "Manifestation",
+      "titles": [
+        {
+          "text": {
+            "@none": "XX-Mb Mus.ms. 1"
+          }
+        }
+      ],
+      "classifications": [
+        "terms:Manuscript"
+      ],
+      "contents": [
+        {
+          "embodies": "expressions:1-fuenfstimmig",
+          "titleInSource": "Lobet den Herrn",
+          "voices": 5,
+          "dating": "um 1610",
+          "note": "Bassstimme fehlt"
+        },
+        {
+          "embodies": "expressions:3",
+          "dating": "um 1615"
+        }
+      ],
+      "notes": [
+        {
+          "label": "Provenienz",
+          "html": "Sammlung Muster"
+        }
+      ]
+    }
+  ]
+}

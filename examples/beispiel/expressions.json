@@ -1,0 +1,67 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "expressions:1-vierstimmig",
+      "@type": "Expression",
+      "label": "Lobet den Herrn (vierstimmig)",
+      "languages": [
+        "terms:German"
+      ],
+      "instrumentation": "instrumentations:4-stimmen",
+      "key": {
+        "pitch": "terms:C",
+        "mode": "terms:Major"
+      },
+      "meter": {
+        "meterSymbol": "common"
+      },
+      "incipit": {
+        "pae": "@clef:G-2@keysig:@timesig:c@data:2''C/4''D''E/",
+        "incipitText": {
+          "de": "Lobet den Herrn"
+        }
+      },
+      "dateCreated": {
+        "date": "1601-01-01",
+        "description": "um 1601",
+        "certainty": "terms:MediumCertainty"
+      },
+      "placeCreated": "places:musterstadt"
+    },
+    {
+      "@id": "expressions:1-fuenfstimmig",
+      "@type": "Expression",
+      "label": "Lobet den Herrn (fünfstimmig)",
+      "languages": [
+        "terms:German"
+      ],
+      "instrumentation": "instrumentations:5-stimmen"
+    },
+    {
+      "@id": "expressions:2",
+      "@type": "Expression",
+      "label": "Der Morgen",
+      "languages": [
+        "terms:German"
+      ],
+      "instrumentation": "instrumentations:4-stimmen"
+    },
+    {
+      "@id": "expressions:2-1",
+      "@type": "Expression",
+      "label": "Der Morgen: Erster Teil",
+      "languages": [
+        "terms:German"
+      ],
+      "instrumentation": "instrumentations:4-stimmen",
+      "partOfExpression": "expressions:2"
+    },
+    {
+      "@id": "expressions:3",
+      "@type": "Expression",
+      "label": "Sonate ohne Text",
+      "tempo": "Allegro"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "@id": "urn:uuid:dataCatalogs/catalog",
+  "@type": "Catalogue",
+  "label": "Erfundenes Werkverzeichnis von Anna Muster",
+  "composer": "persons:muster",
+  "catalogueAbbreviation": "MWV"
+}

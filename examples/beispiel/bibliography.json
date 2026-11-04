@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "bibliography:ausgabe",
+      "@type": "Bibliography",
+      "abbreviation": "MGA",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Anna Muster, Sämtliche Werke"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "bibliography:ausgabe-1",
+      "@type": "Bibliography",
+      "abbreviation": "MGA 1",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Motetten"
+          }
+        }
+      ],
+      "editors": [
+        "persons:herausgeberin"
+      ],
+      "publication": {
+        "startDate": "1990-01-01",
+        "endDate": "1990-12-31",
+        "place": "places:musterstadt",
+        "publisherName": "Musterverlag"
+      },
+      "series": "bibliography:ausgabe",
+      "volumeNumber": "1"
+    },
+    {
+      "@id": "bibliography:ausgabe-2",
+      "@type": "Bibliography",
+      "abbreviation": "MGA 2",
+      "genre": "terms:Book",
+      "titles": [
+        {
+          "text": {
+            "@none": "Instrumentalwerke"
+          }
+        }
+      ],
+      "editors": [
+        "persons:herausgeberin"
+      ],
+      "series": "bibliography:ausgabe",
+      "volumeNumber": "2"
+    }
+  ]
+}

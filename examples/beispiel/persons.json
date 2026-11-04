@@ -1,0 +1,37 @@
+{
+  "@context": "../../schema/context.jsonld",
+  "entries": [
+    {
+      "@id": "persons:muster",
+      "@type": "Person",
+      "familyName": "Muster",
+      "givenName": "Anna",
+      "alternateNames": [
+        "Anna Mustermann"
+      ],
+      "birthDate": {
+        "date": "1570-01-01",
+        "description": "um 1570"
+      },
+      "birthPlace": "places:musterstadt",
+      "occupations": [
+        "Komponistin"
+      ],
+      "sameAs": [
+        "https://example.org/personen/1"
+      ]
+    },
+    {
+      "@id": "persons:dichter",
+      "@type": "Person",
+      "familyName": "Dichter",
+      "givenName": "Max"
+    },
+    {
+      "@id": "persons:herausgeberin",
+      "@type": "Person",
+      "familyName": "Herausgeberin",
+      "givenName": "Erika"
+    }
+  ]
+}

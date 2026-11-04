@@ -1,0 +1,7 @@
+{
+  "@context": "../schema/context.jsonld",
+  "@id": "urn:uuid:dataCatalogs/catalog",
+  "@type": "Catalogue",
+  "label": "Name des Werkverzeichnisses",
+  "catalogueAbbreviation": "WV"
+}
