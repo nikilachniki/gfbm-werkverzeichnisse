@@ -1634,6 +1634,43 @@ bis dahin doppelt im Datensatz.
 
 ---
 
+## 44. Export nach MerMEId MeLODy als Prototyp
+
+**Entscheidung.** `scripts/export_melody.py` schreibt `data/` als Turtle-Dateien
+für den Editor [MerMEId MeLODy](https://music-metadata-tools.github.io/MerMEId-Website/latest/).
+Der Export ist einseitig und ändert den Datenbestand nicht. Vorerst bleiben die
+Excel-Dateien führend, Bearbeitungen im Editor sind bis auf Weiteres nur
+Testdaten. Die Abbildung und ihre Lücken stehen in `docs/melody-abbildung.md`.
+
+**Anlass.** Die Daten müssen voraussichtlich ohnehin in dieses Format, die
+Excel-Dateien sollen nur im Entstehungsprozess Grundlage bleiben, und Lasso ist
+der erste Vorstoß für weitere ähnliche Projekte. MeLODy passt zur Hostingbedingung
+aus Abschnitt 10: Es läuft ohne Server im Browser und speichert in einem
+Git-Repository (Abschnitte 2 und 3).
+
+**Alternativen.** Sofortige Umstellung des Datenbestands: Das kehrte die
+Abschnitte 5, 17 und 38 um, und zwar auf Grundlage einer Beta-Version (0.9).
+Ein eigener Editor: Für Lasso allein einfacher, aber der Export bliebe trotzdem
+nötig, und jedes Folgeprojekt erforderte eine Verallgemeinerung, die MeLODy
+bereits leistet. Er bleibt die Ausweichlösung, falls der Editor mit der Datenmenge
+oder der Stelle im Druck nicht zurechtkommt.
+
+**Verhältnis zu Abschnitt 17 und 38.** MeLODy verbindet den Druck über eine
+Expression mit dem Werk. Dafür erzeugt nur der Export je Werk eine Expression, die
+Daten im Repository bleiben unverändert. Die Bedenken gegen rund 2000 inhaltsleere
+Datensätze gelten weiter; sollte MeLODy führend werden, ist das neu zu entscheiden.
+
+**Stand der Prüfung.** Der Gesamtexport ergibt 8053 Dateien und wurde gegen die
+SHACL-Shapes geprüft. Offen sind 4390 Verstöße durch einen Widerspruch in der
+Shape selbst und 353 Titel ohne bestimmbare Sprache. Im Editor selbst sind die
+Dateien noch nicht geöffnet worden.
+
+**Preis.** Stücknummer und Fundstelle stehen im Export nur als Text. Ein
+späterer Wechsel des führenden Systems ist damit nicht vorweggenommen und bleibt
+eine eigene Entscheidung; zwei parallel gepflegte Systeme sind auszuschließen.
+
+---
+
 ## Bewusst nicht übernommene Standards
 
 - **MEI**, die Music Encoding Initiative, ist für die Codierung von Notentext

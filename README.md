@@ -114,6 +114,17 @@ python scripts/import_excel.py
 Das Skript ist wiederholbar. Ein erneuter Lauf über unveränderte Quellen erzeugt
 identische Ausgaben und vergibt keine neuen IDs.
 
+## Export nach MerMEId MeLODy
+
+```bash
+python scripts/export_melody.py --out ZIELORDNER [--print 1555-1]
+```
+
+Schreibt `data/` als Turtle-Dateien in einen leeren Ordner, mit `--print` nur die
+Werke eines Drucks samt allem, was zu ihnen gehört. Die Abbildung und ihre Lücken
+stehen in [docs/melody-abbildung.md](docs/melody-abbildung.md), die Begründung in
+Abschnitt 44 von `docs/entscheidungen.md`.
+
 ## Quelldateien
 
 Der Import liest genau diese Dateien aus `raw/`; alle werden von Hand gepflegt:
