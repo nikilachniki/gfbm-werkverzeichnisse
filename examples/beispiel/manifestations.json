@@ -72,17 +72,14 @@
           "embodies": "expressions:1",
           "titleInSource": "Lobet den Herrn",
           "voices": 5,
-          "dating": "um 1610",
           "note": "Bassstimme fehlt"
         },
         {
-          "embodies": "expressions:3",
-          "dating": "um 1615"
+          "embodies": "expressions:3"
         },
         {
           "titleInSource": "Ein unbekanntes Lied",
           "voices": 3,
-          "dating": "um 1620",
           "note": "Zuschreibung offen"
         }
       ],
@@ -93,6 +90,7 @@
         }
       ],
       "sourceType": "Partitur",
+      "dating": "um 1610",
       "literature": [
         "Muster, Erika: Die Quellen der Werke Anna Musters, Musterstadt 2000."
       ]

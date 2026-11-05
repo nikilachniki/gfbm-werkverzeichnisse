@@ -335,8 +335,7 @@ class Converter:
                 if work and len(work["voiceCounts"]) > 1 and row["voices"] is None:
                     gap("Stimmenzahl in Handschrift nicht belegt", "{0} in {1}".format(work["lv"], name))
                 for source_field, target in (
-                    ("title", "titleInSource"), ("voices", "voices"),
-                    ("dating", "dating"), ("note", "note"),
+                    ("title", "titleInSource"), ("voices", "voices"), ("note", "note"),
                 ):
                     if row[source_field]:
                         content[target] = row[source_field]
@@ -359,6 +358,11 @@ class Converter:
                 "classifications": ["terms:Manuscript"],
                 "contents": contents,
             }
+            datings = sorted({r["dating"] for r in rows if r["dating"]})
+            if datings:
+                record["dating"] = "; ".join(datings)
+                if len(datings) > 1:
+                    gap("Mehrere Datierungen für eine Quelle", "{0}: {1}".format(name, datings))
             types = sorted({r["sourceType"] for r in rows if r["sourceType"]})
             if types:
                 record["sourceType"] = types[0]

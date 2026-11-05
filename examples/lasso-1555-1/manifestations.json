@@ -2763,238 +2763,200 @@
         {
           "embodies": "expressions:14",
           "titleInSource": "Fiera stella",
-          "voices": 5,
-          "dating": "1848"
+          "voices": 5
         },
         {
           "embodies": "expressions:14-2",
           "titleInSource": "Ma tu pretendi",
-          "voices": 5,
-          "dating": "1848"
+          "voices": 5
         },
         {
           "titleInSource": "Gustate et videte",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 54"
         },
         {
           "titleInSource": "Divites eguerunt",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 54-2"
         },
         {
           "titleInSource": "Confitemini Domino",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 108"
         },
         {
           "titleInSource": "Narrate omnia mirabilia",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 108-2"
         },
         {
           "titleInSource": "Omnia quae fecisti",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 109"
         },
         {
           "titleInSource": "Veni in hortum meum",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 114"
         },
         {
           "titleInSource": "Angelus ad pastores ait",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 115"
         },
         {
           "titleInSource": "Quam benignus es",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 120"
         },
         {
           "titleInSource": "O beatum hominem",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 120-2"
         },
         {
           "titleInSource": "Surrexit pastor bonus",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 126"
         },
         {
           "titleInSource": "Benedicam Dominum in omni tempore",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 131"
         },
         {
           "titleInSource": "In Domino laudabitur",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 131-2"
         },
         {
           "titleInSource": "Amen amen dico vobis",
           "voices": 4,
-          "dating": "1848",
           "note": "LV 204"
         },
         {
           "titleInSource": "Surge propera amica mea, et veni",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 206"
         },
         {
           "titleInSource": "Surge propera amica mea speciosa",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 206-2"
         },
         {
           "titleInSource": "Laudate Dominum de caelis",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 236"
         },
         {
           "titleInSource": "Laudate Dominum de terra",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 236-2"
         },
         {
           "titleInSource": "Iuvenes et virgines",
           "voices": 3,
-          "dating": "1848",
           "note": "LV 236-3"
         },
         {
           "titleInSource": "Laudate eum in virtutibus",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 236-4"
         },
         {
           "titleInSource": "Tristis est anima mea",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 238"
         },
         {
           "titleInSource": "In convertendo Dominus",
           "voices": 8,
-          "dating": "1848",
           "note": "LV 250"
         },
         {
           "titleInSource": "Convertere Domine captivitatem",
           "voices": 8,
-          "dating": "1848",
           "note": "LV 250-2"
         },
         {
           "titleInSource": "Quo properas facunde",
           "voices": 10,
-          "dating": "1848",
           "note": "LV 251"
         },
         {
           "titleInSource": "Levavi oculos meos",
           "voices": 8,
-          "dating": "1848",
           "note": "LV 267"
         },
         {
           "titleInSource": "In monte oliveti",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 334"
         },
         {
           "titleInSource": "O quam suavis est Domine",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 335"
         },
         {
           "titleInSource": "Audite nova: Der Bauer",
           "voices": 4,
-          "dating": "1848",
           "note": "LV 483"
         },
         {
           "titleInSource": "Nun grüß dich Gott",
           "voices": 8,
-          "dating": "1848",
           "note": "LV 497"
         },
         {
           "titleInSource": "Ego sum panis vivus",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 699"
         },
         {
           "titleInSource": "O sacrum convivium",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 702"
         },
         {
           "titleInSource": "O salutaris hostia",
           "voices": 5,
-          "dating": "1848",
           "note": "LV 708"
         },
         {
           "titleInSource": "Ave regina caelorum",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 717"
         },
         {
           "titleInSource": "Pater noster",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 830"
         },
         {
           "titleInSource": "Panem nostrum",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 830-2"
         },
         {
           "titleInSource": "Regina caeli laetare",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 1106"
         },
         {
           "titleInSource": "Resurrexit sicut dixit",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 1106-2"
         },
         {
           "titleInSource": "Salve regina",
           "voices": 6,
-          "dating": "1848",
           "note": "LV 1107"
         }
       ],
+      "dating": "1848",
       "sourceType": "Sparten",
       "notes": [
         {
@@ -3197,88 +3159,75 @@
         {
           "embodies": "expressions:11-2",
           "titleInSource": "Ma tu pretendi",
-          "voices": 5,
-          "dating": "1551-1600"
+          "voices": 5
         },
         {
           "embodies": "expressions:11",
           "titleInSource": "O invidia nemica",
-          "voices": 5,
-          "dating": "1551-1600"
+          "voices": 5
         },
         {
           "embodies": "expressions:11-2",
           "titleInSource": "Ne però che con",
-          "voices": 5,
-          "dating": "1551-1600"
+          "voices": 5
         },
         {
           "embodies": "expressions:13",
           "titleInSource": "Pon fren’ al gran dolor",
-          "voices": 5,
-          "dating": "1551-1600"
+          "voices": 5
         },
         {
           "embodies": "expressions:14",
           "titleInSource": "Fiera stella",
-          "voices": 5,
-          "dating": "1551-1600"
+          "voices": 5
         },
         {
           "titleInSource": "Standomi un giorno",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64"
         },
         {
           "titleInSource": "Indi per alto mar",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64-2"
         },
         {
           "titleInSource": "In un boschetto",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64-3"
         },
         {
           "titleInSource": "Chiara fontana",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64-4"
         },
         {
           "titleInSource": "Una strania Fenice",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64-5"
         },
         {
           "titleInSource": "Al fin vidd’io",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 64-6"
         },
         {
           "titleInSource": "Euro gentil",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 69"
         },
         {
           "titleInSource": "Volgi cor mio",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 70"
         },
         {
           "titleInSource": "Et a noi restarà",
           "voices": 5,
-          "dating": "1551-1600",
           "note": "LV 70-2"
         }
       ],
+      "dating": "1551-1600",
       "sourceType": "Lautentabulatur",
       "literature": [
         "Biblioteca Universitaria di Genova, Lamusica dei libri. Opere musicali dei secoli XIII-XIX. Catalogo, a cura di O. Cartaregia, C. Farinella, G. Grigoletti, con saggi di A. De Floriani e G.E. Cortese. Genova 1996."
@@ -3301,112 +3250,95 @@
         {
           "embodies": "expressions:14",
           "titleInSource": "Fiera stella",
-          "voices": 5,
-          "dating": "vor 1589"
+          "voices": 5
         },
         {
           "embodies": "expressions:14-2",
           "titleInSource": "Ma tu prendi",
-          "voices": 5,
-          "dating": "vor 1589"
+          "voices": 5
         },
         {
           "titleInSource": "Vatene lieta! homai",
           "voices": 4,
-          "dating": "vor 1589",
           "note": "LV 28"
         },
         {
           "titleInSource": "Appariran per me",
           "voices": 4,
-          "dating": "vor 1589",
           "note": "LV 82"
         },
         {
           "titleInSource": "Non vi vieto",
           "voices": 4,
-          "dating": "vor 1589",
           "note": "LV 83; [opus dubium: Hoste da Reggio?]"
         },
         {
           "titleInSource": "Oh d'amarissime onde",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 104"
         },
         {
           "titleInSource": "Ove sei vita mia",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 105"
         },
         {
           "titleInSource": "Come sei stat'o ciel",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 105-2"
         },
         {
           "titleInSource": "La notte che segui",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 106"
         },
         {
           "titleInSource": "Riconosci colei",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 106-2"
         },
         {
           "titleInSource": "Come non conosch'io",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 106-3"
         },
         {
           "titleInSource": "Che fai? Che pensi?",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 315"
         },
         {
           "titleInSource": "Deh non rinovellar",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 315-2"
         },
         {
           "titleInSource": "Voi ch'ascoltate",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 318"
         },
         {
           "titleInSource": "Ma ben veggi'hor",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 318-2"
         },
         {
           "titleInSource": "I vo piangendo",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 319"
         },
         {
           "titleInSource": "Si che s'io vissi",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 319-2"
         },
         {
           "titleInSource": "Misera che farò",
           "voices": 5,
-          "dating": "vor 1589",
           "note": "LV 591"
         }
       ],
+      "dating": "vor 1589",
       "sourceType": "Partitur",
       "literature": [
         "Milan, Biblioteca del Conservatorio di Musica Giuseppe Verdi, The Tarasconi Codex. Introduction by Jessie Ann Owens, New York und London 1986 (= Renaissance Music in Facsimile 11)."
@@ -3429,16 +3361,15 @@
         {
           "embodies": "expressions:11",
           "titleInSource": "O invidia nemica",
-          "voices": 5,
-          "dating": "um 1580 - 1610"
+          "voices": 5
         },
         {
           "embodies": "expressions:11-2",
           "titleInSource": "Ne però che con",
-          "voices": 5,
-          "dating": "um 1580 - 1610"
+          "voices": 5
         }
       ],
+      "dating": "um 1580 - 1610",
       "sourceType": "Chorbuch"
     },
     {
@@ -3459,322 +3390,270 @@
           "embodies": "expressions:14",
           "titleInSource": "Fiera stella",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "[fehlt?]"
         },
         {
           "embodies": "expressions:14-2",
           "titleInSource": "Ma tu prendi",
-          "voices": 5,
-          "dating": "um 1600 - 1620"
+          "voices": 5
         },
         {
           "titleInSource": "Tu sai madonna mia",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 31"
         },
         {
           "titleInSource": "Se sai che del tuo laccio",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 31-2"
         },
         {
           "titleInSource": "Se sai che la mia fede",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 31-3"
         },
         {
           "titleInSource": "Dunque madonna",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 31-4"
         },
         {
           "titleInSource": "La cortesia voi donne",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 33"
         },
         {
           "titleInSource": "Se la dicete",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 33-2"
         },
         {
           "titleInSource": "Quando vi tengo",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 33-3"
         },
         {
           "titleInSource": "Va figlia mia",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 33-4"
         },
         {
           "titleInSource": "Las! Voulez vous qu’ une personne",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 36"
         },
         {
           "titleInSource": "En espoir vis ... Votre doux",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 37"
         },
         {
           "titleInSource": "Avecques vous mon amour",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 38"
         },
         {
           "titleInSource": "Je l’ayme bien",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 39"
         },
         {
           "titleInSource": "Trop endurer",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 40"
         },
         {
           "titleInSource": "Fremuit Spiritu Iesus",
           "voices": 6,
-          "dating": "um 1600 - 1620",
           "note": "LV 59"
         },
         {
           "titleInSource": "Videns Dominus",
           "voices": 6,
-          "dating": "um 1600 - 1620",
           "note": "LV 59-2"
         },
         {
           "titleInSource": "Veux tu ton mal",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 76"
         },
         {
           "titleInSource": "Le voulez vous",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 76-2"
         },
         {
           "titleInSource": "Helas quel jour",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 85"
         },
         {
           "titleInSource": "Un doux nenny",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 86"
         },
         {
           "titleInSource": "Elle s’en va",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 90"
         },
         {
           "titleInSource": "Le Rossignol plaisant",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 91"
         },
         {
           "titleInSource": "Sur tous regretz le mien",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 92"
         },
         {
           "titleInSource": "Mon coeur se recommande à vous",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 94"
         },
         {
           "titleInSource": "Vous qui aymez les dames",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 95"
         },
         {
           "titleInSource": "Ardant amour souuent",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 96"
         },
         {
           "titleInSource": "J’atendz le tems",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 97"
         },
         {
           "titleInSource": "Susanne un jour",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 98"
         },
         {
           "titleInSource": "Un triste coeur",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 99"
         },
         {
           "titleInSource": "Ce faux amour",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 133"
         },
         {
           "titleInSource": "Qui dort icy",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 152"
         },
         {
           "titleInSource": "Quand mon mary",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 153"
         },
         {
           "titleInSource": "Monsieur l'Abé",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 154; als Kontrafaktur: Maistre robin"
         },
         {
           "titleInSource": "A ce matin ce seroit bonne estreine",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 156"
         },
         {
           "titleInSource": "Le temps peut bien",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 162"
         },
         {
           "titleInSource": "Petite folle",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 163"
         },
         {
           "titleInSource": "Fuyons tous d’ amour le jeu",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 164"
         },
         {
           "titleInSource": "Bon jour mon coeur",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 167"
         },
         {
           "titleInSource": "Margot labourez les vignes",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 169"
         },
         {
           "titleInSource": "Du corps absent ... sans fin",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 171"
         },
         {
           "titleInSource": "O comme heureulx",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 173"
         },
         {
           "titleInSource": "Ardant amour souuent",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 174"
         },
         {
           "titleInSource": "Soyons joyeux",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 176"
         },
         {
           "titleInSource": "Mon coeur ravi d’ amour fort variable",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 178"
         },
         {
           "titleInSource": "De tout mon coeur ... Et dy pour vray",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 181"
         },
         {
           "titleInSource": "J’endure un tourment",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 182"
         },
         {
           "titleInSource": "In te Domine speravi",
           "voices": 6,
-          "dating": "um 1600 - 1620",
           "note": "LV 193"
         },
         {
           "titleInSource": "Quoniam fortitudo mea",
           "voices": 6,
-          "dating": "um 1600 - 1620",
           "note": "LV 193-2"
         },
         {
           "titleInSource": "Gloria Patri",
           "voices": 6,
-          "dating": "um 1600 - 1620",
           "note": "LV 193-3"
         },
         {
           "titleInSource": "Hatez vouz de me faire grace",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 333"
         },
         {
           "titleInSource": "Si par souhait",
           "voices": 4,
-          "dating": "um 1600 - 1620",
           "note": "LV 377"
         },
         {
           "titleInSource": "Comme un qui prend une couppe",
           "voices": 5,
-          "dating": "um 1600 - 1620",
           "note": "LV 438"
         }
       ],
+      "dating": "um 1600 - 1620",
       "sourceType": "Chorbuch"
     },
     {
@@ -3794,263 +3673,221 @@
         {
           "embodies": "expressions:1",
           "titleInSource": "Cantai hor piango",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:1-2",
           "titleInSource": "Tengan dunque",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:3",
           "titleInSource": "Alma cortese",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:3-2",
           "titleInSource": "Ch'udirai",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:6",
           "titleInSource": "Hor qui son lasso",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:8",
           "titleInSource": "Mentre che'l cor",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:8-2",
           "titleInSource": "Quel fuoco e morto",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:13",
           "titleInSource": "Pon fren'al gran dolor",
           "voices": 5,
-          "dating": "1566",
           "note": "[ohne Text]"
         },
         {
           "embodies": "expressions:14",
           "titleInSource": "Fiera stella",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "embodies": "expressions:16",
           "titleInSource": "S'io tal'hor",
           "voices": 5,
-          "dating": "1566",
           "note": "[nur II. Pars]"
         },
         {
           "embodies": "expressions:16-2",
           "titleInSource": "Al'hor lasso",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         },
         {
           "titleInSource": "Delitiae Phoebi",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 47"
         },
         {
           "titleInSource": "Peccavi quid faciam",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 48"
         },
         {
           "titleInSource": "Gustate et videte",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 54"
         },
         {
           "titleInSource": "Divites eguerunt",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 54-2"
         },
         {
           "titleInSource": "Candid'allhor",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 73"
         },
         {
           "titleInSource": "Est il possible a moy",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 88"
         },
         {
           "titleInSource": "Alma Venus",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 89"
         },
         {
           "titleInSource": "Nunc elegos divae",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 89-2"
         },
         {
           "titleInSource": "Sur tous regretz le mien",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 92"
         },
         {
           "titleInSource": "Las! me faut il",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 93"
         },
         {
           "titleInSource": "Ardant amour souuent",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 96; als Kontrafaktur: Divine amour"
         },
         {
           "titleInSource": "Susanne un jour",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 98"
         },
         {
           "titleInSource": "Au temps jadis",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 103"
         },
         {
           "titleInSource": "Heu quantus dolor",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 113"
         },
         {
           "titleInSource": "Veni in hortum meum",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 114"
         },
         {
           "titleInSource": "Angelus ad pastores ait",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 115"
         },
         {
           "titleInSource": "Exaudi Domine vocem meam",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 116"
         },
         {
           "titleInSource": "Ne avertas faciem tuam",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 116-2"
         },
         {
           "titleInSource": "O Domine salvum me fac",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 118"
         },
         {
           "titleInSource": "Non moriar",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 118-2"
         },
         {
           "titleInSource": "Benedicam Dominum in omni tempore",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 131"
         },
         {
           "titleInSource": "In Domino laudabitur",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 131-2"
         },
         {
           "titleInSource": "Mon coeur ravi d'amour fort variable",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 178"
         },
         {
           "titleInSource": "Le departir",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 180"
         },
         {
           "titleInSource": "Puisque fortune",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 184; als Kontrafaktur: Peché infame"
         },
         {
           "titleInSource": "Beati omnes qui timent",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 242"
         },
         {
           "titleInSource": "Ecce sie benedicetur homo",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 242-2"
         },
         {
           "titleInSource": "Animam meam dilectam",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 244"
         },
         {
           "titleInSource": "Congregamini et properate",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 244-2"
         },
         {
           "titleInSource": "Que gaignez vous",
           "voices": 5,
-          "dating": "1566",
           "note": "LV 383"
         },
         {
           "titleInSource": "Se'l vostro sol ch'alteramente",
           "voices": 5,
-          "dating": "1566",
           "note": "nicht identifiziert; [Text in keinem Verzeichnis nachweisbar. Fehlzuschreibung?]"
         },
         {
           "titleInSource": "Tanto più che virtute",
-          "voices": 5,
-          "dating": "1566"
+          "voices": 5
         }
       ],
+      "dating": "1566",
       "sourceType": "Stimmbücher (1): Quintus"
     }
   ]

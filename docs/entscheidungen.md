@@ -111,3 +111,24 @@ früher erschien als das Werk als Ganzes. Deshalb „Frühester Druck“ statt �
 **Preis.** Ein zweiter Erstdruck in anderer Besetzung ist nicht mehr gekennzeichnet (bei
 Lasso 30 Werke), und das Datum „ca. 1558“ zählt als 1558. Eine redaktionelle Korrektur
 der Ableitung ist nicht vorgesehen, bis ein echter Fall sie verlangt.
+
+## 8. Datierung an der Handschrift
+
+**Entscheidung.** `dating` steht an der Manifestation, nicht am Stück in `contents`. Es
+ist Text wie in der Literatur. Drucke tragen ihr Datum weiter in `publication`.
+
+**Anlass.** Die Lasso-Tabelle hat eine Zeile je Stück und wiederholt dort die Datierung
+der Handschrift. Der erste Härtetest übernahm sie je Stück, und die Oberfläche zeigte
+sie dadurch wie eine Eigenschaft des Stücks.
+
+**Alternative.** `publication` auch für Handschriften: Das Feld hätte schon Platz für
+Text und Datum, eine Handschrift ist aber nicht veröffentlicht.
+
+**Begründung.** Die Datierung beschreibt die Quelle. Von den 1410 Lasso-Handschriften
+auf `main` haben 1403 genau einen Wert, 3 keinen und 4 mehrere: D-Rp A.R. 233-238,
+D-Rp Pr-M Lasso III/24, D-Po Lasso 5 und A-Wn Mus.Hs.19428.
+
+**Preis.** Entstand eine Handschrift nachweislich in Abschnitten, lässt sich das nur als
+Text ausdrücken. Die 4 Handschriften mit mehreren Werten sind fachlich nicht geklärt. Die
+Konvertierung behält ihre Werte als Text, etwa „um 1585; um 1590“, und meldet sie in
+`luecken.json`. In den beiden Testauszügen kommen sie nicht vor.

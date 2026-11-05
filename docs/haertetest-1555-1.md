@@ -77,3 +77,7 @@ Literaturangaben in Lasso nicht als Bibliographie-Einträge vorliegen.
   nicht oder kaum vertreten.
 - **Die Gattung** ist ungeprüft übernommen, obwohl sie in Lasso als fehlerhaft gilt.
 - **Der Weg zurück** vom Editor in das JSON-LD fehlt.
+- **Shapes und Editor nach dem Verschieben der Datierung.** `dating` steht seit
+  `docs/entscheidungen.md`, Abschnitt 8, an der Handschrift und wird beim Export zu einer
+  Anmerkung. Prüfung und Export liefen erneut, Shapes und Editor nicht. Die Zahlen oben
+  stammen also von davor.

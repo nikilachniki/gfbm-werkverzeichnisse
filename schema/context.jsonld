@@ -97,6 +97,7 @@
     "publisherName": "wv:publisherName",
     "sourceType": "wv:sourceType",
     "partbooks": "wv:partbooks",
+    "dating": "wv:dating",
     "literature": { "@id": "wv:literature", "@container": "@set" },
     "partOfManifestation": { "@id": "melod:isManifestationPartOf", "@type": "@id" },
     "contents": { "@id": "wv:contents", "@container": "@list" },
@@ -105,7 +106,6 @@
     "embodies": { "@id": "lrmoo:R4_embodies", "@type": "@id" },
     "titleInSource": "wv:titleInSource",
     "voices": { "@id": "wv:voices", "@type": "xsd:integer" },
-    "dating": "wv:dating",
     "note": "wv:note",
 
     "keeper": { "@id": "cidoc:P50_has_current_keeper", "@type": "@id" },

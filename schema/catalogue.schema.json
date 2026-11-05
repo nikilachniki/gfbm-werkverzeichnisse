@@ -175,9 +175,6 @@
           "type": "integer",
           "minimum": 1
         },
-        "dating": {
-          "type": "string"
-        },
         "note": {
           "type": "string"
         },
@@ -534,6 +531,10 @@
         "partbooks": {
           "type": "string",
           "description": "Vorhandene Stimmbuecher, etwa Cantus; Tenor; Bassus."
+        },
+        "dating": {
+          "type": "string",
+          "description": "Datierung einer Handschrift wie in der Literatur, etwa um 1585. Drucke tragen ihr Datum in publication."
         },
         "literature": {
           "type": "array",

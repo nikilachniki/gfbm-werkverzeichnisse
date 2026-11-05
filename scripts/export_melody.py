@@ -99,7 +99,7 @@ def content_line(content, labels):
     details = [content.get("titleInSource")] if assigned else []
     if content.get("voices"):
         details.append("{0} Stimmen".format(content["voices"]))
-    details += [content.get("dating"), content.get("note")]
+    details.append(content.get("note"))
     details = [detail for detail in details if detail]
     return "{0} ({1})".format(line, "; ".join(details)) if details else line
 
@@ -180,6 +180,7 @@ def to_melody(catalog, collections):
         fields_to_notes(record, (
             ("sourceType", "Quellenart"),
             ("partbooks", "Stimmbücher"),
+            ("dating", "Datierung"),
             ("literature", "Literatur"),
         ))
     for name in ("manifestations", "bibliography"):
