@@ -1,6 +1,6 @@
 # Härtetests mit Lasso-Daten
 
-Am 4. November 2026 wurden echte Auszüge aus dem Lasso-Stand (`main`) in die Vorlage
+Am 4. November 2026 wurden echte Auszüge aus dem Lasso-Stand (Branch `lasso`) in die Vorlage
 übertragen. `examples/lasso_konvertieren.py` ist wiederholbar, aber kein Teil der
 Vorlage; `luecken.json` im jeweiligen Ordner listet die Fundstücke.
 

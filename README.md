@@ -3,11 +3,10 @@
 Prototyp für die Daten eines musikalischen Werkverzeichnisses. Das Modell folgt
 [MerMEId MeLODy](https://music-metadata-tools.github.io/MerMEId-Website/latest/), die
 Daten liegen aber als JSON-LD vor, damit eine Website sie direkt lesen kann. Sie
-entstand aus dem Lasso-Werkverzeichnis (Branch `main`).
+entstand aus dem Lasso-Werkverzeichnis (Branch `lasso`).
 
 **Stand:** Prototyp. Noch ohne Eingabeoberfläche. Die Website liegt in
-[lassoDB](https://github.com/nikilachniki/lassoDB/tree/werkverzeichnis-vorlage), Branch
-`werkverzeichnis-vorlage`.
+[lassoDB](https://github.com/nikilachniki/lassoDB).
 
 ## Aufbau
 

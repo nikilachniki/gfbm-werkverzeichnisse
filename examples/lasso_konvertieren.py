@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Haertetest: uebertraegt Lasso-Daten aus main in die Vorlage.
+"""Haertetest: uebertraegt Lasso-Daten aus dem Branch lasso in die Vorlage.
 
 Aufruf (im Wurzelordner):
   python examples/lasso_konvertieren.py --out examples/lasso-1555-1 --print 1555-1
   python examples/lasso_konvertieren.py --out examples/lasso-schwierig --lv 74 90 193 327 --anh 1
 
 Einmaliges Werkzeug fuer die Tests, kein Teil der Vorlage. Liest den Git-Stand von
-main, schreibt die Datensaetze in den Zielordner und fuehrt in luecken.json auf, was
+lasso, schreibt die Datensaetze in den Zielordner und fuehrt in luecken.json auf, was
 keinen passenden Platz gefunden hat. Am Ende zaehlt es gegen die Quelle nach.
 """
 
@@ -34,7 +34,7 @@ examples = defaultdict(list)
 
 def source(name):
     text = subprocess.run(
-        ["git", "show", "main:data/{0}.json".format(name)],
+        ["git", "show", "lasso:data/{0}.json".format(name)],
         capture_output=True, encoding="utf-8", check=True,
     ).stdout
     return json.loads(text)["items"]
@@ -231,7 +231,7 @@ class Converter:
             content["note"] = "; ".join(notes)
 
     def fassung(self, item):
-        """Die gekennzeichneten Fassungen aus main sind echte Expressions."""
+        """Die gekennzeichneten Fassungen aus lasso sind echte Expressions."""
         name = item["languages"][0] if item["languages"] else None
         languages = [LANGUAGES[name][1]] if name else []
         tag = LANGUAGES[name][0] if name else "@none"

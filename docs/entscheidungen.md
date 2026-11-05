@@ -1,17 +1,17 @@
 # Entscheidungen
 
 Begründungen zur Vorlage. Die Entscheidungen zum Lasso-Verzeichnis, aus dem sie
-hervorgeht, stehen im Branch `main` in derselben Datei.
+hervorgeht, stehen im Branch `lasso` in derselben Datei.
 
 ## 1. Vorlage statt Lasso-Sonderfall
 
-**Entscheidung.** Dieser Branch enthält nur ein allgemeines Modell, leere Datendateien,
-einen erfundenen Beispieldatensatz und Werkzeuge. Lasso-Daten und Lasso-spezifische
-Felder (LV-Nummern, LV-Anhang, Excel-Import, TeX-Auszug) sind entfernt.
+**Entscheidung.** `main` enthält nur ein allgemeines Modell, leere Datendateien, einen
+erfundenen Beispieldatensatz, die Lasso-Testauszüge und Werkzeuge. Lasso-Daten und
+Lasso-spezifische Felder (LV-Nummern, LV-Anhang, Excel-Import, TeX-Auszug) sind entfernt.
 
 **Begründung.** Das Lasso-Projekt soll Grundlage für weitere Werkverzeichnisse sein.
 
-**Preis.** Lasso nutzt die Vorlage noch nicht und bleibt auf `main` beim eigenen
+**Preis.** Lasso nutzt die Vorlage noch nicht und bleibt im Branch `lasso` beim eigenen
 Modell; eine Migration wäre eine eigene Aufgabe.
 
 ## 2. JSON-LD mit den Begriffen von MeLODy
@@ -84,7 +84,7 @@ Expressions, damit die Kennzeichnung nicht verloren geht.
 ist. So kann eine Quelle ein Stück nennen, das keinem Werk zugeordnet ist.
 
 **Anlass.** Bei Lasso sind 311 Handschriftenzeugnisse keinem Werk zugeordnet (siehe
-`main`, Abschnitt 14). Ohne dieses Feld standen sie nur als Textblock in einer Anmerkung.
+`lasso`, Abschnitt 14). Ohne dieses Feld standen sie nur als Textblock in einer Anmerkung.
 
 **Alternative.** Für jedes solche Stück ein Werk anlegen: Das unterstellte eine
 Zuordnung, die noch nicht feststeht.
@@ -125,7 +125,7 @@ sie dadurch wie eine Eigenschaft des Stücks.
 Text und Datum, eine Handschrift ist aber nicht veröffentlicht.
 
 **Begründung.** Die Datierung beschreibt die Quelle. Von den 1410 Lasso-Handschriften
-auf `main` haben 1403 genau einen Wert, 3 keinen und 4 mehrere: D-Rp A.R. 233-238,
+im Branch `lasso` haben 1403 genau einen Wert, 3 keinen und 4 mehrere: D-Rp A.R. 233-238,
 D-Rp Pr-M Lasso III/24, D-Po Lasso 5 und A-Wn Mus.Hs.19428.
 
 **Preis.** Entstand eine Handschrift nachweislich in Abschnitten, lässt sich das nur als
