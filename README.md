@@ -6,7 +6,7 @@ Daten liegen aber als JSON-LD vor, damit eine Website sie direkt lesen kann. Sie
 entstand aus dem Lasso-Werkverzeichnis (Branch `lasso`).
 
 **Stand:** Prototyp. Die Website samt Verwaltung liegt in
-[lassoDB](https://github.com/nikilachniki/lassoDB) und wird für jedes Verzeichnis aus
+[gfbm-werkverzeichnisse-frontend](https://github.com/nikilachniki/gfbm-werkverzeichnisse-frontend) und wird für jedes Verzeichnis aus
 demselben Code gebaut.
 
 ## Aufbau
@@ -23,7 +23,7 @@ demselben Code gebaut.
 ## Ein neues Verzeichnis beginnen
 
 Jedes Werkverzeichnis bekommt ein eigenes Daten-Repo. Die Website kommt nicht als Kopie
-dazu: Sie wird aus dem gemeinsamen Code in lassoDB mit den Daten dieses Repos gebaut.
+dazu: Sie wird aus dem gemeinsamen Code im Frontend-Repo mit den Daten dieses Repos gebaut.
 
 1. **Repo anlegen.** Auf GitHub bei diesem Repo „Use this template“ → „Create a new
    repository“, etwa `lebeau-werkverzeichnis`. Das ergibt ein eigenständiges Repo ohne
