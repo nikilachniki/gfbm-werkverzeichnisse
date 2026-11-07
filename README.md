@@ -5,8 +5,9 @@ Prototyp für die Daten eines musikalischen Werkverzeichnisses. Das Modell folgt
 Daten liegen aber als JSON-LD vor, damit eine Website sie direkt lesen kann. Sie
 entstand aus dem Lasso-Werkverzeichnis (Branch `lasso`).
 
-**Stand:** Prototyp. Noch ohne Eingabeoberfläche. Die Website liegt in
-[lassoDB](https://github.com/nikilachniki/lassoDB).
+**Stand:** Prototyp. Die Website samt Verwaltung liegt in
+[lassoDB](https://github.com/nikilachniki/lassoDB) und wird für jedes Verzeichnis aus
+demselben Code gebaut.
 
 ## Aufbau
 
@@ -20,6 +21,30 @@ entstand aus dem Lasso-Werkverzeichnis (Branch `lasso`).
 | `docs/` | [Datenmodell](docs/modell.md) und [Entscheidungen](docs/entscheidungen.md) |
 
 ## Ein neues Verzeichnis beginnen
+
+Jedes Werkverzeichnis bekommt ein eigenes Daten-Repo. Die Website kommt nicht als Kopie
+dazu: Sie wird aus dem gemeinsamen Code in lassoDB mit den Daten dieses Repos gebaut.
+
+1. **Repo anlegen.** Auf GitHub bei diesem Repo „Use this template“ → „Create a new
+   repository“, etwa `lebeau-werkverzeichnis`. Das ergibt ein eigenständiges Repo ohne
+   Verbindung zur Vorlage (kein Fork). Am besten in der Organisation, in der auch die
+   Redaktion Mitglied ist.
+2. **Website einschalten.** Im neuen Repo Settings → Pages → Source: „GitHub Actions“.
+   Danach Actions → „Daten prüfen und veröffentlichen“ → „Run workflow“. Die Seite
+   erscheint unter `https://<owner>.github.io/<repo>/`.
+3. **Einrichten.** `https://<owner>.github.io/<repo>/#/admin` öffnen, mit einem GitHub-Token
+   anmelden (Anleitung auf der Seite), unter „Ausprobieren“ → „Aus dem Repo öffnen“. Dann
+   in den Schritten Vorlage, Bausteine und Felder Name, Komponist*in, Kürzel und die
+   gewünschten Felder wählen und speichern. Die Auswahl liegt danach als
+   `data/baukasten.json` im Repo und gilt für alle, die das Verzeichnis bearbeiten.
+4. **Erfassen und veröffentlichen.** Werke, Quellen usw. in der Verwaltung anlegen,
+   speichern (Zweig `redaktion/<login>`), veröffentlichen (Pull Request) und nach grüner
+   Prüfung zusammenführen. Jeder Push auf `main` baut die Seite neu.
+
+Die Ordner `examples/` und `texDateien/` stammen aus der Vorlage und können im neuen Repo
+gelöscht werden.
+
+Von Hand geht es auch ohne Verwaltung:
 
 ```bash
 pip install -r scripts/requirements.txt

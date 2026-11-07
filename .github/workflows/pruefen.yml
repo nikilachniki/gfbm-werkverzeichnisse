@@ -1,13 +1,18 @@
-name: Daten prüfen
+name: Daten prüfen und veröffentlichen
 
 # Prueft jeden Pull Request, bevor er nach main kommt: Schema, IDs, Verweise und
-# RDF mit validate.py, dazu den MeLODy-Export. Der Baukasten in lassoDB zeigt das
+# RDF mit validate.py, dazu den MeLODy-Export. Die Verwaltung der Website zeigt das
 # Ergebnis an und laesst erst nach gruener Pruefung zusammenfuehren.
 #
-# Nach jedem Push auf main stoesst der zweite Job den Neubau der Website an. Dafuer
-# braucht das Repo das Secret LASSODB_DEPLOY_TOKEN: ein fein granularer Token fuer
-# nikilachniki/lassoDB mit dem Recht Actions (lesen und schreiben). Fehlt es, wird
-# der Schritt uebersprungen.
+# Nach jedem Push auf main wird danach die Website gebaut:
+# - In einem Projekt-Repo, das aus dieser Vorlage entstanden ist, baut der gemeinsame
+#   Workflow aus nikilachniki/lassoDB die Seite mit den Daten aus data/ und
+#   veroeffentlicht sie auf den Pages dieses Repos. Einmalig: Settings > Pages >
+#   Source auf "GitHub Actions".
+# - In der Vorlage selbst (nikilachniki/lassoDBData) wird stattdessen die lassoDB-Seite
+#   neu gebaut. Dafuer braucht es das Secret LASSODB_DEPLOY_TOKEN, einen fein granularen
+#   Token fuer nikilachniki/lassoDB mit Actions (lesen und schreiben). Fehlt es, wird der
+#   Schritt uebersprungen.
 on:
   pull_request:
   push:
@@ -37,6 +42,7 @@ jobs:
           status=0
           for folder in data examples/*/; do
             folder="${folder%/}"
+            [ -f "$folder/catalog.json" ] || continue
             echo "::group::$folder"
             python scripts/validate.py "$folder" || status=1
             python scripts/export_melody.py --data "$folder" --out "$RUNNER_TEMP/export-$(basename "$folder")" || status=1
@@ -46,10 +52,21 @@ jobs:
 
   website:
     needs: pruefen
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository != 'nikilachniki/lassoDBData'
+    uses: nikilachniki/lassoDB/.github/workflows/website.yml@main
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    with:
+      data-path: data
+
+  lassodb-neu-bauen:
+    needs: pruefen
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'nikilachniki/lassoDBData'
     runs-on: ubuntu-latest
     steps:
-      - name: Neubau der Website anstossen
+      - name: Neubau der lassoDB-Seite anstossen
         env:
           TOKEN: ${{ secrets.LASSODB_DEPLOY_TOKEN }}
         run: |
