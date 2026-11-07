@@ -551,7 +551,8 @@ def main():
     context = "../../schema/context.jsonld"
     for name, records in converter.out.items():
         write(args.out, name, {"@context": context, "entries": records})
-    label = "Werkverzeichnis Orlando di Lasso, Auszug ({0})".format(args.out.name)
+    # Der Name erscheint im Kopf der Website, daher ohne Hinweis auf den Auszug.
+    label = "Werkverzeichnis Orlando di Lasso"
     write(args.out, "catalog", {
         "@context": context, "@id": "urn:uuid:dataCatalogs/catalog", "@type": "Catalogue",
         "label": label, "composer": LASSO, "catalogueAbbreviation": "LV",

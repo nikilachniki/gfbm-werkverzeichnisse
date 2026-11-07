@@ -2,7 +2,7 @@
   "@context": "../../schema/context.jsonld",
   "@id": "urn:uuid:dataCatalogs/catalog",
   "@type": "Catalogue",
-  "label": "Werkverzeichnis Orlando di Lasso, Auszug (lasso-schwierig)",
+  "label": "Werkverzeichnis Orlando di Lasso",
   "composer": "persons:lasso",
   "catalogueAbbreviation": "LV"
 }
