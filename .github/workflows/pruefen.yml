@@ -9,10 +9,11 @@ name: Daten prüfen und veröffentlichen
 #   Workflow aus nikilachniki/lassoDB die Seite mit den Daten aus data/ und
 #   veroeffentlicht sie auf den Pages dieses Repos. Einmalig: Settings > Pages >
 #   Source auf "GitHub Actions".
-# - In der Vorlage selbst (nikilachniki/lassoDBData) wird stattdessen die lassoDB-Seite
-#   neu gebaut. Dafuer braucht es das Secret LASSODB_DEPLOY_TOKEN, einen fein granularen
-#   Token fuer nikilachniki/lassoDB mit Actions (lesen und schreiben). Fehlt es, wird der
-#   Schritt uebersprungen.
+# - In der Vorlage selbst (Haken "Template repository", derzeit
+#   nikilachniki/gfbm-werkverzeichnisse) wird stattdessen die lassoDB-Seite neu gebaut.
+#   Dafuer braucht es das Secret LASSODB_DEPLOY_TOKEN, einen fein granularen Token fuer
+#   nikilachniki/lassoDB mit Actions (lesen und schreiben). Fehlt es, wird der Schritt
+#   uebersprungen.
 on:
   pull_request:
   push:
@@ -52,7 +53,7 @@ jobs:
 
   website:
     needs: pruefen
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository != 'nikilachniki/lassoDBData'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && !github.event.repository.is_template
     uses: nikilachniki/lassoDB/.github/workflows/website.yml@main
     permissions:
       contents: read
@@ -63,7 +64,7 @@ jobs:
 
   lassodb-neu-bauen:
     needs: pruefen
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'nikilachniki/lassoDBData'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.event.repository.is_template
     runs-on: ubuntu-latest
     steps:
       - name: Neubau der lassoDB-Seite anstossen
