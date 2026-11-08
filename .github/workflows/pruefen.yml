@@ -2,7 +2,9 @@ name: Daten prüfen und veröffentlichen
 
 # Prueft jeden Pull Request, bevor er nach main kommt: Schema, IDs, Verweise und
 # RDF mit validate.py, dazu den MeLODy-Export. Die Verwaltung der Website zeigt das
-# Ergebnis an und laesst erst nach gruener Pruefung zusammenfuehren.
+# Ergebnis an und laesst erst nach gruener Pruefung zusammenfuehren. Schema und Skripte
+# kommen immer aktuell aus der Vorlage (pruefung.yml dort), die Kopien in diesem Repo
+# spielen fuer die Pruefung keine Rolle. Die Vorlage prueft sich selbst samt Beispielen.
 #
 # Nach jedem Push auf main wird danach die Website gebaut:
 # - In einem Projekt-Repo, das aus dieser Vorlage entstanden ist, baut der gemeinsame
@@ -26,31 +28,10 @@ permissions:
 
 jobs:
   pruefen:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
-          cache-dependency-path: scripts/requirements.txt
-
-      - name: Abhaengigkeiten installieren
-        run: pip install -r scripts/requirements.txt
-
-      - name: Alle Datenordner pruefen
-        run: |
-          status=0
-          for folder in data examples/*/; do
-            folder="${folder%/}"
-            [ -f "$folder/catalog.json" ] || continue
-            echo "::group::$folder"
-            python scripts/validate.py "$folder" || status=1
-            python scripts/export_melody.py --data "$folder" --out "$RUNNER_TEMP/export-$(basename "$folder")" || status=1
-            echo "::endgroup::"
-          done
-          exit $status
+    uses: nikilachniki/gfbm-werkverzeichnisse/.github/workflows/pruefung.yml@main
+    with:
+      folders: ${{ github.event.repository.is_template && 'data examples/*/' || 'data' }}
+      vorlage-ref: ${{ github.event.repository.is_template && github.sha || 'main' }}
 
   website:
     needs: pruefen

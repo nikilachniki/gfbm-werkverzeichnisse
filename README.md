@@ -44,6 +44,12 @@ dazu: Sie wird aus dem gemeinsamen Code im Frontend-Repo mit den Daten dieses Re
 Die Ordner `examples/` und `texDateien/` stammen aus der Vorlage und können im neuen Repo
 gelöscht werden.
 
+Die automatische Prüfung holt Schema und Skripte immer aktuell aus dieser Vorlage
+(`.github/workflows/pruefung.yml`), nicht aus der Kopie im jeweiligen Repo. Eine Änderung
+am Datenmodell gilt damit sofort für alle Verzeichnisse. Neue optionale Felder sind
+unkritisch. Wer ein Feld umbenennt, entfernt oder strenger fasst, muss zuerst die Daten
+aller Verzeichnisse anpassen, sonst wird deren Prüfung rot.
+
 Von Hand geht es auch ohne Verwaltung:
 
 ```bash

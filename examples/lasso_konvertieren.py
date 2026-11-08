@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 import subprocess
 from collections import Counter, defaultdict
@@ -196,7 +197,11 @@ class Converter:
             voices = first[0]["voices"] if first else None
             if len(work["voiceCounts"]) > 1 and voices is None:
                 gap("Stimmenzahl im Druck nicht belegt", "{0} in {1}".format(work["lv"], siglum))
-            content = {"position": appearance["piece"], "embodies": expression_for(work)}
+            content = {"embodies": expression_for(work)}
+            if appearance["piece"] is None:
+                gap("Druck nennt das Stück ohne Nummer", "{0} in {1}".format(work["lv"], siglum))
+            else:
+                content = {"position": appearance["piece"], **content}
             self.source_details(content, first, appearance.get("note"))
             self.contents[siglum].append(content)
         # Teile und Eintraege ohne Registerangabe stehen nur als Eintrag im Erstdruck.
@@ -548,7 +553,7 @@ def main():
     converter.manuscript_records()
     converter.rest()
 
-    context = "../../schema/context.jsonld"
+    context = Path(os.path.relpath("schema/context.jsonld", args.out)).as_posix()
     for name, records in converter.out.items():
         write(args.out, name, {"@context": context, "entries": records})
     # Der Name erscheint im Kopf der Website, daher ohne Hinweis auf den Auszug.
