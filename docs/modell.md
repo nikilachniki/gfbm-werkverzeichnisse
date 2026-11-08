@@ -9,7 +9,7 @@ Website direkt lesen kann.
 
 | Datei | Typ | Inhalt |
 | --- | --- | --- |
-| `catalog.json` | `Catalogue` | Name des Verzeichnisses, Komponist*in, Kürzel |
+| `catalog.json` | `Catalogue` | Name des Verzeichnisses, Komponist*in, Kürzel, Info-Text |
 | `works.json` | `Work` | Das abstrakte Werk |
 | `expressions.json` | `Expression` | Eine Gestalt des Werks, etwa eine Besetzung |
 | `manifestations.json` | `Manifestation` | Ein Druck oder eine Handschrift |

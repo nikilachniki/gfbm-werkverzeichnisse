@@ -222,6 +222,11 @@
         "catalogueAbbreviation": {
           "type": "string",
           "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Info-Text über das Verzeichnis für die Website."
         }
       }
     },
